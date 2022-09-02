@@ -31,7 +31,7 @@ run the command without the -n flag.
 Example output:
 
 .d..tp..... ./
-.f..tp..... CHECKIFREBOOTED
+.f..tp..... reboot_if_flag_set.sh
 .f..tp..... ECR_settings.sql
 <f+++++++++ ECR_settings_1mA.sql
 <f+++++++++ ECR_settings_5mA.sql

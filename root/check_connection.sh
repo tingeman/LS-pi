@@ -43,7 +43,7 @@ then
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CHK: All good, exiting." >> $LOGDIR/uploadlog
 else
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CHK: Could not connect, setting reboot flag" >> $LOGDIR/uploadlog
-    /home/root/SETPENDINGREBOOT    
+    /home/root/set_pending_reboot.sh    
 fi
 
 

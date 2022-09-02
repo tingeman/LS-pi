@@ -44,6 +44,6 @@ then
 else
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "COMPLETE: Could not connect." >> $LOGDIR/logfile
     #$BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "UPL: Could not connect, set pending reboot!" >> $LOGDIR/logfile
-    #$HOME/SETPENDINGREBOOT
+    #$HOME/set_pending_reboot.sh
 fi
 

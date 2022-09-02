@@ -2,7 +2,7 @@
 
 # Use as 
 #
-#	SETPENDINGREBOOT
+#	set_pending_reboot.sh
 #
 #	Will create a flag file used to indicate that a reboot
 #	should be performed by GO after completion of next job.
@@ -16,7 +16,7 @@ source "./cronscripter_settings"
 
 if [ -e $RUNFILEDIR/runfile ]
 then
-    $BIN/echo -n "SETPENDINGREBOOT: Flag for reboot. " >> $LOGDIR/logfile
+    $BIN/echo -n "set_pending_reboot.sh: Setting flag for reboot. " >> $LOGDIR/logfile
     $BIN/date >>$LOGDIR/logfile
     $BIN/touch $RUNFILEDIR/rebootmenow
 fi

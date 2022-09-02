@@ -2,7 +2,7 @@
 
 # Use as 
 #
-#	CHECKIFREBOOTED
+#	reboot_if_flag_set.sh
 #
 #	Will check if the flag file used to indicate that a reboot
 #	should be performed by GO is present. If so, it is assumed
@@ -20,7 +20,7 @@ if [ -e $RUNFILEDIR/runfile ]
 then
     if [ -e $RUNFILEDIR/rebootmenow ]
     then
-        $BIN/echo -n "CHECKIFREBOOTED: Pending reboot. Force shutdown at " >> $LOGDIR/logfile
+        $BIN/echo -n "reboot_if_flag_set.sh: Pending reboot. Force shutdown at " >> $LOGDIR/logfile
         $BIN/date >>$LOGDIR/logfile
         $BIN/rm $RUNFILEDIR/rebootmenow
         $BIN/sleep 2
