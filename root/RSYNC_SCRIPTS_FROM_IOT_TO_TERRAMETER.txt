@@ -1,0 +1,52 @@
+Using rsync to transfer files from IOT to Terrameter
+====================================================
+
+rsync must be run from IOT, as the Terrameter user does
+not have permission to access all directories on the IOT.
+
+rsync -n -aic ./ root@192.168.23.10:/home/root/
+
+
+NB: rsync is one-way sync only! The above will overwrite
+    changed files on remote by files from local.
+	If you want to sync from Terrameter to IOT, use:
+    
+	rsync -n -aic root@192.168.23.10:/home/root/ ./ 
+
+
+-n     dry-run - does not change any files
+-a     archive mode
+-i     itemize changes - show a list of what is being done
+-c     use checksum to determine changes
+
+
+Run first with the -n parameter
+Check all suggested changes, to see if files are sent that should not be.
+E.g. we don't want log-files to be overwritten on the Terrameter.
+When you are sure only good files are transferred, 
+run the command without the -n flag.
+
+
+
+Example output:
+
+.d..tp..... ./
+.f..tp..... CHECKIFREBOOTED
+.f..tp..... ECR_settings.sql
+<f+++++++++ ECR_settings_1mA.sql
+<f+++++++++ ECR_settings_5mA.sql
+.f..tp..... GET_VOLTAGE.sql
+.f..tp..... GO
+
+
+<      file is transferred to destination
+>      file is transferred from destination to local
+.      item is not being updated
+f/d    (f)ile or (d)irectory
+t      modification times are different and will be updated
+p      permissions are different and will be updated
+
+
+
+see following link for more details:
+https://linux.die.net/man/1/rsync

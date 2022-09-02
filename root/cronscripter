@@ -1,0 +1,457 @@
+#!/bin/bash
+
+####################################################################
+#    Cronscripter
+#
+#    A utility to send commands to the terrameter executable.
+#
+#    The commands are read from a textfile, provided as input 
+#    when the script is called, e.g.
+#
+#    $ cronscripter CommandFile
+#
+#    will read the commands in CommandFile and execute them.
+#
+#    The script will react on the reserved words below, any other
+#    input will be passed on unaltered. 
+#
+#    Piping and redirection are used as mechanisms to communicate
+#    with the terrameter executable. A typical call, where stdin
+#    and stdout are redirected to files would be
+#
+#    cronscripter CommandFile | DISPLAY=:0 terrameter 1>> ttyfile 2>> /errfile
+#
+#    where the output from the script is piped to terrameter, and the 
+#    output from same program is written to files. Caveat emptor: See 
+#    note at reserved word WAITMEASURE below.
+#
+#    Dependencies
+#
+#    The script relies on the help program gpio_out for
+#    the control of the LCD on the instrument. Also, the standard 
+#    commands echo, grep, sh, sleep, touch and awk, dc, expr, killall, 
+#    tail, tr are being used. The script must have read and write privileges
+#    for log- and i/o-files, and read privileges for the settings file.
+#
+#    The settings
+#
+#    The settings file is located in a file cronscripter_settings, that
+#    is supposed to be located in the same directory as the script itself.
+#    The terrameter executable must be of version 1.7.1 or higher.
+#
+#    Execution with GO/GOKILL
+#
+#    To launch the script, a help script GOKILL can be used. This script will
+#    check if an instance of terrameter is running, if so attempt to kill 
+#    it, and execute the script. A similar script, GO, will respect the running
+#    instance, and dies silently if another terrameter program is running. 
+#    It is possible to launch GO/GOKILL from cron.
+#
+#    Reserved words
+#
+#    The following words are reserved, and has the effect described below
+#
+#    SLEEP s        Will pause execution for n seconds, then continue
+#    WAITMEASURE    Will wait until terrameter reports that a measurement 
+#                   cycle is not active. Polls every RUNCHECK_INTERVAL seconds,
+#                   see cronscripter_settings. Do not poll too often; 300 s default.
+#    WAITHOUR       Will wait until next hour (hh.00) then continue
+#    WAITHALFHOUR   Will wait until next halfhour (hh.00 or hh.30) then continue
+#    LCDOFF         Shuts off the LCD display to save power
+#    LCDON          Turns on the LCD
+#    P_NEWDAY       Will create a new project if the date has changed since the
+#                   last time (saved in $WORKDIR/projectdatefile between runs)
+#                   The project will have the name YYMMDD. 
+#    UPLOAD         Calls upload.sh, used to rsync data to upstream server and/or
+#                   attached usb-stick
+#    SIGNALCOMPLETE   Calls signalcomplete.sh, used to signal that measurements
+#                   completed to an upstream server using ssh commands.
+#
+#    Execution
+#
+#    The script can be executed as
+#
+#    $ cronscripter CommandFile
+#
+#    but the preferred way is to use the helpscripts GO and GOKILL; used as
+#
+#    $ GO CommandFile
+#    $ GOKILL CommandFile
+#
+#    that will kill running instances (GOKILL) of terrameter checks or do nothing
+#    (GO)  if terrameter is running. GO/GOKILL can be run from cron.
+#
+#    The actions are logged in logfile.
+#
+#    NB: The execution of GO/GOKILL depends on the existence of a file (runfile) 
+#     in $RUNFILEDIR (see cronscripter_settings). If the file is present, GO/GOKILL
+#    will execute, if not it will log a message and die.
+#
+#    Create runfile for example with
+#
+#    $ touch runfile
+#
+#    remove it with
+#
+#    $ rm runfile
+#
+#    A suitable line in cron (edit with crontab -e) that runs every hour is 
+#
+#    00 * * * *    /bin/bash /home/root/GO /home/root/Commandfile    
+#
+#    See the documentation for vi(1) if editing is a problem.
+#
+#    Peter Jonsson, Engineering geology LTH     2011-05-29
+#    version 1.0
+#    version 1.1    2011-06-10    RUNFILEDIR
+#    version 1.2    2011-07-04    Handle unresponsive LS, prompt >
+#       modified by Joseph Doetsch 2013-05-04
+#    version 1.2b   2021-06-02    Thomas Ingeman-Nielsen
+#                                     Added SQLITE command to execute SQL statements
+#                                     e.g. used to change Terrameter settings
+#    version 1.2c   2021-09-02    Thomas Ingeman-Nielsen
+#                                     Improved checks for Terrameter running,
+#                                     including ttyfile size change,
+#                                     and extraction of measure_ids
+#                                     Added WAITHALFHOUR command
+#                                     Added WAITHALFHOUR command
+#                                     Improved logging output
+####################################################################
+
+
+# source settings. All changes to directories, etc. done here.
+source ./cronscripter_settings
+source ./helper_functions.sh
+
+# Will turn off LCD via gpio_out   
+lcd_off()                                                                           
+{                                                                                  
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Turning LCD off" >> $LOGDIR/logfile
+    $GPIO_OUT_BIN/gpio_out LCD_LAMP_ON 0 1>> $LOGDIR/logfile 2>> $LOGDIR/logfile                                                    
+    #$GPIO_OUT_BIN/gpio_out LCD_PWR_ON 0                                                      
+    #$GPIO_OUT_BIN/gpio_out LCD_INV_PWR_ON 0                                                  
+}                                                                                  
+                                             
+# Will turn on LCD via gpio_out                                                                                  
+lcd_on()                                                                             
+{                                                                                  
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Turning LCD on" >> $LOGDIR/logfile
+    $GPIO_OUT_BIN/gpio_out LCD_LAMP_ON 1 1>> $LOGDIR/logfile 2>> $LOGDIR/logfile                                                    
+    #$GPIO_OUT_BIN/gpio_out LCD_PWR_ON 1                                                      
+    #$GPIO_OUT_BIN/gpio_out LCD_INV_PWR_ON 1                                                  
+}      
+
+
+## Will check if terrameter is running, and return 1 or 0 in variable $running
+#check_if_measuring()
+#{
+#    check_if_terrameter_runs "CSCR"
+#
+#    # If ttyfile changed size since last probe (including our own requests for information)
+#    # it means that the terrameter software is responding to input...
+#    new_ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+#    delta_ttyfile="$(($new_ttyfile_size-$ttyfile_size))"
+#    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: ttyfile change since last probe: $delta_ttyfile bytes" >> $LOGDIR/logfile
+#
+#    if [ $running -eq 1 ] || [ $delta_ttyfile -gt 0 ]
+#    then
+#
+#        # Ask terrameter for the most recent measurement. Response includes a measure id, which we parse.
+#        # If it increased since last probe, it means the terrameter is advancing in the protocol.
+#        $BIN/echo "R"
+#        $BIN/sleep 10 
+#        new_measure_id=`$BIN/grep "Showing" $WORKDIR/ttyfile | $USRBIN/tail -1 | $BIN/egrep -o "[\-]*[0-9]+"`
+#        delta_measure_id="$(($new_measure_id - $measure_id))"
+#        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sending \"R\" => new (previous) measure id; $new_measure_id ($measure_id)" >> $LOGDIR/logfile
+#        # $new_measure_id = -1 when no measurements have been collected
+#        # $new_measure_id >0 when measurements have been collected
+#        # $delta_measure_id = 0 -> new id identified, and no change in measure id
+#        # $delta_measure_id > 0 -> new id identified, and the measure id increased
+#        # $delta_measure_id < 0 -> no id identified (blank) or measure id decreased (should not be possible)
+#    
+#        # Ask terrameter if it is currently measuring.
+#        # Response: "measure_1" = we are still measuring
+#        $BIN/echo "g measure"
+#        $BIN/sleep 10
+#        measuring=`$BIN/grep measure $WORKDIR/ttyfile|$USRBIN/tail -1|$USRBIN/tr -d \>|$USRBIN/tr \[\:blank\:\] _`    
+#        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sending \"g measure\", reply: \"$measuring\" " >> $LOGDIR/logfile
+#        
+#        if [ "$measuring" = "measure_0" ] && [ $delta_measure_id -eq 0 ]
+#        then
+#            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is NOT measuring" >> $LOGDIR/logfile
+#            running=0
+#        elif [ "$measuring" = "measure_1" ] || [ $delta_measure_id -gt 0 ]
+#        then
+#            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is measuring" >> $LOGDIR/logfile
+#            running=1
+#        else
+#            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is not responding as expected, status unknown " >> $LOGDIR/logfile
+#            running=2
+#        fi
+#    else
+#        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter software is NOT running (unexpectedly terminated)" >> $LOGDIR/logfile
+#    fi
+#    
+#    ttyfile_size="$new_ttyfile_size"
+#    measure_id="$new_measure_id"
+#    # $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: updated measure_id ($measure_id) and tty_filesize ($ttyfile_size bytes)" >> $LOGDIR/logfile
+#}
+
+
+
+
+# Will check if terrameter is running, and return 1 or 0 in variable $running
+check_if_measuring()
+{
+    # If ttyfile changed size since last probe (including our own requests for information)
+    # it means that the terrameter software is responding to input...
+    new_ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+    delta_ttyfile="$(($new_ttyfile_size-$ttyfile_size))"
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: ttyfile change since last probe: $delta_ttyfile bytes" >> $LOGDIR/logfile
+
+    # Ask terrameter for the most recent measurement. Response includes a measure id, which we parse.
+    # If it increased since last probe, it means the terrameter is advancing in the protocol.
+    $BIN/echo "R"
+    $BIN/sleep 10 
+    new_measure_id=`$BIN/grep "Showing" $WORKDIR/ttyfile | $USRBIN/tail -1 | $BIN/egrep -o "[\-]*[0-9]+"`
+    delta_measure_id="$(($new_measure_id - $measure_id))"
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sending \"R\" => new (previous) measure id; $new_measure_id ($measure_id)" >> $LOGDIR/logfile
+    # $new_measure_id = -1 when no measurements have been collected
+    # $new_measure_id >0 when measurements have been collected
+    # $delta_measure_id = 0 -> new id identified, and no change in measure id
+    # $delta_measure_id > 0 -> new id identified, and the measure id increased
+    # $delta_measure_id < 0 -> no id identified (blank) or measure id decreased (should not be possible)
+
+    # Ask terrameter if it is currently measuring.
+    # Response: "measure_1" = we are still measuring
+    $BIN/echo "g measure"
+    $BIN/sleep 10
+    measuring=`$BIN/grep measure $WORKDIR/ttyfile|$USRBIN/tail -1|$USRBIN/tr -d \>|$USRBIN/tr \[\:blank\:\] _`    
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sending \"g measure\", reply: \"$measuring\" " >> $LOGDIR/logfile
+    
+    if [ "$measuring" = "measure_0" ] && [ $delta_measure_id -eq 0 ]
+    then
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is NOT measuring" >> $LOGDIR/logfile
+        running=0
+    elif [ "$measuring" = "measure_1" ] || [ $delta_measure_id -gt 0 ]
+    then
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is measuring" >> $LOGDIR/logfile
+        running=1
+    else
+        new_ttyfile_size_2=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+        delta_ttyfile="$(($new_ttyfile_size-$ttyfile_size))"
+        
+        if [ $delta_ttyfile -gt 0 ]
+        then
+            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is responding, but response is not recognized: status unknown " >> $LOGDIR/logfile
+        else
+            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is NOT responding (no change in tty file size); status unknown " >> $LOGDIR/logfile
+        fi
+        running=2
+    fi
+    
+    ttyfile_size="$new_ttyfile_size"
+    measure_id="$new_measure_id"
+    # $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: updated measure_id ($measure_id) and tty_filesize ($ttyfile_size bytes)" >> $LOGDIR/logfile
+}
+
+
+# Will sleep until next hour starts
+wait_until_next_hour()
+{
+    x=`$BIN/date +%s`
+    t=`$USRBIN/dc 3600 $x 3600 mod -  p`
+
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sleeping $t seconds" >> $LOGDIR/logfile
+    $BIN/sleep $t 
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Done sleeping" >> $LOGDIR/logfile
+}
+
+# Will sleep until next halfhour starts
+wait_until_next_halfhour()
+{
+    x=`$BIN/date +%s`
+    t=`$USRBIN/dc 1800 $x 1800 mod -  p`
+
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sleeping $t seconds" >> $LOGDIR/logfile
+    $BIN/sleep $t 
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Done sleeping" >> $LOGDIR/logfile
+}
+
+# Will wait for terrameter to end, checks every RUNCHECK_INTERVAL seconds
+wait_until_not_measuring()
+{
+    # update ttyfile_size, to ensure we only check for change after this point
+    ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+    check_if_measuring
+    
+    n_wait=0
+    while [ $running -eq 2 ]
+    do
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Waiting for Terrameter to respond" >> $LOGDIR/logfile
+        
+        $BIN/sleep $RUNCHECK_INTERVAL
+        
+        check_if_measuring
+        n_wait=`expr $n_wait + 1`
+        
+        if [ n_wait -eq $MAXINTERVALS_TO_WAIT_FOR_TERRAMETER_TO_MEASURE ]
+        then
+            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Max time to wait reached ($MAXINTERVALS_TO_WAIT_FOR_TERRAMETER_TO_MEASURE x $RUNCHECK_INTERVAL sec). Aborting..." >> $LOGDIR/logfile
+            running=0
+        fi
+    done
+    
+    while [ $running -eq 1 ]
+    do
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sleeping $RUNCHECK_INTERVAL s" >> $LOGDIR/logfile
+        $BIN/sleep $RUNCHECK_INTERVAL
+        check_if_measuring
+    done
+}
+
+
+# Processes the command file. Anything but SLEEP, WAITMEASURE, WAITHOUR, LCDOFF, LCDON, P_NEWDAY
+# is echoed unaltered to stdout
+process_file()
+{
+    counter=0
+    
+    #$BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Processing file $1" >> $LOGDIR/logfile
+
+    while read line
+    do
+        counter=`$USRBIN/expr $counter + 1`;
+    
+        keyword=`$BIN/echo $line | $USRBIN/awk '{print $1}'`
+            
+        #echo "$line   =>    \"$keyword\"" >> $LOGDIR/logfile
+        
+        # Lines in the command file may be commented out by a "#" sign.
+    # There must be a space af the "# " so that the "#" is read as the keyword!
+    if [ "$keyword" != "#" ]
+        then    
+            if [ "$keyword" = "SLEEP" ]
+            then
+                argval=`$BIN/echo $line | $USRBIN/awk '{print $2}'`
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sleeping $argval s" >> $LOGDIR/logfile
+                $BIN/sleep $argval
+            elif [ "$keyword" = "WAITMEASURE" ]
+            then
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Waiting for measurement to end..." >> $LOGDIR/logfile            
+                wait_until_not_measuring
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Done waiting for measurement to end!" >> $LOGDIR/logfile            
+            elif [ "$keyword" = "WAITHOUR" ]
+            then
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Waiting for next hour..." >> $LOGDIR/logfile                        
+                wait_until_next_hour
+            elif [ "$keyword" = "WAITHALFHOUR" ]
+            then
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Waiting for next halfhour..." >> $LOGDIR/logfile                        
+                wait_until_next_halfhour
+            elif [ "$keyword" = "LCDOFF" ]
+            then
+                lcd_off
+            elif [ "$keyword" = "LCDON" ]
+            then
+                if [ -e $RUNFILEDIR/lcdoff ]
+                then
+                    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: LCDON: lcdoff file exists, will not turn on LCD." >> $LOGDIR/logfile                
+                    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: LCDON: to allow automatic LCD ON/OFF remove $RUNFILEDIR/lcdoff." >> $LOGDIR/logfile                
+                else
+                    lcd_on
+                fi
+            elif [ "$keyword" = "P_NEWDAY" ]
+            then
+                check_for_new_day
+            elif [ "$keyword" = "NEW_PROJECT" ]
+            then                
+                new_project
+            elif [ "$keyword" = "UPLOAD" ]
+            then
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Setting UPLOAD_FLAG" >> $LOGDIR/logfile                
+                touch $WORKDIR/UPLOAD_FLAG
+            elif [ "$keyword" = "SIGNALCOMPLETE" ]
+            then                
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Setting SIGNALCOMPLETE_FLAG" >> $LOGDIR/logfile                
+                touch $WORKDIR/SIGNALCOMPLETE_FLAG
+            elif [ "$keyword" = "SQLITE" ]
+            then                
+                sqldbfile=`$BIN/echo $line | $USRBIN/awk '{print $2}'`
+                sqlcommandfile=`$BIN/echo $line | $USRBIN/awk '{print $3}'`
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Executing: sqlite3 $sqldbfile < $sqlcommandfile " >> $LOGDIR/logfile                
+                $USRBIN/sqlite3 $sqldbfile < $sqlcommandfile  2>> $LOGDIR/logfile
+            else
+                $BIN/echo $line
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sending \"$line\" to Terrameter " >> $LOGDIR/logfile                
+                $BIN/echo "=> $line   [`date "+%Y-%m-%d %H:%M:%S(%Z)"`]" >> $WORKDIR/ttyfile
+            fi
+        fi
+        #echo "DEBUG: end of read loop, current line: $line" >> $LOGDIR/logfile
+    done < $1
+
+}
+
+
+# Will create a new project if it is a new day, or first run
+check_for_new_day()
+{
+    currentdate=`$BIN/date +%d`
+
+    lastdate="0"
+    lastdate=`cat $WORKDIR/projectdatefile`
+
+    if [ -z $lastdate ]
+    then
+        lastdate="0"
+    fi
+
+    if [ $currentdate != $lastdate ]
+    then
+        $BIN/date +%d > $WORKDIR/projectdatefile    
+        projectname=`$BIN/date +%y%m%d`
+        $BIN/echo "P $projectname"
+        $BIN/echo "=> P $projectname   [`date "+%Y-%m-%d %H:%M:%S(%Z)"`]" >> $WORKDIR/ttyfile
+        projectdate=$currentdate
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: New project name $projectname" >> $LOGDIR/logfile
+    fi
+}
+
+# Will create a new project if it is a new day, or first run
+new_project()
+{   
+    projectname=`$BIN/date +%y%m%d`
+    $BIN/echo "P $projectname"
+    $BIN/echo "=> P $projectname   [`date "+%Y-%m-%d %H:%M:%S(%Z)"`]" >> $WORKDIR/ttyfile
+    projectdate=$currentdate
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: New project name $projectname" >> $LOGDIR/logfile
+}
+
+
+# This is the main program
+
+projectdate=0
+$BIN/touch $LOGDIR/logfile
+$BIN/touch $WORKDIR/ttyfile
+$BIN/touch $WORKDIR/errfile
+$BIN/touch $WORKDIR/projectdatefile
+running=0
+measure_id=-1
+ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+
+
+if [ $# = 1 ]
+then
+    commandfile=$1
+
+    if [ $running -eq 0 ]
+    then
+        if [ -e $commandfile ]
+        then
+            process_file $commandfile 
+        fi
+    else
+        exit
+    fi
+fi
+

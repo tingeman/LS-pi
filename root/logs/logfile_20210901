@@ -1,0 +1,286 @@
+2021-08-31 12:09:32(GMT) === GO SCRIPT STARTED ===
+2021-08-31 12:09:32(GMT) GO: Processing file command_ecr_only
+2021-08-31 12:09:32(GMT) GO: Terrameter is not running, continue.
+2021-08-31 12:09:32(GMT) GO: rsync is not running, continue.
+2021-08-31 12:09:33(GMT) GO: rsync not running. Launching Terrameter
+2021-08-31 12:09:33(GMT) ???: Start processing commandfile command_ecr_only
+Processing file command_ecr_only at Tue Aug 31 12:09:33 GMT 2021
+Turning LCD on at Tue Aug 31 12:09:33 GMT 2021
+Ret = 0
+Executing: sqlite3 /media/hda1/system.db < /home/root/ECR_settings.sql 
+Sleeping 120 s
+Sending s unattendedmode 1 at Tue Aug 31 12:11:37 GMT 2021
+Sleeping 5 s
+New project name 210831 at Tue Aug 31 12:11:42 GMT 2021
+Sleeping 15 s
+Sending T ECR_2x32 /home/root/protocols/2X32mirrored.xml  /home/root/protocols/QEQ-ERT-02_ElectrodeT.xml 2 2 1 0 0 0 at Tue Aug 31 12:11:57 GMT 2021
+Sleeping 10 s
+Sending S 0 0 0 at Tue Aug 31 12:12:08 GMT 2021
+Sleeping 60 s
+Sending m at Tue Aug 31 12:13:08 GMT 2021
+Sleeping 120 s
+Waiting for measurement to end...
+Check if running at Tue Aug 31 12:15:08 GMT 2021
+2021-08-31 12:15:09(GMT) CSCR: Terrameter is running
+Could not check running status
+Waiting for terrameter to respond at Tue Aug 31 12:15:13 GMT 2021
+Check if running at Tue Aug 31 12:20:13 GMT 2021
+2021-08-31 12:20:13(GMT) CSCR: Terrameter is running
+Is not running
+2021-08-31 12:51:32(GMT) UPL: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 12:51:36(GMT) UPL: Connected OK to QEQ-ERT-02-PC
+2021-08-31 13:00:40(GMT) === GO SCRIPT STARTED ===
+2021-08-31 13:00:40(GMT) GO: Processing file command_2x32_dipdip_ecr_1sec
+2021-08-31 13:00:40(GMT) GO: Terrameter is running
+2021-08-31 13:00:41(GMT) GO: rsync is not running, continue.
+2021-08-31 13:00:41(GMT) GO: Terrameter is running. Die. 
+2021-08-31 13:00:46(GMT) GO: No pending reboot
+2021-08-31 13:00:46(GMT) GO: exiting
+2021-08-31 13:02:06(GMT) === GO SCRIPT STARTED ===
+2021-08-31 13:02:06(GMT) GO: Processing file command_2x32_dipdip_ecr_1sec
+2021-08-31 13:02:06(GMT) GO: Terrameter is not running, continue.
+2021-08-31 13:02:06(GMT) GO: rsync is not running, continue.
+2021-08-31 13:02:06(GMT) GO: rsync not running. Launching Terrameter
+2021-08-31 13:02:06(GMT) ???: Start processing commandfile command_2x32_dipdip_ecr_1sec
+Processing file command_2x32_dipdip_ecr_1sec at Tue Aug 31 13:02:07 GMT 2021
+Turning LCD on at Tue Aug 31 13:02:07 GMT 2021
+Ret = 0
+Executing: sqlite3 /media/hda1/system.db < /home/root/ECR_settings.sql 
+Sleeping 120 s
+Sending s unattendedmode 1 at Tue Aug 31 13:04:12 GMT 2021
+Sleeping 5 s
+New project name 210831 at Tue Aug 31 13:04:17 GMT 2021
+Sleeping 15 s
+Sending T ECR_2x32 /home/root/protocols/2X32mirrored.xml  /home/root/protocols/QEQ-ERT-02_ElectrodeT.xml 2 2 1 0 0 0 at Tue Aug 31 13:04:33 GMT 2021
+Sleeping 10 s
+Sending S 0 0 0 at Tue Aug 31 13:04:43 GMT 2021
+Sleeping 60 s
+Sending m at Tue Aug 31 13:05:43 GMT 2021
+Sleeping 120 s
+Waiting for measurement to end...
+Check if running at Tue Aug 31 13:07:44 GMT 2021
+2021-08-31 13:07:44(GMT) CSCR: Terrameter is running
+Is not running
+Done waiting for measurement to end...
+Sleeping 5 s
+Executing: sqlite3 /media/hda1/system.db < /home/root/RES_FW_NOECR_1sec_settings.sql 
+Sleeping 15 s
+Sending T 2x32dipdip /home/root/protocols/2X32mirrored.xml  /home/root/protocols/DipoleDipole64.xml 2 2 1 0 0 0 at Tue Aug 31 13:08:10 GMT 2021
+Sleeping 10 s
+Sending S 0 0 0 at Tue Aug 31 13:08:20 GMT 2021
+Sleeping 60 s
+Sending m at Tue Aug 31 13:09:21 GMT 2021
+Sleeping 300 s
+Waiting for measurement to end...
+Check if running at Tue Aug 31 13:14:21 GMT 2021
+2021-08-31 13:14:22(GMT) CSCR: Terrameter is running
+Is running
+Check if running at Tue Aug 31 13:19:27 GMT 2021
+2021-08-31 13:19:27(GMT) CSCR: Terrameter is running
+Is running
+Check if running at Tue Aug 31 13:24:32 GMT 2021
+2021-08-31 13:24:33(GMT) CSCR: Terrameter is running
+Is running
+Check if running at Tue Aug 31 13:29:38 GMT 2021
+2021-08-31 13:29:38(GMT) CSCR: Terrameter is running
+Is running
+Check if running at Tue Aug 31 13:34:42 GMT 2021
+2021-08-31 13:34:43(GMT) CSCR: Terrameter is running
+Is running
+Check if running at Tue Aug 31 13:39:47 GMT 2021
+2021-08-31 13:39:47(GMT) CSCR: Terrameter is not running, continue.
+Is not running (terrameter software unexpectedly terminated)
+Done waiting for measurement to end...
+Sleeping 5 s
+Sending Q at Tue Aug 31 13:39:53 GMT 2021
+Sleeping 5 s
+Turning LCD off at Tue Aug 31 13:39:58 GMT 2021
+2021-08-30 19:15:15(GMT) NTP: Terrameter is not running, continue.
+2021-08-30 19:15:15(GMT) NTP: Attempting clock update
+2021-08-31 13:58:59(GMT) NTP: Clock update failed
+2021-08-31 13:59:43(GMT) NTP: Terrameter is not running, continue.
+2021-08-31 13:59:43(GMT) NTP: Attempting clock update
+2021-08-31 13:59:43(GMT) SIP: Terrameter is not running, continue.
+2021-08-31 13:59:43(GMT) SIP: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 13:59:44(GMT) NTP: SUCCESS: 31 Aug 13:59:44 ntpdate[1497]: adjust time server 192.168.23.1 offset -0.005828 sec
+2021-08-31 13:59:46(GMT) SIP: Connected OK to 
+2021-08-31 13:59:49(GMT) SIP: file with IP sent.
+2021-08-31 13:59:54(GMT) Turning LCD off: Ret = 0
+2021-08-31 14:00:54(GMT) Killall terrameter
+2021-08-31 14:00:54(GMT) SIP: Terrameter is not running, continue.
+2021-08-31 14:00:54(GMT) SIP: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 14:00:57(GMT) SIP: Connected OK to 
+2021-08-31 14:01:00(GMT) SIP: file with IP sent.
+2021-08-31 14:03:54(GMT) NTP: Terrameter is not running, continue.
+2021-08-31 14:03:54(GMT) NTP: Attempting clock update
+2021-08-31 14:03:54(GMT) NTP: SUCCESS: 31 Aug 14:03:54 ntpdate[1559]: adjust time server 192.168.23.1 offset -0.030667 sec
+2021-08-31 14:13:41(GMT) === GO SCRIPT STARTED ===
+2021-08-31 14:13:41(GMT) GO: Processing file command_continue
+2021-08-31 14:13:41(GMT) GO: Terrameter is not running, continue.
+2021-08-31 14:13:42(GMT) GO: rsync is not running, continue.
+2021-08-31 14:13:42(GMT) GO: rsync not running. Launching Terrameter
+2021-08-31 14:13:42(GMT) ???: Start processing commandfile command_continue
+Processing file command_continue at Tue Aug 31 14:13:42 GMT 2021
+Turning LCD on at Tue Aug 31 14:13:42 GMT 2021
+Ret = 0
+Sending s unattendedmode 1 at Tue Aug 31 14:13:42 GMT 2021
+Sleeping 5 s
+Sending O 210831_1 at Tue Aug 31 14:13:48 GMT 2021
+Sleeping 60 s
+Sending m at Tue Aug 31 14:14:48 GMT 2021
+Sleeping 120 s
+Waiting for measurement to end...
+Check if running at Tue Aug 31 14:16:49 GMT 2021
+2021-08-31 14:16:49(GMT) CSCR: Terrameter is not running, continue.
+Is not running (terrameter software unexpectedly terminated)
+Done waiting for measurement to end...
+Sleeping 5 s
+Sending Q at Tue Aug 31 14:16:54 GMT 2021
+Sleeping 5 s
+Turning LCD off at Tue Aug 31 14:16:59 GMT 2021
+Ret = 0
+Sleeping 5 s
+2021-08-31 14:17:38(GMT) UPL: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 14:17:40(GMT) UPL: Connected OK to 
+Done processing file command_continue at Tue Aug 31 14:17:50 GMT 2021
+2021-08-31 14:18:02(GMT) === GO SCRIPT STARTED ===
+2021-08-31 14:18:02(GMT) GO: Processing file command_continue
+2021-08-31 14:18:02(GMT) GO: Terrameter is not running, continue.
+2021-08-31 14:18:02(GMT) GO: rsync is not running, continue.
+2021-08-31 14:18:02(GMT) GO: rsync not running. Launching Terrameter
+2021-08-31 14:18:02(GMT) ???: Start processing commandfile command_continue
+Processing file command_continue at Tue Aug 31 14:18:02 GMT 2021
+Turning LCD on at Tue Aug 31 14:18:03 GMT 2021
+Ret = 0
+Sleeping 120 s
+Sending s unattendedmode 1 at Tue Aug 31 14:20:03 GMT 2021
+Sleeping 5 s
+Sending O 210831_1 at Tue Aug 31 14:20:09 GMT 2021
+Sleeping 60 s
+Sending m at Tue Aug 31 14:21:09 GMT 2021
+Sleeping 120 s
+Waiting for measurement to end...
+Check if running at Tue Aug 31 14:23:10 GMT 2021
+2021-08-31 14:23:10(GMT) CSCR: Terrameter is running
+Is running
+Check if running at Tue Aug 31 14:28:14 GMT 2021
+2021-08-31 14:28:14(GMT) CSCR: Terrameter is not running, continue.
+Is not running (terrameter software unexpectedly terminated)
+Done waiting for measurement to end...
+Sleeping 5 s
+Sending Q at Tue Aug 31 14:28:20 GMT 2021
+Sleeping 5 s
+Turning LCD off at Tue Aug 31 14:28:25 GMT 2021
+Ret = 0
+Sleeping 5 s
+2021-08-30 19:15:15(GMT) NTP: Terrameter is not running, continue.
+2021-08-30 19:15:16(GMT) NTP: Attempting clock update
+2021-08-31 19:00:45(GMT) NTP: Clock update failed
+2021-08-31 19:01:20(GMT) === GO SCRIPT STARTED ===
+2021-08-31 19:01:20(GMT) GO: Processing file command_continue
+2021-08-31 19:01:20(GMT) GO: Terrameter is not running, continue.
+2021-08-31 19:01:21(GMT) GO: rsync is not running, continue.
+2021-08-31 19:01:21(GMT) GO: rsync not running. Launching Terrameter
+2021-08-31 19:01:21(GMT) ???: Start processing commandfile command_continue
+Processing file command_continue at Tue Aug 31 19:01:21 GMT 2021
+Turning LCD on at Tue Aug 31 19:01:21 GMT 2021
+Ret = 0
+Sleeping 120 s
+2021-08-31 19:01:30(GMT) NTP: Terrameter is running
+2021-08-31 19:01:30(GMT) NTP: Terrameter runs => Die.
+2021-08-31 19:01:30(GMT) SIP: Terrameter is running
+2021-08-31 19:01:30(GMT) SIP: Terrameter runs => Die.
+2021-08-31 19:01:40(GMT) Turning LCD off: Ret = 0
+2021-08-31 19:02:41(GMT) Killall terrameter
+2021-08-31 19:02:41(GMT) SIP: Terrameter is running
+2021-08-31 19:02:41(GMT) SIP: Terrameter runs => Die.
+Sending s unattendedmode 1 at Tue Aug 31 19:03:22 GMT 2021
+Sleeping 5 s
+Sending O 210831_1 at Tue Aug 31 19:03:28 GMT 2021
+Sleeping 60 s
+Sending m at Tue Aug 31 19:04:28 GMT 2021
+Sleeping 120 s
+2021-08-31 19:05:40(GMT) NTP: Terrameter is not running, continue.
+2021-08-31 19:05:40(GMT) NTP: Attempting clock update
+2021-08-31 19:05:40(GMT) NTP: SUCCESS: 31 Aug 19:05:40 ntpdate[1650]: adjust time server 192.168.23.1 offset -0.039744 sec
+Waiting for measurement to end...
+Check if running at Tue Aug 31 19:06:28 GMT 2021
+2021-08-31 19:06:28(GMT) CSCR: Terrameter is not running, continue.
+Is not running (terrameter software unexpectedly terminated)
+Done waiting for measurement to end...
+Sleeping 5 s
+Sending Q at Tue Aug 31 19:06:34 GMT 2021
+Sleeping 5 s
+Turning LCD off at Tue Aug 31 19:06:39 GMT 2021
+Ret = 0
+Sleeping 5 s
+2021-08-31 19:15:36(GMT) UPL: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 19:15:39(GMT) UPL: Connected OK to 
+2021-08-31 19:17:19(GMT) === GO SCRIPT STARTED ===
+2021-08-31 19:17:19(GMT) GO: Processing file command_continue
+2021-08-31 19:17:19(GMT) GO: Terrameter is not running, continue.
+2021-08-31 19:17:20(GMT) GO: rsync is not running, continue.
+2021-08-31 19:17:20(GMT) GO: rsync not running. Launching Terrameter
+2021-08-31 19:17:20(GMT) ???: Start processing commandfile command_continue
+Processing file command_continue at Tue Aug 31 19:17:20 GMT 2021
+Turning LCD on at Tue Aug 31 19:17:21 GMT 2021
+Ret = 0
+Sleeping 120 s
+Sending s unattendedmode 1 at Tue Aug 31 19:19:24 GMT 2021
+Sleeping 5 s
+Sending O 210831_1 at Tue Aug 31 19:19:29 GMT 2021
+Sleeping 60 s
+Sending m at Tue Aug 31 19:20:30 GMT 2021
+Sleeping 120 s
+Done processing file command_continue at Tue Aug 31 19:21:01 GMT 2021
+Waiting for measurement to end...
+Check if running at Tue Aug 31 19:22:31 GMT 2021
+2021-08-31 19:22:31(GMT) CSCR: Terrameter is not running, continue.
+Is not running (terrameter software unexpectedly terminated)
+Done waiting for measurement to end...
+Sleeping 5 s
+Sending Q at Tue Aug 31 19:22:36 GMT 2021
+Sleeping 5 s
+Turning LCD off at Tue Aug 31 19:22:42 GMT 2021
+Ret = 0
+Sleeping 5 s
+2021-08-31 19:27:28(GMT) UPL: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 19:27:32(GMT) UPL: Connected OK to 
+Done processing file command_continue at Tue Aug 31 19:28:15 GMT 2021
+2021-08-30 19:15:15(GMT) NTP: Terrameter is not running, continue.
+2021-08-30 19:15:15(GMT) NTP: Attempting clock update
+2021-08-31 21:24:50(GMT) NTP: Clock update failed
+2021-08-31 21:25:35(GMT) NTP: Terrameter is not running, continue.
+2021-08-31 21:25:35(GMT) NTP: Attempting clock update
+2021-08-31 21:25:35(GMT) SIP: Terrameter is not running, continue.
+2021-08-31 21:25:35(GMT) SIP: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 21:25:35(GMT) NTP: SUCCESS: 31 Aug 21:25:35 ntpdate[1485]: adjust time server 192.168.23.1 offset -0.005738 sec
+2021-08-31 21:25:38(GMT) SIP: Connected OK to 
+2021-08-31 21:25:40(GMT) SIP: file with IP sent.
+2021-08-31 21:25:45(GMT) Turning LCD off: Ret = 0
+2021-08-31 21:26:46(GMT) SIP: Terrameter is not running, continue.
+2021-08-31 21:26:46(GMT) SIP: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-08-31 21:26:48(GMT) SIP: Connected OK to 
+2021-08-31 21:26:52(GMT) SIP: file with IP sent.
+2021-08-31 21:29:46(GMT) NTP: Terrameter is not running, continue.
+2021-08-31 21:29:46(GMT) NTP: Attempting clock update
+2021-08-31 21:29:46(GMT) NTP: SUCCESS: 31 Aug 21:29:46 ntpdate[1547]: adjust time server 192.168.23.1 offset -0.030652 sec
+2021-08-30 19:15:15(GMT) ====== Terrameter booted ======
+2021-08-30 19:15:15(GMT) NTP: Terrameter is not running, continue.
+2021-08-30 19:15:16(GMT) NTP: Attempting clock update
+2021-09-01 10:49:41(GMT) NTP: Clock update failed
+2021-09-01 10:50:25(GMT) NTP: Terrameter is not running, continue.
+2021-09-01 10:50:25(GMT) SIP: Terrameter is not running, continue.
+2021-09-01 10:50:25(GMT) NTP: Attempting clock update
+2021-09-01 10:50:26(GMT) SIP: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-09-01 10:50:26(GMT) NTP: SUCCESS:  1 Sep 10:50:26 ntpdate[1497]: adjust time server 192.168.23.1 offset -0.006233 sec
+2021-09-01 10:50:28(GMT) SIP: Connected OK to 
+2021-09-01 10:50:31(GMT) SIP: file with IP sent.
+2021-09-01 10:50:36(GMT) Turning LCD off: Ret = 0
+2021-09-01 10:51:36(GMT) SIP: Terrameter is not running, continue.
+2021-09-01 10:51:36(GMT) SIP: Trying /usr/bin/ssh -i /home/root/.ssh/terrameter_id_rsa terrameter@192.168.23.1
+2021-09-01 10:51:39(GMT) SIP: Connected OK to 
+2021-09-01 10:51:42(GMT) SIP: file with IP sent.
+2021-09-01 10:54:36(GMT) NTP: Terrameter is not running, continue.
+2021-09-01 10:54:36(GMT) NTP: Attempting clock update
+2021-09-01 10:54:36(GMT) NTP: SUCCESS:  1 Sep 10:54:36 ntpdate[1554]: adjust time server 192.168.23.1 offset -0.030370 sec

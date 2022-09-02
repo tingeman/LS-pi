@@ -1,0 +1,35 @@
+LCDON
+#
+# Set settings appropriate for a quick ECR test
+#
+SQLITE  /media/hda1/system.db  /home/root/ECR_settings.sql
+SLEEP 120
+s unattendedmode 1
+SLEEP 15
+NEW_PROJECT
+SLEEP 15
+T ECR_2x21wenner /home/root/protocols/2X21.xml  /home/root/protocols/Wenner2x21.xml 2 2 1 0 0 0
+SLEEP 60
+S 0 0 0
+SLEEP 60
+m
+SLEEP 300
+WAITMEASURE
+SLEEP 15
+#
+# Set settings appropriate for a full dataset with no ECR test
+#
+SQLITE  /media/hda1/system.db  /home/root/RES_FW_NOECR_0p8sec_settings.sql
+SLEEP 15
+T 2x21wenner /home/root/protocols/2X21.xml  /home/root/protocols/Wenner2x21.xml 2 2 1 0 0 0
+SLEEP 60
+S 0 0 0
+SLEEP 60
+m
+SLEEP 300
+WAITMEASURE
+SLEEP 15
+LCDOFF
+UPLOAD
+SLEEP 5
+Q

@@ -1,0 +1,92 @@
+#!/bin/bash
+
+
+source "./cronscripter_settings"
+source "./helper_functions.sh"
+
+
+$BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "=== GO SCRIPT STARTED ===" >> $LOGDIR/logfile
+
+if [ $1 ]
+then
+    CFile=$1
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: Processing file $CFile" >> $LOGDIR/logfile
+else
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: No commandfile was provided" >> $LOGDIR/logfile
+    exit
+fi
+    
+
+if [ -e $RUNFILEDIR/runfile ]
+then
+    check_if_terrameter_runs "GO"
+    check_if_rsync_runs "GO"
+
+    if [ -e $WORKDIR/UPLOAD_FLAG ]
+	then
+		rm $WORKDIR/UPLOAD_FLAG
+	fi
+
+	if [ -e $WORKDIR/SIGNALCOMPLETE_FLAG ]
+	then
+		rm $WORKDIR/SIGNALCOMPLETE_FLAG
+	fi
+
+
+    if [ $running -eq 1 ]
+    then
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: Terrameter is running. Die. " >> $LOGDIR/logfile
+        $BIN/sleep 5
+    elif [ $sync -eq 1 ]                                                                                              
+    then                                                                                                               
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: rsync is running. KILLING RSYNC! " >> $LOGDIR/logfile                                         
+
+        kill_rsync
+
+        $BIN/sleep 5   
+    
+        check_if_rsync_runs "GO"
+
+        if [ $sync -eq 1 ]
+        then
+            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: rsync is still running. Die" >> $LOGDIR/logfile
+        else
+            $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: rsync not running. Launching Terrameter" >> $LOGDIR/logfile
+            start_job "GO"
+        fi
+    else
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: rsync not running. Launching Terrameter" >> $LOGDIR/logfile
+        start_job "GO"
+    fi
+	
+	# Check for existence of UPLOAD_FLAG and SIGNALCOMPLETE_FLAG, which may be
+	# set by cronscripter command files.
+	# If present, call the appropriate scripts, and remove the flags.
+
+    if [ -e $WORKDIR/UPLOAD_FLAG ]
+    then
+		rm $WORKDIR/UPLOAD_FLAG		
+        $BIN/bash $HOME/upload.sh
+    fi
+
+    if [ -e $WORKDIR/SIGNALCOMPLETE_FLAG ]
+    then
+		rm $WORKDIR/SIGNALCOMPLETE_FLAG		
+        $BIN/bash $HOME/signalcomplete.sh
+    fi	
+	
+else
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: No runfile. Aborting" >> $LOGDIR/logfile
+fi
+
+if [ -e $RUNFILEDIR/rebootmenow ]
+then
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: Will reboot system now" >> $LOGDIR/logfile
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: Removing $RUNFILEDIR/rebootmenow." >> $LOGDIR/logfile
+    $BIN/rm $RUNFILEDIR/rebootmenow
+    $HOME/reboot_now.sh
+else
+    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: No pending reboot" >> $LOGDIR/logfile
+fi
+
+$BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: exiting" >> $LOGDIR/logfile

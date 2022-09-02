@@ -1,0 +1,18 @@
+LCDON
+SLEEP 140
+s unattendedmode 1
+SLEEP 15
+NEW_PROJECT
+SLEEP 15
+T 2x21wenner /home/root/protocols/2X21.xml  /home/root/protocols/Wenner2x21.xml 2 2 1 0 0 0
+SLEEP 60
+S 0 0 0
+SLEEP 60
+m
+SLEEP 300
+WAITMEASURE
+SLEEP 15
+LCDOFF
+UPLOAD
+SLEEP 5
+Q

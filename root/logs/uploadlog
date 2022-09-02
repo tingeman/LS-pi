@@ -1,0 +1,1758 @@
+2021-06-22 04:24:47(GMT) UPL: Start copy to USB
+2021-06-22 04:25:47(GMT) UPL: copy done
+2021-06-22 04:25:47(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-22 04:25:47(GMT) UPL: Starting upload to IOT
+2021-06-22 04:25:50(GMT) UPL: Start upload
+2021-06-27 16:05:46(GMT) UPL: Start copy to USB
+2021-06-27 16:06:46(GMT) UPL: copy done
+2021-06-27 16:06:46(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-27 16:07:32(GMT) UPL: Starting upload to IOT
+2021-06-27 16:07:35(GMT) UPL: Start upload
+2021-06-27 16:07:38(GMT) UPL: Upload done
+2021-06-27 17:02:13(GMT) UPL: Start copy to USB
+2021-06-27 17:02:22(GMT) UPL: copy done
+2021-06-27 17:02:22(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-27 17:02:22(GMT) UPL: Starting upload to IOT
+2021-06-27 17:02:26(GMT) UPL: Start upload
+2021-06-27 17:02:31(GMT) UPL: Upload done
+2021-06-27 18:13:04(GMT) UPL: Start copy to USB
+2021-06-27 18:21:27(GMT) UPL: copy done
+2021-06-27 18:21:28(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-27 18:21:41(GMT) UPL: Starting upload to IOT
+2021-06-27 18:21:41(GMT) UPL: Could not connect.
+2021-06-27 20:04:35(GMT) UPL: Start copy to USB
+2021-06-27 20:06:00(GMT) UPL: copy done
+2021-06-27 20:06:00(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-27 20:06:12(GMT) UPL: Starting upload to IOT
+2021-06-27 20:06:17(GMT) UPL: Start upload
+2021-06-27 20:14:26(GMT) UPL: Upload done
+2021-06-27 21:06:37(GMT) UPL: Start copy to USB
+2021-06-27 21:15:28(GMT) UPL: copy done
+2021-06-27 21:15:28(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-27 21:15:57(GMT) UPL: Starting upload to IOT
+2021-06-27 21:16:00(GMT) UPL: Start upload
+2021-06-27 21:20:59(GMT) UPL: Upload done
+2021-06-28 06:10:54(GMT) UPL: Start copy to USB
+2021-06-28 06:12:03(GMT) UPL: copy done
+2021-06-28 06:12:03(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-28 06:12:03(GMT) UPL: Starting upload to IOT
+2021-06-28 06:12:06(GMT) UPL: Start upload
+2021-06-28 06:12:43(GMT) UPL: Upload done
+2021-06-28 15:38:17(GMT) UPL: Start copy to USB
+2021-06-28 15:51:13(GMT) UPL: copy done
+2021-06-28 15:51:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-28 15:52:15(GMT) UPL: Starting upload to IOT
+2021-06-28 15:52:19(GMT) UPL: Start upload
+2021-06-28 15:59:50(GMT) UPL: Upload done
+2021-06-28 18:08:03(GMT) UPL: Start copy to USB
+2021-06-28 18:18:23(GMT) UPL: copy done
+2021-06-28 18:18:23(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-28 18:19:39(GMT) UPL: Starting upload to IOT
+2021-06-28 18:19:42(GMT) UPL: Start upload
+2021-06-28 18:25:26(GMT) UPL: Upload done
+2021-06-29 06:10:54(GMT) UPL: Start copy to USB
+2021-06-29 06:13:30(GMT) UPL: copy done
+2021-06-29 06:13:30(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-29 06:13:31(GMT) UPL: Starting upload to IOT
+2021-06-29 06:13:34(GMT) UPL: Start upload
+2021-06-29 06:14:54(GMT) UPL: Upload done
+2021-06-29 15:43:21(GMT) UPL: Start copy to USB
+rsync: rename "/media/sda1/projects/210629/RawData/00000/.0002-000428-006.raw.Owrlab" -> "projects/210629/RawData/00000/0002-000428-006.raw": Input/output error (5)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000428.txt.QJD9PG" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000429-000.raw.2hSkFc" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000429-004.raw.SMMxhI" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000429-006.raw.EpmtPc" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000429.txt.U08OJm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000430-000.raw.aYEKBC" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000430-004.raw.g4Bcn9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000430.txt.D5LsRQ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000431-000.raw.8esIty" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000431-004.raw.iG6D7B" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000431.txt.YxEBXb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000432-000.raw.Iv0PRL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000432-004.raw.eymHXy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000432.txt.RECOiL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000433-000.raw.UqLwIX" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000433-004.raw.dfntXg" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000433.txt.SGlM5b" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000434-000.raw.XbNYl7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000434-004.raw.QMOGqc" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000434.txt.ymiGfs" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000435-000.raw.0fGZHM" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000435-004.raw.8icg5g" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000435.txt.a9amAi" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000436-000.raw.6PAH9j" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000436-004.raw.Hi2U7m" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000436.txt.IMnyr2" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000437-000.raw.h2OeTH" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000437-004.raw.k9RUdw" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000437-006.raw.Xo8Fuj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000437.txt.zwamvA" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000438-000.raw.pTuLDR" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000438-004.raw.96xRjb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000438-006.raw.LeygQE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000438.txt.1AXxDG" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000439-000.raw.TQdx4L" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000439-004.raw.KI7TGN" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000439.txt.BOaAof" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000440-000.raw.qnJEaH" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000440-004.raw.xvHZhf" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000440.txt.I1AoBe" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000441-000.raw.VwbM2d" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000441-004.raw.I4hmwk" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000441.txt.q0JY4P" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000442-000.raw.iXdXRp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000442-004.raw.0EyL69" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000442.txt.BVwuZe" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000443-000.raw.wsi3gp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000443-004.raw.VCIgIL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000443.txt.shwpwy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000444-000.raw.rmiWql" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000444-004.raw.Acabge" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000444.txt.MEatpx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000445-000.raw.oK04CQ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000445-004.raw.gQiP4i" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000445.txt.2YtUdn" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000446-000.raw.O7kT0u" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000446-004.raw.bcquey" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000446.txt.G6R66b" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000447-000.raw.rnJK3P" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000447-004.raw.WHGEOH" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000447.txt.Yxrmg0" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000448-000.raw.s4ioMi" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000448-004.raw.IjNKhH" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000448.txt.oimzSp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000449-000.raw.uSXGB8" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000449-004.raw.mzqiK0" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000449.txt.jtkhha" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000450-000.raw.IZuiWj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000450-004.raw.TyudqB" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000450.txt.iXmzRq" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000451-000.raw.T1xdMe" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000451-004.raw.k5eJw9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000451.txt.oHnrWy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000452-000.raw.OyCfsY" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000452-004.raw.SCNt5s" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000452.txt.GmgYck" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000453-000.raw.eAEyN9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000453-004.raw.wTRbsa" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000453.txt.HZ3nyA" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000454-000.raw.AqX8K0" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000454-004.raw.HOxykA" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000454.txt.FsWWEB" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000455-000.raw.B3FgdI" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000455-004.raw.pao0fV" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000455.txt.BDvCdK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000456-000.raw.hgsQEx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000456-004.raw.dHKQWv" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000456.txt.kUSuVX" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000457-000.raw.Nm7e0p" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000457-004.raw.6pZewY" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000457.txt.XyviWQ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000458-000.raw.SPix0M" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000458-004.raw.jPkAUO" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000458.txt.jPjWy8" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000459-000.raw.Vctuls" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000459-004.raw.XZAiqS" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000459.txt.lUqKTM" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000460-000.raw.1h3LrH" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000460-004.raw.NA3nNL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000460.txt.OPHQzi" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000461-000.raw.TGiggO" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000461-004.raw.2xajut" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000461.txt.vjkRZo" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000462-000.raw.UmoTQp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000462-004.raw.3ZAk8v" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000462.txt.pYANt7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000463-000.raw.DeuDXI" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000463-004.raw.H1yLYp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000463.txt.UV6bmB" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000464-000.raw.dbuYpM" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000464-004.raw.i7Cef7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000464.txt.JWqUa3" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000465-000.raw.8IdQaZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000465-004.raw.lpA4q7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000465.txt.vCIaNE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000466-000.raw.DgJ1Mf" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000466-004.raw.XKdYfX" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000466.txt.jG13N1" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000467-000.raw.r24Is6" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000467-004.raw.QTRO4a" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000467.txt.9jaDiD" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000468-000.raw.8b8mE5" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000468-004.raw.xbJ24E" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000468.txt.6FrhpL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000469-000.raw.FE9TRR" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000469-004.raw.XKxaiX" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000469.txt.lYBlfE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000470-000.raw.LIWUkl" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000470-004.raw.DT5gOb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000470.txt.QtIkug" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000471-000.raw.52DU7j" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000471-004.raw.wsPmru" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000471.txt.3Ug5Uj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000472-000.raw.6BFwm8" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000472-004.raw.LETdf7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000472.txt.tF5qYy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000473-000.raw.zweaO0" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000473-004.raw.1IOmFy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000473.txt.oJbiHz" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000474-000.raw.zrasNA" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000474-004.raw.SjIoyK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000474.txt.ZFMmUy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000475-000.raw.eaZRdm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000475-004.raw.Va73Mk" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000475.txt.h10Uwu" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000476-000.raw.zXUFmE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000476-004.raw.fSHqUY" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000476.txt.Z2f4LI" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000477-000.raw.zud5Hs" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000477-004.raw.jhXA7i" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000477.txt.i0s62u" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000478-000.raw.RBrd7G" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000478-004.raw.GJmGg4" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000478.txt.Bymxa3" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000479-000.raw.Upd610" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000479-004.raw.XwSyE5" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000479.txt.RLdSqA" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000480-000.raw.NbiOy9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000480-004.raw.PoK8IN" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000480.txt.AVmkSW" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000481-000.raw.vHCN55" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000481-004.raw.YQ1ZSk" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000481.txt.dp7h0b" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000482-000.raw.2dOVA1" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000482-004.raw.L9hCF1" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000482.txt.xN17Nr" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000483-000.raw.ZWw74R" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000483-004.raw.XMdUrs" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000483.txt.TrvYEo" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000484-000.raw.f8cFZk" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000484-004.raw.v9YX1m" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000484.txt.Y54VoE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000485-000.raw.ZlQmUV" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000485-004.raw.ESR6sk" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000485.txt.rB5Gyb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000486-000.raw.SWQP90" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000486-004.raw.JVDYRY" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000486.txt.zmp5Km" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000487-000.raw.tTYsIK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000487-004.raw.Ls9Vdi" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000487.txt.ikZSck" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000488-000.raw.dMn9fm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000488-004.raw.AanBLx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000488.txt.D6eAFb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000489-000.raw.OetQDP" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000489-004.raw.rjW0iE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000489.txt.neBUXR" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000490-000.raw.fPqY85" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000490-004.raw.Rvb64t" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000490.txt.PvYW6s" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000491-000.raw.nmb8gs" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000491-004.raw.1HkCPC" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000491.txt.k9HV0W" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000492-000.raw.JVUASg" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000492-004.raw.A6qlxK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000492.txt.9pOIaz" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000493-000.raw.4sL3Tn" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000493-004.raw.rWgNOj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000493.txt.TIMeAy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000494-000.raw.LIc70M" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000494-004.raw.H6jONb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000494.txt.dbW0xb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000495-000.raw.Tqldqb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000495-004.raw.ZRtTni" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000495.txt.CkWQpO" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000496-000.raw.B4je1o" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000496-004.raw.G7Fut9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000496.txt.e4sQ0f" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000497-000.raw.YMTBGm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000497-004.raw.2vDZ1z" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000497.txt.k68PXj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000498-000.raw.o1snU7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000498-004.raw.AYfKj5" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000498.txt.vlYJUt" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000499-000.raw.4G3CpR" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000499-004.raw.BvAs5o" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00000/.0002-000499.txt.QkGFTg" failed: No such file or directory (2)
+default_perms_for_dir: sys_acl_get_file(projects/210629/RawData/00005, ACL_TYPE_DEFAULT): No such file or directory, falling back on umask
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000500-000.raw.mlHj7N" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000500-004.raw.M8ulfp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000500.txt.AeQmvc" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000501-000.raw.u1P4PZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000501-004.raw.yXNeCV" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000501.txt.ZvJd68" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000502-000.raw.MBYyVm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000502-004.raw.dItlOG" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000502.txt.66WDoy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000503-000.raw.3daj0n" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000503-004.raw.MRLSfm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000503.txt.Aqzg7w" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000504-000.raw.APQl3H" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000504-004.raw.sczuKZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000504-006.raw.e8MVBh" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000504.txt.wkRba5" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000505-000.raw.kJdmQS" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000505-004.raw.GLjCEL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000505.txt.DvsXr3" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000506-000.raw.WMSBjl" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000506-004.raw.lDpXRK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000506.txt.u3qv8m" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000507-000.raw.VsLLtZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000507-004.raw.uuL2QJ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000507.txt.JrqFxL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000508-000.raw.WNKwuP" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000508-004.raw.vplZaZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000508.txt.n1miCt" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000509-000.raw.RY730W" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000509-004.raw.d0MWFv" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000509.txt.HVyJQz" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000510-000.raw.TrAEFH" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000510-004.raw.Svc7LL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000510.txt.zkpgqb" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000511-000.raw.K2SHgA" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000511-004.raw.LndFF2" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000511-006.raw.ooT1av" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000511.txt.Tkrs8x" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000512-000.raw.shw82z" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000512-004.raw.r5z9NG" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000512.txt.VR4qid" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000513-000.raw.JoYdTJ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000513-004.raw.RJa2cj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000513.txt.LLu7z9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000514-000.raw.FZm72Z" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000514-004.raw.LXhWuU" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000514.txt.WalKb1" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000515-000.raw.lbgH07" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000515-004.raw.ehKIbg" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000515.txt.f5YTiT" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000516-000.raw.qyuWxw" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000516-004.raw.NhtV4e" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000516.txt.FBovAf" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000517-000.raw.HwSYvj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000517-004.raw.RZVMkt" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000517.txt.3hzyxX" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000518-000.raw.PU5vSr" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000518-004.raw.RZOaFZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000518-006.raw.r6LOxx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000518.txt.bck1rE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000519-000.raw.FP59tL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000519-004.raw.esto4L" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000519.txt.rvQAqn" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000520-000.raw.kumAUY" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000520-004.raw.ZBityD" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000520.txt.qIrHoy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000521-000.raw.PxETQw" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000521-004.raw.OxnQrw" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000521.txt.Gya2pM" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000522-000.raw.WBcow2" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000522-004.raw.UzWrUj" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000522.txt.weuVh9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000523-000.raw.sn2HJY" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000523-004.raw.gWNpHT" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000523.txt.vHqr7U" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000524-000.raw.uADPBW" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000524-004.raw.jq1ms2" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000524.txt.Mwhz1H" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000525-000.raw.38qQbm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000525-004.raw.u4nrn7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000525.txt.OKs10g" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000526-000.raw.0IqYMq" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000526-004.raw.yOUQRF" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000526.txt.00DIxd" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000527-000.raw.yyKvjL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000527-004.raw.s9Ym2n" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000527.txt.Kij3Gk" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000528-000.raw.S60ZLk" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000528-004.raw.uQYNTp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000528.txt.3URQjW" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000529-000.raw.CtKhSs" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000529-004.raw.V9KEUZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000529.txt.k7mHC3" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000530-000.raw.xyvjr7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000530-004.raw.DY8kra" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000530.txt.nTPPWN" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000531-000.raw.VZRGAr" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000531-004.raw.RG0GY9" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000531.txt.nupqU4" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000532-000.raw.7g0Zg0" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000532-004.raw.R55MK3" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000532.txt.i9H2Lf" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000533-000.raw.tQqNRr" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000533-004.raw.y2EPkL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000533.txt.J9k6IE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000534-000.raw.Churfy" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000534-004.raw.NgKE5v" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000534.txt.pmyb66" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000535-000.raw.ZolYaI" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000535-004.raw.XZFeZp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000535.txt.QUriOx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000536-000.raw.jCx8KF" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000536-004.raw.msw5pS" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000536.txt.pgAR5k" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000537-000.raw.q9YmmR" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000537-004.raw.Zf0UPs" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000537.txt.Ex7DOv" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000538-000.raw.Ziz7Kx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000538-004.raw.6EH5JF" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000538.txt.isuqj8" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000539-000.raw.wcVA8C" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000539-004.raw.sPo2Ng" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000539.txt.Jnomlh" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000540-000.raw.AmA4wl" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000540-004.raw.zxIGtq" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000540.txt.snT2WP" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000541-000.raw.HMoZuf" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000541-004.raw.MEXm2F" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000541-006.raw.jd5Cm8" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000541.txt.aGaO82" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000542-000.raw.HI17u1" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000542-004.raw.sasRx4" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000542.txt.y9tWUv" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000543-000.raw.UmZkxZ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000543-004.raw.ubiHjx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000543.txt.8Zfr7A" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000544-000.raw.MoiyMI" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000544-004.raw.ZFNJ1M" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000544.txt.szit49" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000545-000.raw.LbTqfx" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000545-004.raw.Qk0YDV" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000545.txt.LAf2nJ" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000546-000.raw.6ZgbMA" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000546-004.raw.DZ3sAr" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000546-006.raw.uPsrkn" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000546.txt.CAK9pK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000547-000.raw.uTfOD7" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000547-004.raw.s3sCHz" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000547.txt.erU8SC" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000548-000.raw.KU80cG" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000548-004.raw.uLZULK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000548.txt.T969a4" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000549-000.raw.QPQAIn" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000549-004.raw.bIwnoN" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000549.txt.qfVrTL" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000550-000.raw.nLJjwK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000550-004.raw.olJOMM" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000550.txt.qcDsh0" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000551-000.raw.CCcIie" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000551-004.raw.gRm58y" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000551.txt.6zn1ea" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000552-000.raw.Kq38LK" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000552-004.raw.61Zybp" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000552.txt.xYFMYv" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000553-000.raw.CzSRRC" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000553-004.raw.PGnFIN" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000553.txt.WSmefd" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000554-000.raw.Vwgc0A" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000554-004.raw.UOMLt6" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000554.txt.1AU5IV" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000555-000.raw.CATB2K" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000555-004.raw.XlZWjH" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000555-006.raw.K3zOHD" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000555.txt.2nkVzV" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000556-000.raw.2IhQvd" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000556-004.raw.wzP7hC" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000556.txt.0BHUcv" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000557-000.raw.yc4Ofo" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000557-004.raw.ifEKcm" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000557.txt.BAmGlt" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000558-000.raw.iayAmE" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000558-004.raw.tVdj5S" failed: No such file or directory (2)
+rsync: mkstemp "/media/sda1/projects/210629/RawData/00005/.0002-000558.txt.m3388l" failed: No such file or directory (2)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1039) [sender=3.0.6]
+2021-06-29 15:56:30(GMT) UPL: Copy failed. Keep raw data.
+2021-06-29 15:56:31(GMT) UPL: Starting upload to IOT
+2021-06-29 15:56:33(GMT) UPL: Start upload
+2021-06-29 16:04:27(GMT) UPL: Upload done
+2021-06-29 16:26:11(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-06-29 16:56:18(GMT) UPL: Copy failed. Keep raw data.
+2021-06-29 16:56:18(GMT) UPL: Starting upload to IOT
+2021-06-29 16:56:23(GMT) UPL: Start upload
+2021-06-29 16:58:41(GMT) UPL: Upload done
+2021-06-29 20:16:07(GMT) UPL: Start copy to USB
+2021-06-29 20:30:37(GMT) UPL: copy done
+2021-06-29 20:30:37(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-29 20:32:26(GMT) UPL: Starting upload to IOT
+2021-06-29 20:32:29(GMT) UPL: Start upload
+2021-06-29 20:34:18(GMT) UPL: Upload done
+2021-06-30 01:01:11(GMT) UPL: Start copy to USB
+2021-06-30 01:13:11(GMT) UPL: copy done
+2021-06-30 01:13:11(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-30 01:15:16(GMT) UPL: Starting upload to IOT
+2021-06-30 01:15:19(GMT) UPL: Start upload
+2021-06-30 01:21:46(GMT) UPL: Upload done
+2021-06-30 06:12:03(GMT) UPL: Start copy to USB
+2021-06-30 06:16:07(GMT) UPL: copy done
+2021-06-30 06:16:07(GMT) UPL: Delete raw data older than 3 day(s).
+2021-06-30 06:16:08(GMT) UPL: Starting upload to IOT
+2021-06-30 06:16:11(GMT) UPL: Start upload
+2021-06-30 06:18:17(GMT) UPL: Upload done
+2021-06-30 06:10:08(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-06-30 06:12:52(GMT) UPL: Copy failed. Keep raw data.
+2021-06-30 06:12:53(GMT) UPL: Starting upload to IOT
+2021-06-30 06:12:55(GMT) UPL: Could not connect.
+2021-06-30 08:15:10(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-06-30 08:16:06(GMT) UPL: Copy failed. Keep raw data.
+2021-06-30 08:16:06(GMT) UPL: Starting upload to IOT
+2021-06-30 08:16:06(GMT) UPL: Could not connect.
+2021-06-30 08:49:08(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-06-30 08:49:43(GMT) UPL: Copy failed. Keep raw data.
+2021-06-30 08:49:43(GMT) UPL: Starting upload to IOT
+2021-06-30 08:49:43(GMT) UPL: Could not connect.
+2021-06-30 10:18:08(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-06-30 10:19:31(GMT) UPL: Copy failed. Keep raw data.
+2021-06-30 10:19:31(GMT) UPL: Starting upload to IOT
+2021-06-30 10:19:33(GMT) UPL: Could not connect.
+2021-06-30 21:03:00(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+2021-06-30 21:16:06(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+2021-06-30 22:49:37(GMT) UPL: Start copy to USB
+2021-06-30 22:54:53(GMT) UPL: Delete raw data older than 3 day(s).
+rm: /media/hda1/projects/210627/RawData/00000: is a directory
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+rmdir: '/media/hda1/projects/210627/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210627_1/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210628/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210628_1/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210629/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210629_1/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210630/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/Project6/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/Project7/Rawdata': Directory not empty
+2021-06-30 22:55:03(GMT) UPL: Starting upload to IOT
+2021-06-30 22:55:03(GMT) UPL: Could not connect.
+2021-06-30 22:55:03(GMT) UPL: Could not connect.
+2021-06-30 22:57:23(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+2021-06-30 22:59:46(GMT) UPL: Copy failed. Keep raw data.
+2021-06-30 22:59:46(GMT) UPL: Starting upload to IOT
+2021-06-30 22:59:49(GMT) UPL: Start upload
+2021-06-30 23:01:15(GMT) UPL: Upload failed.
+2021-06-30 23:43:50(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+2021-07-01 00:15:05(GMT) UPL: Copy failed. Keep raw data.
+2021-07-01 00:15:05(GMT) UPL: Starting upload to IOT
+2021-07-01 00:15:08(GMT) UPL: Start upload
+2021-07-01 00:30:10(GMT) UPL: Upload failed.
+2021-07-01 00:36:27(GMT) UPL: Start copy to USB
+2021-07-01 00:46:15(GMT) UPL: copy done
+2021-07-01 00:46:15(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 00:49:56(GMT) UPL: Starting upload to IOT
+2021-07-01 00:49:59(GMT) UPL: Start upload
+2021-07-01 00:57:28(GMT) UPL: Upload done
+2021-07-01 01:09:56(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+2021-07-01 01:21:17(GMT) UPL: Start copy to USB
+2021-07-01 01:26:27(GMT) UPL: copy done
+2021-07-01 01:26:27(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 01:27:14(GMT) UPL: Starting upload to IOT
+2021-07-01 01:27:17(GMT) UPL: Start upload
+2021-07-01 01:29:52(GMT) UPL: Upload done
+2021-07-01 01:35:56(GMT) UPL: Start copy to USB
+2021-07-01 01:41:04(GMT) UPL: copy done
+2021-07-01 01:41:04(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 01:41:10(GMT) UPL: Starting upload to IOT
+2021-07-01 01:41:12(GMT) UPL: Start upload
+2021-07-01 01:43:49(GMT) UPL: Upload done
+2021-07-01 02:20:56(GMT) UPL: Start copy to USB
+2021-07-01 02:25:37(GMT) UPL: copy done
+2021-07-01 02:25:37(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 02:25:42(GMT) UPL: Starting upload to IOT
+2021-07-01 02:25:44(GMT) UPL: Start upload
+2021-07-01 02:28:21(GMT) UPL: Upload done
+2021-07-01 02:35:56(GMT) UPL: Start copy to USB
+2021-07-01 02:40:00(GMT) UPL: copy done
+2021-07-01 02:40:00(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 02:40:04(GMT) UPL: Starting upload to IOT
+2021-07-01 02:40:07(GMT) UPL: Start upload
+2021-07-01 02:42:44(GMT) UPL: Upload done
+2021-07-01 03:20:56(GMT) UPL: Start copy to USB
+2021-07-01 03:24:48(GMT) UPL: copy done
+2021-07-01 03:24:48(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 03:24:52(GMT) UPL: Starting upload to IOT
+2021-07-01 03:24:55(GMT) UPL: Start upload
+2021-07-01 03:27:33(GMT) UPL: Upload done
+2021-07-01 03:35:56(GMT) UPL: Start copy to USB
+2021-07-01 03:40:03(GMT) UPL: copy done
+2021-07-01 03:40:03(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 03:40:09(GMT) UPL: Starting upload to IOT
+2021-07-01 03:40:13(GMT) UPL: Start upload
+2021-07-01 03:42:49(GMT) UPL: Upload done
+2021-07-01 04:20:56(GMT) UPL: Start copy to USB
+2021-07-01 04:25:19(GMT) UPL: copy done
+2021-07-01 04:25:19(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 04:25:25(GMT) UPL: Starting upload to IOT
+2021-07-01 04:25:29(GMT) UPL: Start upload
+2021-07-01 04:28:05(GMT) UPL: Upload done
+2021-07-01 04:35:56(GMT) UPL: Start copy to USB
+2021-07-01 04:40:17(GMT) UPL: copy done
+2021-07-01 04:40:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 04:40:24(GMT) UPL: Starting upload to IOT
+2021-07-01 04:40:27(GMT) UPL: Start upload
+2021-07-01 04:43:04(GMT) UPL: Upload done
+2021-07-01 05:20:57(GMT) UPL: Start copy to USB
+2021-07-01 05:25:21(GMT) UPL: copy done
+2021-07-01 05:25:21(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 05:25:27(GMT) UPL: Starting upload to IOT
+2021-07-01 05:25:30(GMT) UPL: Start upload
+2021-07-01 05:28:07(GMT) UPL: Upload done
+2021-07-01 05:35:56(GMT) UPL: Start copy to USB
+2021-07-01 05:39:54(GMT) UPL: copy done
+2021-07-01 05:39:54(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 05:40:00(GMT) UPL: Starting upload to IOT
+2021-07-01 05:40:04(GMT) UPL: Start upload
+2021-07-01 05:42:40(GMT) UPL: Upload done
+2021-07-01 06:20:56(GMT) UPL: Start copy to USB
+2021-07-01 06:25:36(GMT) UPL: copy done
+2021-07-01 06:25:36(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 06:25:44(GMT) UPL: Starting upload to IOT
+2021-07-01 06:25:48(GMT) UPL: Start upload
+2021-07-01 06:28:25(GMT) UPL: Upload done
+2021-07-01 06:35:57(GMT) UPL: Start copy to USB
+2021-07-01 06:40:22(GMT) UPL: copy done
+2021-07-01 06:40:22(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 06:40:29(GMT) UPL: Starting upload to IOT
+2021-07-01 06:40:32(GMT) UPL: Start upload
+2021-07-01 06:43:09(GMT) UPL: Upload done
+2021-07-01 07:20:56(GMT) UPL: Start copy to USB
+2021-07-01 07:25:13(GMT) UPL: copy done
+2021-07-01 07:25:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 07:25:20(GMT) UPL: Starting upload to IOT
+2021-07-01 07:25:23(GMT) UPL: Start upload
+2021-07-01 07:28:01(GMT) UPL: Upload done
+2021-07-01 07:35:56(GMT) UPL: Start copy to USB
+2021-07-01 07:40:06(GMT) UPL: copy done
+2021-07-01 07:40:06(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 07:40:13(GMT) UPL: Starting upload to IOT
+2021-07-01 07:40:17(GMT) UPL: Start upload
+2021-07-01 07:42:53(GMT) UPL: Upload done
+2021-07-01 08:20:57(GMT) UPL: Start copy to USB
+2021-07-01 08:25:45(GMT) UPL: copy done
+2021-07-01 08:25:45(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 08:25:53(GMT) UPL: Starting upload to IOT
+2021-07-01 08:25:57(GMT) UPL: Start upload
+2021-07-01 08:28:34(GMT) UPL: Upload done
+2021-07-01 08:35:58(GMT) UPL: Start copy to USB
+2021-07-01 08:41:15(GMT) UPL: copy done
+2021-07-01 08:41:15(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 08:41:48(GMT) UPL: Starting upload to IOT
+2021-07-01 08:41:51(GMT) UPL: Start upload
+2021-07-01 08:44:28(GMT) UPL: Upload done
+2021-07-01 09:20:57(GMT) UPL: Start copy to USB
+2021-07-01 09:26:17(GMT) UPL: copy done
+2021-07-01 09:26:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 09:27:11(GMT) UPL: Starting upload to IOT
+2021-07-01 09:27:14(GMT) UPL: Start upload
+2021-07-01 09:29:51(GMT) UPL: Upload done
+2021-07-01 09:35:57(GMT) UPL: Start copy to USB
+2021-07-01 09:41:17(GMT) UPL: copy done
+2021-07-01 09:41:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 09:42:22(GMT) UPL: Starting upload to IOT
+2021-07-01 09:42:25(GMT) UPL: Start upload
+2021-07-01 09:45:02(GMT) UPL: Upload done
+2021-07-01 10:20:58(GMT) UPL: Start copy to USB
+2021-07-01 10:26:17(GMT) UPL: copy done
+2021-07-01 10:26:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 10:27:16(GMT) UPL: Starting upload to IOT
+2021-07-01 10:27:20(GMT) UPL: Start upload
+2021-07-01 10:29:57(GMT) UPL: Upload done
+2021-07-01 10:35:57(GMT) UPL: Start copy to USB
+2021-07-01 10:41:16(GMT) UPL: copy done
+2021-07-01 10:41:16(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 10:42:10(GMT) UPL: Starting upload to IOT
+2021-07-01 10:42:14(GMT) UPL: Start upload
+2021-07-01 10:44:51(GMT) UPL: Upload done
+2021-07-01 11:20:56(GMT) UPL: Start copy to USB
+2021-07-01 11:26:16(GMT) UPL: copy done
+2021-07-01 11:26:16(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 11:27:12(GMT) UPL: Starting upload to IOT
+2021-07-01 11:27:15(GMT) UPL: Start upload
+2021-07-01 11:29:52(GMT) UPL: Upload done
+2021-07-01 11:35:56(GMT) UPL: Start copy to USB
+2021-07-01 11:41:17(GMT) UPL: copy done
+2021-07-01 11:41:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 11:42:17(GMT) UPL: Starting upload to IOT
+2021-07-01 11:42:21(GMT) UPL: Start upload
+2021-07-01 11:44:57(GMT) UPL: Upload done
+2021-07-01 12:20:57(GMT) UPL: Start copy to USB
+2021-07-01 12:26:17(GMT) UPL: copy done
+2021-07-01 12:26:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 12:27:24(GMT) UPL: Starting upload to IOT
+2021-07-01 12:27:28(GMT) UPL: Start upload
+2021-07-01 12:30:02(GMT) UPL: Upload failed.
+2021-07-01 12:36:18(GMT) UPL: Start copy to USB
+2021-07-01 12:41:42(GMT) UPL: copy done
+2021-07-01 12:41:43(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 12:43:04(GMT) UPL: Starting upload to IOT
+2021-07-01 12:43:07(GMT) UPL: Start upload
+2021-07-01 12:45:44(GMT) UPL: Upload done
+2021-07-01 13:20:56(GMT) UPL: Start copy to USB
+2021-07-01 13:26:19(GMT) UPL: copy done
+2021-07-01 13:26:19(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 13:27:39(GMT) UPL: Starting upload to IOT
+2021-07-01 13:27:43(GMT) UPL: Start upload
+2021-07-01 13:30:02(GMT) UPL: Upload failed.
+2021-07-01 13:36:17(GMT) UPL: Start copy to USB
+2021-07-01 13:41:38(GMT) UPL: copy done
+2021-07-01 13:41:38(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 13:42:55(GMT) UPL: Starting upload to IOT
+2021-07-01 13:42:58(GMT) UPL: Start upload
+2021-07-01 13:45:36(GMT) UPL: Upload done
+2021-07-01 14:20:56(GMT) UPL: Start copy to USB
+2021-07-01 14:26:56(GMT) UPL: copy done
+2021-07-01 14:26:56(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 14:30:35(GMT) UPL: Starting upload to IOT
+2021-07-01 14:30:41(GMT) UPL: Start upload
+2021-07-01 14:34:13(GMT) UPL: Upload done
+2021-07-01 14:36:00(GMT) UPL: Start copy to USB
+2021-07-01 14:39:42(GMT) UPL: copy done
+2021-07-01 14:39:42(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 14:40:46(GMT) UPL: Starting upload to IOT
+2021-07-01 14:40:50(GMT) UPL: Start upload
+2021-07-01 14:43:10(GMT) UPL: Upload done
+2021-07-01 17:13:23(GMT) UPL: Start copy to USB
+2021-07-01 17:29:57(GMT) UPL: copy done
+2021-07-01 17:29:57(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-01 17:33:16(GMT) UPL: Starting upload to IOT
+2021-07-01 17:33:19(GMT) UPL: Start upload
+2021-07-01 17:42:36(GMT) UPL: Upload done
+2021-07-01 01:09:08(GMT) UPL: Start copy to USB
+2021-07-01 01:10:48(GMT) UPL: Copy failed. Keep raw data.
+2021-07-01 01:10:48(GMT) UPL: Starting upload to IOT
+2021-07-01 01:10:49(GMT) UPL: Could not connect.
+2021-07-01 02:58:09(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-07-01 03:01:44(GMT) UPL: Copy failed. Keep raw data.
+2021-07-01 03:01:45(GMT) UPL: Starting upload to IOT
+2021-07-01 03:01:47(GMT) UPL: Could not connect.
+2021-07-01 04:55:08(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-07-01 04:56:01(GMT) UPL: Copy failed. Keep raw data.
+2021-07-01 04:56:02(GMT) UPL: Starting upload to IOT
+2021-07-01 04:56:02(GMT) UPL: Could not connect.
+2021-07-01 23:54:22(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+2021-07-02 00:00:52(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+rsync: writefd_unbuffered failed to write 78 bytes to socket [generator]: Broken pipe (32)
+2021-07-02 00:24:55(GMT) UPL: Start copy to USB
+2021-07-02 00:31:09(GMT) UPL: Start copy to USB
+2021-07-02 00:57:28(GMT) UPL: copy done
+2021-07-02 00:57:28(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 00:57:28(GMT) UPL: copy done
+2021-07-02 00:57:28(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 00:57:35(GMT) UPL: Starting upload to IOT
+2021-07-02 00:57:36(GMT) UPL: Could not connect.
+2021-07-02 01:00:56(GMT) UPL: Starting upload to IOT
+2021-07-02 01:00:57(GMT) UPL: Could not connect.
+2021-07-02 04:08:08(GMT) UPL: Start copy to USB
+2021-07-02 04:22:06(GMT) UPL: copy done
+2021-07-02 04:22:06(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 04:24:50(GMT) UPL: Starting upload to IOT
+2021-07-02 04:24:51(GMT) UPL: Could not connect.
+2021-07-02 07:08:09(GMT) UPL: Start copy to USB
+2021-07-02 07:22:50(GMT) UPL: copy done
+2021-07-02 07:22:50(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 07:25:46(GMT) UPL: Starting upload to IOT
+2021-07-02 07:25:46(GMT) UPL: Could not connect.
+2021-07-02 10:08:09(GMT) UPL: Start copy to USB
+2021-07-02 10:23:18(GMT) UPL: copy done
+2021-07-02 10:23:18(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 10:26:39(GMT) UPL: Starting upload to IOT
+2021-07-02 10:26:39(GMT) UPL: Could not connect.
+2021-07-02 13:08:08(GMT) UPL: Start copy to USB
+2021-07-02 13:23:52(GMT) UPL: copy done
+2021-07-02 13:23:52(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 13:27:33(GMT) UPL: Starting upload to IOT
+2021-07-02 13:27:33(GMT) UPL: Could not connect.
+2021-07-02 16:08:08(GMT) UPL: Start copy to USB
+2021-07-02 16:24:25(GMT) UPL: copy done
+2021-07-02 16:24:25(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 16:28:41(GMT) UPL: Starting upload to IOT
+2021-07-02 16:28:45(GMT) UPL: Start upload
+2021-07-02 17:04:10(GMT) UPL: Upload done
+2021-07-02 19:08:10(GMT) UPL: Start copy to USB
+2021-07-02 19:24:13(GMT) UPL: copy done
+2021-07-02 19:24:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 19:27:50(GMT) UPL: Starting upload to IOT
+2021-07-02 19:27:53(GMT) UPL: Start upload
+2021-07-02 19:36:29(GMT) UPL: Upload done
+2021-07-02 22:08:11(GMT) UPL: Start copy to USB
+2021-07-02 22:24:48(GMT) UPL: copy done
+2021-07-02 22:24:48(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-02 22:28:55(GMT) UPL: Starting upload to IOT
+2021-07-02 22:28:59(GMT) UPL: Start upload
+2021-07-02 22:37:52(GMT) UPL: Upload done
+2021-07-03 06:11:59(GMT) UPL: Start copy to USB
+2021-07-03 06:20:46(GMT) UPL: copy done
+2021-07-03 06:20:46(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-03 06:21:50(GMT) UPL: Starting upload to IOT
+2021-07-03 06:21:54(GMT) UPL: Start upload
+2021-07-03 06:26:01(GMT) UPL: Upload done
+2021-07-03 15:38:27(GMT) UPL: Start copy to USB
+2021-07-03 15:58:27(GMT) UPL: copy done
+2021-07-03 15:58:27(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-03 16:03:16(GMT) UPL: Starting upload to IOT
+2021-07-03 16:03:20(GMT) UPL: Start upload
+2021-07-03 16:13:43(GMT) UPL: Upload done
+2021-07-03 18:08:19(GMT) UPL: Start copy to USB
+2021-07-03 18:24:26(GMT) UPL: copy done
+2021-07-03 18:24:27(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-03 18:28:52(GMT) UPL: Starting upload to IOT
+2021-07-03 18:28:55(GMT) UPL: Start upload
+2021-07-03 18:37:35(GMT) UPL: Upload done
+2021-07-03 21:17:22(GMT) UPL: Start copy to USB
+2021-07-03 21:25:42(GMT) UPL: copy done
+2021-07-03 21:25:42(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-03 21:26:09(GMT) UPL: Starting upload to IOT
+2021-07-03 21:26:13(GMT) UPL: Start upload
+2021-07-03 21:26:36(GMT) UPL: Upload failed.
+2021-07-03 21:38:58(GMT) UPL: Start copy to USB
+2021-07-03 21:43:01(GMT) UPL: Start copy to USB
+2021-07-03 21:48:55(GMT) UPL: copy done
+2021-07-03 21:48:55(GMT) UPL: copy done
+2021-07-03 21:48:55(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-03 21:48:56(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-03 21:49:41(GMT) UPL: Starting upload to IOT
+2021-07-03 21:49:41(GMT) UPL: Starting upload to IOT
+2021-07-03 21:49:47(GMT) UPL: Start upload
+2021-07-03 21:49:47(GMT) UPL: Start upload
+2021-07-03 23:56:42(GMT) UPL: Upload done
+2021-07-04 06:11:59(GMT) UPL: Start copy to USB
+2021-07-04 06:20:11(GMT) UPL: copy done
+2021-07-04 06:20:11(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-04 06:23:15(GMT) UPL: Starting upload to IOT
+2021-07-04 06:23:19(GMT) UPL: Start upload
+2021-07-04 06:26:31(GMT) UPL: Upload done
+2021-07-04 15:38:33(GMT) UPL: Start copy to USB
+2021-07-04 15:56:45(GMT) UPL: copy done
+2021-07-04 15:56:45(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-04 16:00:31(GMT) UPL: Starting upload to IOT
+2021-07-04 16:00:35(GMT) UPL: Start upload
+2021-07-04 16:10:25(GMT) UPL: Upload done
+2021-07-04 18:08:10(GMT) UPL: Start copy to USB
+2021-07-04 18:23:39(GMT) UPL: copy done
+2021-07-04 18:23:39(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-04 18:27:57(GMT) UPL: Starting upload to IOT
+2021-07-04 18:28:01(GMT) UPL: Start upload
+2021-07-04 18:35:51(GMT) UPL: Upload done
+2021-07-05 06:10:57(GMT) UPL: Start copy to USB
+2021-07-05 06:17:46(GMT) UPL: copy done
+2021-07-05 06:17:46(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-05 06:18:27(GMT) UPL: Starting upload to IOT
+2021-07-05 06:18:31(GMT) UPL: Start upload
+2021-07-05 06:21:35(GMT) UPL: Upload done
+2021-07-05 15:33:26(GMT) UPL: Start copy to USB
+2021-07-05 15:51:22(GMT) UPL: copy done
+2021-07-05 15:51:22(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-05 15:56:10(GMT) UPL: Starting upload to IOT
+2021-07-05 15:56:13(GMT) UPL: Start upload
+2021-07-05 16:05:08(GMT) UPL: Upload done
+2021-07-05 18:08:16(GMT) UPL: Start copy to USB
+2021-07-05 18:21:44(GMT) UPL: copy done
+2021-07-05 18:21:45(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-05 18:24:53(GMT) UPL: Starting upload to IOT
+2021-07-05 18:24:57(GMT) UPL: Start upload
+2021-07-05 18:31:59(GMT) UPL: Upload done
+2021-07-06 06:10:56(GMT) UPL: Start copy to USB
+2021-07-06 06:16:15(GMT) UPL: copy done
+2021-07-06 06:16:16(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-06 06:17:13(GMT) UPL: Starting upload to IOT
+2021-07-06 06:17:16(GMT) UPL: Start upload
+2021-07-06 06:19:27(GMT) UPL: Upload done
+2021-07-06 15:38:37(GMT) UPL: Start copy to USB
+2021-07-06 15:54:54(GMT) UPL: copy done
+2021-07-06 15:54:54(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-06 15:58:10(GMT) UPL: Starting upload to IOT
+2021-07-06 15:58:14(GMT) UPL: Start upload
+2021-07-06 16:06:51(GMT) UPL: Upload done
+2021-07-06 18:08:11(GMT) UPL: Start copy to USB
+2021-07-06 18:21:04(GMT) UPL: copy done
+2021-07-06 18:21:04(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-06 18:24:04(GMT) UPL: Starting upload to IOT
+2021-07-06 18:24:08(GMT) UPL: Start upload
+2021-07-06 18:30:47(GMT) UPL: Upload done
+2021-07-07 06:11:57(GMT) UPL: Start copy to USB
+2021-07-07 06:16:19(GMT) UPL: copy done
+2021-07-07 06:16:19(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-07 06:16:20(GMT) UPL: Starting upload to IOT
+2021-07-07 06:16:23(GMT) UPL: Start upload
+2021-07-07 06:18:36(GMT) UPL: Upload done
+2021-07-07 15:38:32(GMT) UPL: Start copy to USB
+2021-07-07 15:54:41(GMT) UPL: copy done
+2021-07-07 15:54:41(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-07 15:57:57(GMT) UPL: Starting upload to IOT
+2021-07-07 15:58:01(GMT) UPL: Start upload
+2021-07-07 16:06:44(GMT) UPL: Upload done
+2021-07-07 18:08:11(GMT) UPL: Start copy to USB
+2021-07-07 18:20:56(GMT) UPL: copy done
+2021-07-07 18:20:56(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-07 18:23:58(GMT) UPL: Starting upload to IOT
+2021-07-07 18:24:01(GMT) UPL: Start upload
+2021-07-07 18:30:40(GMT) UPL: Upload done
+2021-07-08 06:10:55(GMT) UPL: Start copy to USB
+2021-07-08 06:15:15(GMT) UPL: copy done
+2021-07-08 06:15:15(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-08 06:15:17(GMT) UPL: Starting upload to IOT
+2021-07-08 06:15:20(GMT) UPL: Start upload
+2021-07-08 06:17:31(GMT) UPL: Upload done
+2021-07-08 15:38:29(GMT) UPL: Start copy to USB
+2021-07-08 15:54:39(GMT) UPL: copy done
+2021-07-08 15:54:39(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-08 15:57:56(GMT) UPL: Starting upload to IOT
+2021-07-08 15:58:00(GMT) UPL: Start upload
+2021-07-08 16:06:40(GMT) UPL: Upload done
+2021-07-08 18:08:12(GMT) UPL: Start copy to USB
+2021-07-08 18:20:59(GMT) UPL: copy done
+2021-07-08 18:20:59(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-08 18:24:03(GMT) UPL: Starting upload to IOT
+2021-07-08 18:24:07(GMT) UPL: Start upload
+2021-07-08 18:30:48(GMT) UPL: Upload done
+2021-07-09 06:10:56(GMT) UPL: Start copy to USB
+2021-07-09 06:15:16(GMT) UPL: copy done
+2021-07-09 06:15:16(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-09 06:15:17(GMT) UPL: Starting upload to IOT
+2021-07-09 06:15:21(GMT) UPL: Start upload
+2021-07-09 06:17:32(GMT) UPL: Upload done
+2021-07-09 15:38:34(GMT) UPL: Start copy to USB
+2021-07-09 15:54:48(GMT) UPL: copy done
+2021-07-09 15:54:48(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-09 15:58:07(GMT) UPL: Starting upload to IOT
+2021-07-09 15:58:11(GMT) UPL: Start upload
+2021-07-09 16:06:48(GMT) UPL: Upload done
+2021-07-09 18:08:14(GMT) UPL: Start copy to USB
+2021-07-09 18:21:06(GMT) UPL: copy done
+2021-07-09 18:21:06(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-09 18:24:09(GMT) UPL: Starting upload to IOT
+2021-07-09 18:24:13(GMT) UPL: Start upload
+2021-07-09 18:30:49(GMT) UPL: Upload done
+2021-07-10 06:10:55(GMT) UPL: Start copy to USB
+2021-07-10 06:15:13(GMT) UPL: copy done
+2021-07-10 06:15:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-10 06:15:15(GMT) UPL: Starting upload to IOT
+2021-07-10 06:15:18(GMT) UPL: Start upload
+2021-07-10 06:17:30(GMT) UPL: Upload done
+2021-07-10 15:38:31(GMT) UPL: Start copy to USB
+2021-07-10 15:54:51(GMT) UPL: copy done
+2021-07-10 15:54:51(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-10 15:58:10(GMT) UPL: Starting upload to IOT
+2021-07-10 15:58:14(GMT) UPL: Start upload
+2021-07-10 16:06:54(GMT) UPL: Upload done
+2021-07-10 18:08:12(GMT) UPL: Start copy to USB
+2021-07-10 18:21:04(GMT) UPL: copy done
+2021-07-10 18:21:04(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-10 18:24:07(GMT) UPL: Starting upload to IOT
+2021-07-10 18:24:11(GMT) UPL: Start upload
+2021-07-10 18:30:49(GMT) UPL: Upload done
+2021-07-11 06:10:55(GMT) UPL: Start copy to USB
+2021-07-11 06:15:18(GMT) UPL: copy done
+2021-07-11 06:15:18(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-11 06:15:19(GMT) UPL: Starting upload to IOT
+2021-07-11 06:15:23(GMT) UPL: Start upload
+2021-07-11 06:17:36(GMT) UPL: Upload done
+2021-07-11 15:38:35(GMT) UPL: Start copy to USB
+2021-07-11 15:55:08(GMT) UPL: copy done
+2021-07-11 15:55:08(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-11 15:58:31(GMT) UPL: Starting upload to IOT
+2021-07-11 15:58:35(GMT) UPL: Start upload
+2021-07-11 16:07:15(GMT) UPL: Upload done
+2021-07-11 18:08:13(GMT) UPL: Start copy to USB
+2021-07-11 18:21:11(GMT) UPL: copy done
+2021-07-11 18:21:11(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-11 18:24:19(GMT) UPL: Starting upload to IOT
+2021-07-11 18:24:23(GMT) UPL: Start upload
+2021-07-11 18:31:03(GMT) UPL: Upload done
+2021-07-12 06:10:56(GMT) UPL: Start copy to USB
+2021-07-12 06:15:23(GMT) UPL: copy done
+2021-07-12 06:15:23(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-12 06:15:24(GMT) UPL: Starting upload to IOT
+2021-07-12 06:15:27(GMT) UPL: Start upload
+2021-07-12 06:17:45(GMT) UPL: Upload done
+2021-07-12 15:38:33(GMT) UPL: Start copy to USB
+2021-07-12 15:55:13(GMT) UPL: copy done
+2021-07-12 15:55:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-12 15:58:40(GMT) UPL: Starting upload to IOT
+2021-07-12 15:58:44(GMT) UPL: Start upload
+2021-07-12 16:07:30(GMT) UPL: Upload done
+2021-07-12 18:08:12(GMT) UPL: Start copy to USB
+2021-07-12 18:21:24(GMT) UPL: copy done
+2021-07-12 18:21:24(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-12 18:24:35(GMT) UPL: Starting upload to IOT
+2021-07-12 18:24:39(GMT) UPL: Start upload
+2021-07-12 18:31:24(GMT) UPL: Upload done
+2021-07-13 06:10:57(GMT) UPL: Start copy to USB
+2021-07-13 06:15:30(GMT) UPL: copy done
+2021-07-13 06:15:30(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-13 06:15:31(GMT) UPL: Starting upload to IOT
+2021-07-13 06:15:34(GMT) UPL: Start upload
+2021-07-13 06:17:52(GMT) UPL: Upload done
+2021-07-13 15:38:34(GMT) UPL: Start copy to USB
+2021-07-13 15:55:00(GMT) UPL: copy done
+2021-07-13 15:55:00(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-13 15:58:27(GMT) UPL: Starting upload to IOT
+2021-07-13 15:58:31(GMT) UPL: Start upload
+2021-07-13 16:07:13(GMT) UPL: Upload done
+2021-07-13 18:08:12(GMT) UPL: Start copy to USB
+2021-07-13 18:21:17(GMT) UPL: copy done
+2021-07-13 18:21:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-13 18:24:27(GMT) UPL: Starting upload to IOT
+2021-07-13 18:24:31(GMT) UPL: Start upload
+2021-07-13 18:31:11(GMT) UPL: Upload done
+2021-07-14 06:10:56(GMT) UPL: Start copy to USB
+2021-07-14 06:15:25(GMT) UPL: copy done
+2021-07-14 06:15:25(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-14 06:15:27(GMT) UPL: Starting upload to IOT
+2021-07-14 06:15:30(GMT) UPL: Start upload
+2021-07-14 06:17:49(GMT) UPL: Upload done
+2021-07-14 15:33:29(GMT) UPL: Start copy to USB
+2021-07-14 15:50:01(GMT) UPL: copy done
+2021-07-14 15:50:02(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-14 15:53:26(GMT) UPL: Starting upload to IOT
+2021-07-14 15:53:30(GMT) UPL: Start upload
+2021-07-14 16:02:12(GMT) UPL: Upload done
+2021-07-14 18:08:15(GMT) UPL: Start copy to USB
+2021-07-14 18:21:18(GMT) UPL: copy done
+2021-07-14 18:21:18(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-14 18:24:30(GMT) UPL: Starting upload to IOT
+2021-07-14 18:24:33(GMT) UPL: Start upload
+2021-07-14 18:31:14(GMT) UPL: Upload done
+2021-07-15 06:10:57(GMT) UPL: Start copy to USB
+2021-07-15 06:15:23(GMT) UPL: copy done
+2021-07-15 06:15:23(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-15 06:15:25(GMT) UPL: Starting upload to IOT
+2021-07-15 06:15:28(GMT) UPL: Start upload
+2021-07-15 06:17:43(GMT) UPL: Upload done
+2021-07-15 15:33:30(GMT) UPL: Start copy to USB
+2021-07-15 15:49:56(GMT) UPL: copy done
+2021-07-15 15:49:56(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-15 15:53:20(GMT) UPL: Starting upload to IOT
+2021-07-15 15:53:24(GMT) UPL: Start upload
+2021-07-15 16:02:03(GMT) UPL: Upload done
+2021-07-15 18:08:14(GMT) UPL: Start copy to USB
+2021-07-15 18:21:08(GMT) UPL: copy done
+2021-07-15 18:21:08(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-15 18:24:13(GMT) UPL: Starting upload to IOT
+2021-07-15 18:24:17(GMT) UPL: Start upload
+2021-07-15 18:30:54(GMT) UPL: Upload done
+2021-07-16 06:10:56(GMT) UPL: Start copy to USB
+2021-07-16 06:15:19(GMT) UPL: copy done
+2021-07-16 06:15:19(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-16 06:15:20(GMT) UPL: Starting upload to IOT
+2021-07-16 06:15:24(GMT) UPL: Start upload
+2021-07-16 06:17:38(GMT) UPL: Upload done
+2021-07-16 15:33:34(GMT) UPL: Start copy to USB
+2021-07-16 15:49:58(GMT) UPL: copy done
+2021-07-16 15:49:58(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-16 15:53:24(GMT) UPL: Starting upload to IOT
+2021-07-16 15:53:28(GMT) UPL: Start upload
+2021-07-16 16:02:09(GMT) UPL: Upload done
+2021-07-16 18:08:16(GMT) UPL: Start copy to USB
+2021-07-16 18:21:12(GMT) UPL: copy done
+2021-07-16 18:21:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-16 18:24:21(GMT) UPL: Starting upload to IOT
+2021-07-16 18:24:25(GMT) UPL: Start upload
+2021-07-16 18:31:03(GMT) UPL: Upload done
+2021-07-17 06:10:57(GMT) UPL: Start copy to USB
+2021-07-17 06:15:20(GMT) UPL: copy done
+2021-07-17 06:15:20(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-17 06:15:22(GMT) UPL: Starting upload to IOT
+2021-07-17 06:15:25(GMT) UPL: Start upload
+2021-07-17 06:17:38(GMT) UPL: Upload done
+2021-07-17 15:38:39(GMT) UPL: Start copy to USB
+2021-07-17 15:55:01(GMT) UPL: copy done
+2021-07-17 15:55:01(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-17 15:58:24(GMT) UPL: Starting upload to IOT
+2021-07-17 15:58:28(GMT) UPL: Start upload
+2021-07-17 16:07:09(GMT) UPL: Upload done
+2021-07-17 18:08:15(GMT) UPL: Start copy to USB
+2021-07-17 18:21:01(GMT) UPL: copy done
+2021-07-17 18:21:01(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-17 18:24:10(GMT) UPL: Starting upload to IOT
+2021-07-17 18:24:14(GMT) UPL: Start upload
+2021-07-17 18:30:52(GMT) UPL: Upload done
+2021-07-18 06:10:56(GMT) UPL: Start copy to USB
+2021-07-18 06:15:18(GMT) UPL: copy done
+2021-07-18 06:15:18(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-18 06:15:20(GMT) UPL: Starting upload to IOT
+2021-07-18 06:15:24(GMT) UPL: Start upload
+2021-07-18 06:17:37(GMT) UPL: Upload done
+2021-07-18 15:38:41(GMT) UPL: Start copy to USB
+2021-07-18 15:55:13(GMT) UPL: copy done
+2021-07-18 15:55:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-18 15:58:39(GMT) UPL: Starting upload to IOT
+2021-07-18 15:58:43(GMT) UPL: Start upload
+2021-07-18 16:07:27(GMT) UPL: Upload done
+2021-07-18 18:08:13(GMT) UPL: Start copy to USB
+2021-07-18 18:21:12(GMT) UPL: copy done
+2021-07-18 18:21:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-18 18:24:26(GMT) UPL: Starting upload to IOT
+2021-07-18 18:24:30(GMT) UPL: Start upload
+2021-07-18 18:31:11(GMT) UPL: Upload done
+2021-07-19 06:10:56(GMT) UPL: Start copy to USB
+2021-07-19 06:15:23(GMT) UPL: copy done
+2021-07-19 06:15:23(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-19 06:15:25(GMT) UPL: Starting upload to IOT
+2021-07-19 06:15:28(GMT) UPL: Start upload
+2021-07-19 06:17:43(GMT) UPL: Upload done
+2021-07-19 15:38:37(GMT) UPL: Start copy to USB
+2021-07-19 15:55:11(GMT) UPL: copy done
+2021-07-19 15:55:11(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-19 15:58:40(GMT) UPL: Starting upload to IOT
+2021-07-19 15:58:43(GMT) UPL: Start upload
+2021-07-19 16:07:26(GMT) UPL: Upload done
+2021-07-19 18:13:23(GMT) UPL: Start copy to USB
+2021-07-19 18:26:20(GMT) UPL: copy done
+2021-07-19 18:26:20(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-19 18:29:33(GMT) UPL: Starting upload to IOT
+2021-07-19 18:29:37(GMT) UPL: Start upload
+2021-07-19 18:36:24(GMT) UPL: Upload done
+2021-07-20 06:10:55(GMT) UPL: Start copy to USB
+2021-07-20 06:15:24(GMT) UPL: copy done
+2021-07-20 06:15:24(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-20 06:15:26(GMT) UPL: Starting upload to IOT
+2021-07-20 06:15:29(GMT) UPL: Start upload
+2021-07-20 06:17:45(GMT) UPL: Upload done
+2021-07-20 15:33:41(GMT) UPL: Start copy to USB
+2021-07-20 15:50:09(GMT) UPL: copy done
+2021-07-20 15:50:10(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-20 15:53:39(GMT) UPL: Starting upload to IOT
+2021-07-20 15:53:42(GMT) UPL: Start upload
+2021-07-20 16:02:27(GMT) UPL: Upload done
+2021-07-20 18:08:19(GMT) UPL: Start copy to USB
+2021-07-20 18:21:18(GMT) UPL: copy done
+2021-07-20 18:21:18(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-20 18:24:32(GMT) UPL: Starting upload to IOT
+2021-07-20 18:24:36(GMT) UPL: Start upload
+2021-07-20 18:31:16(GMT) UPL: Upload done
+2021-07-21 06:10:56(GMT) UPL: Start copy to USB
+2021-07-21 06:15:24(GMT) UPL: copy done
+2021-07-21 06:15:24(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-21 06:15:26(GMT) UPL: Starting upload to IOT
+2021-07-21 06:15:29(GMT) UPL: Start upload
+2021-07-21 06:17:45(GMT) UPL: Upload done
+2021-07-21 15:38:42(GMT) UPL: Start copy to USB
+2021-07-21 15:55:06(GMT) UPL: copy done
+2021-07-21 15:55:06(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-21 15:58:35(GMT) UPL: Starting upload to IOT
+2021-07-21 15:58:38(GMT) UPL: Start upload
+2021-07-21 16:07:19(GMT) UPL: Upload done
+2021-07-21 18:08:19(GMT) UPL: Start copy to USB
+2021-07-21 18:21:11(GMT) UPL: copy done
+2021-07-21 18:21:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-21 18:24:25(GMT) UPL: Starting upload to IOT
+2021-07-21 18:24:28(GMT) UPL: Start upload
+2021-07-21 18:31:08(GMT) UPL: Upload done
+2021-07-22 06:10:57(GMT) UPL: Start copy to USB
+2021-07-22 06:15:20(GMT) UPL: copy done
+2021-07-22 06:15:20(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-22 06:15:21(GMT) UPL: Starting upload to IOT
+2021-07-22 06:15:25(GMT) UPL: Start upload
+2021-07-22 06:17:38(GMT) UPL: Upload done
+2021-07-22 15:33:39(GMT) UPL: Start copy to USB
+2021-07-22 15:49:58(GMT) UPL: copy done
+2021-07-22 15:49:58(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-22 15:53:24(GMT) UPL: Starting upload to IOT
+2021-07-22 15:53:28(GMT) UPL: Start upload
+2021-07-22 16:02:06(GMT) UPL: Upload done
+2021-07-22 18:08:25(GMT) UPL: Start copy to USB
+2021-07-22 18:21:14(GMT) UPL: copy done
+2021-07-22 18:21:14(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-22 18:24:26(GMT) UPL: Starting upload to IOT
+2021-07-22 18:24:29(GMT) UPL: Start upload
+2021-07-22 18:31:05(GMT) UPL: Upload done
+2021-07-23 06:10:56(GMT) UPL: Start copy to USB
+2021-07-23 06:15:16(GMT) UPL: copy done
+2021-07-23 06:15:16(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-23 06:15:17(GMT) UPL: Starting upload to IOT
+2021-07-23 06:15:20(GMT) UPL: Start upload
+2021-07-23 06:17:32(GMT) UPL: Upload done
+2021-07-23 15:38:41(GMT) UPL: Start copy to USB
+2021-07-23 15:55:02(GMT) UPL: copy done
+2021-07-23 15:55:02(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-23 15:58:28(GMT) UPL: Starting upload to IOT
+2021-07-23 15:58:31(GMT) UPL: Start upload
+2021-07-23 16:07:14(GMT) UPL: Upload done
+2021-07-23 18:08:20(GMT) UPL: Start copy to USB
+2021-07-23 18:21:12(GMT) UPL: copy done
+2021-07-23 18:21:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-23 18:24:23(GMT) UPL: Starting upload to IOT
+2021-07-23 18:24:26(GMT) UPL: Start upload
+2021-07-23 18:31:02(GMT) UPL: Upload done
+2021-07-24 06:10:56(GMT) UPL: Start copy to USB
+2021-07-24 06:15:15(GMT) UPL: copy done
+2021-07-24 06:15:15(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-24 06:15:17(GMT) UPL: Starting upload to IOT
+2021-07-24 06:15:20(GMT) UPL: Start upload
+2021-07-24 06:17:31(GMT) UPL: Upload done
+2021-07-24 15:33:37(GMT) UPL: Start copy to USB
+2021-07-24 15:49:45(GMT) UPL: copy done
+2021-07-24 15:49:45(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-24 15:53:11(GMT) UPL: Starting upload to IOT
+2021-07-24 15:53:15(GMT) UPL: Start upload
+2021-07-24 16:01:53(GMT) UPL: Upload done
+2021-07-24 18:08:20(GMT) UPL: Start copy to USB
+2021-07-24 18:21:06(GMT) UPL: copy done
+2021-07-24 18:21:06(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-24 18:24:16(GMT) UPL: Starting upload to IOT
+2021-07-24 18:24:20(GMT) UPL: Start upload
+2021-07-24 18:31:01(GMT) UPL: Upload done
+2021-07-25 06:10:56(GMT) UPL: Start copy to USB
+2021-07-25 06:15:15(GMT) UPL: copy done
+2021-07-25 06:15:15(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-25 06:15:16(GMT) UPL: Starting upload to IOT
+2021-07-25 06:15:20(GMT) UPL: Start upload
+2021-07-25 06:17:31(GMT) UPL: Upload done
+2021-07-25 15:38:47(GMT) UPL: Start copy to USB
+2021-07-25 15:55:11(GMT) UPL: copy done
+2021-07-25 15:55:11(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-25 15:58:38(GMT) UPL: Starting upload to IOT
+2021-07-25 15:58:42(GMT) UPL: Start upload
+2021-07-25 16:07:28(GMT) UPL: Upload done
+2021-07-25 18:08:25(GMT) UPL: Start copy to USB
+2021-07-25 18:21:18(GMT) UPL: copy done
+2021-07-25 18:21:18(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-25 18:24:30(GMT) UPL: Starting upload to IOT
+2021-07-25 18:24:34(GMT) UPL: Start upload
+2021-07-25 18:31:10(GMT) UPL: Upload done
+2021-07-26 06:10:56(GMT) UPL: Start copy to USB
+2021-07-26 06:15:15(GMT) UPL: copy done
+2021-07-26 06:15:15(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-26 06:15:17(GMT) UPL: Starting upload to IOT
+2021-07-26 06:15:20(GMT) UPL: Start upload
+2021-07-26 06:17:31(GMT) UPL: Upload done
+2021-07-26 15:38:45(GMT) UPL: Start copy to USB
+2021-07-26 15:55:00(GMT) UPL: copy done
+2021-07-26 15:55:00(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-26 15:58:27(GMT) UPL: Starting upload to IOT
+2021-07-26 15:58:31(GMT) UPL: Start upload
+2021-07-26 16:07:08(GMT) UPL: Upload done
+2021-07-26 18:08:24(GMT) UPL: Start copy to USB
+2021-07-26 18:21:13(GMT) UPL: copy done
+2021-07-26 18:21:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-26 18:24:25(GMT) UPL: Starting upload to IOT
+2021-07-26 18:24:29(GMT) UPL: Start upload
+2021-07-26 18:31:03(GMT) UPL: Upload done
+2021-07-27 06:10:57(GMT) UPL: Start copy to USB
+2021-07-27 06:15:16(GMT) UPL: copy done
+2021-07-27 06:15:16(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-27 06:15:17(GMT) UPL: Starting upload to IOT
+2021-07-27 06:15:21(GMT) UPL: Start upload
+2021-07-27 06:17:32(GMT) UPL: Upload done
+2021-07-27 15:33:42(GMT) UPL: Start copy to USB
+2021-07-27 15:50:07(GMT) UPL: copy done
+2021-07-27 15:50:07(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-27 15:53:37(GMT) UPL: Starting upload to IOT
+2021-07-27 15:53:41(GMT) UPL: Start upload
+2021-07-27 16:02:20(GMT) UPL: Upload done
+2021-07-27 18:08:22(GMT) UPL: Start copy to USB
+2021-07-27 18:21:17(GMT) UPL: copy done
+2021-07-27 18:21:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-27 18:24:32(GMT) UPL: Starting upload to IOT
+2021-07-27 18:24:36(GMT) UPL: Start upload
+2021-07-27 18:31:14(GMT) UPL: Upload done
+2021-07-28 06:10:56(GMT) UPL: Start copy to USB
+2021-07-28 06:15:19(GMT) UPL: copy done
+2021-07-28 06:15:19(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-28 06:15:21(GMT) UPL: Starting upload to IOT
+2021-07-28 06:15:24(GMT) UPL: Start upload
+2021-07-28 06:17:36(GMT) UPL: Upload done
+2021-07-28 15:38:47(GMT) UPL: Start copy to USB
+2021-07-28 15:55:25(GMT) UPL: copy done
+2021-07-28 15:55:25(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-28 15:58:58(GMT) UPL: Starting upload to IOT
+2021-07-28 15:59:02(GMT) UPL: Start upload
+2021-07-28 16:07:47(GMT) UPL: Upload done
+2021-07-28 18:08:22(GMT) UPL: Start copy to USB
+2021-07-28 18:21:17(GMT) UPL: copy done
+2021-07-28 18:21:17(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-28 18:24:34(GMT) UPL: Starting upload to IOT
+2021-07-28 18:24:38(GMT) UPL: Start upload
+2021-07-28 18:31:16(GMT) UPL: Upload done
+2021-07-29 06:10:57(GMT) UPL: Start copy to USB
+2021-07-29 06:15:24(GMT) UPL: copy done
+2021-07-29 06:15:24(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-29 06:15:25(GMT) UPL: Starting upload to IOT
+2021-07-29 06:15:28(GMT) UPL: Start upload
+2021-07-29 06:17:44(GMT) UPL: Upload done
+2021-07-29 15:38:48(GMT) UPL: Start copy to USB
+2021-07-29 15:55:16(GMT) UPL: copy done
+2021-07-29 15:55:16(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-29 15:58:50(GMT) UPL: Starting upload to IOT
+2021-07-29 15:58:53(GMT) UPL: Start upload
+2021-07-29 16:07:36(GMT) UPL: Upload done
+2021-07-29 18:08:22(GMT) UPL: Start copy to USB
+2021-07-29 18:21:14(GMT) UPL: copy done
+2021-07-29 18:21:14(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-29 18:24:34(GMT) UPL: Starting upload to IOT
+2021-07-29 18:24:38(GMT) UPL: Start upload
+2021-07-29 18:31:20(GMT) UPL: Upload done
+2021-07-30 06:10:56(GMT) UPL: Start copy to USB
+2021-07-30 06:15:25(GMT) UPL: copy done
+2021-07-30 06:15:25(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-30 06:15:26(GMT) UPL: Starting upload to IOT
+2021-07-30 06:15:30(GMT) UPL: Start upload
+2021-07-30 06:17:50(GMT) UPL: Upload done
+2021-07-30 15:38:43(GMT) UPL: Start copy to USB
+2021-07-30 15:55:29(GMT) UPL: copy done
+2021-07-30 15:55:29(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-30 15:59:04(GMT) UPL: Starting upload to IOT
+2021-07-30 15:59:08(GMT) UPL: Start upload
+2021-07-30 16:07:53(GMT) UPL: Upload done
+2021-07-30 18:08:20(GMT) UPL: Start copy to USB
+2021-07-30 18:21:24(GMT) UPL: copy done
+2021-07-30 18:21:24(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-30 18:24:44(GMT) UPL: Starting upload to IOT
+2021-07-30 18:24:48(GMT) UPL: Start upload
+2021-07-30 18:31:33(GMT) UPL: Upload done
+2021-07-31 06:10:56(GMT) UPL: Start copy to USB
+2021-07-31 06:15:24(GMT) UPL: copy done
+2021-07-31 06:15:24(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-31 06:15:26(GMT) UPL: Starting upload to IOT
+2021-07-31 06:15:29(GMT) UPL: Start upload
+2021-07-31 06:17:46(GMT) UPL: Upload done
+2021-07-31 15:33:42(GMT) UPL: Start copy to USB
+2021-07-31 15:50:24(GMT) UPL: copy done
+2021-07-31 15:50:24(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-31 15:54:00(GMT) UPL: Starting upload to IOT
+2021-07-31 15:54:04(GMT) UPL: Start upload
+2021-07-31 16:02:48(GMT) UPL: Upload done
+2021-07-31 18:08:27(GMT) UPL: Start copy to USB
+2021-07-31 18:21:26(GMT) UPL: copy done
+2021-07-31 18:21:26(GMT) UPL: Delete raw data older than 3 day(s).
+2021-07-31 18:24:44(GMT) UPL: Starting upload to IOT
+2021-07-31 18:24:48(GMT) UPL: Start upload
+2021-07-31 18:31:28(GMT) UPL: Upload done
+2021-08-01 00:20:59(GMT) UPL: Start copy to USB
+2021-08-01 00:25:34(GMT) UPL: copy done
+2021-08-01 00:25:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 00:26:56(GMT) UPL: Starting upload to IOT
+2021-08-01 00:27:00(GMT) UPL: Start upload
+2021-08-01 00:29:15(GMT) UPL: Upload done
+2021-08-01 00:50:59(GMT) UPL: Start copy to USB
+2021-08-01 00:55:31(GMT) UPL: copy done
+2021-08-01 00:55:31(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 00:56:31(GMT) UPL: Starting upload to IOT
+2021-08-01 00:56:34(GMT) UPL: Start upload
+2021-08-01 00:58:49(GMT) UPL: Upload done
+2021-08-01 01:20:59(GMT) UPL: Start copy to USB
+2021-08-01 01:25:32(GMT) UPL: copy done
+2021-08-01 01:25:32(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 01:26:32(GMT) UPL: Starting upload to IOT
+2021-08-01 01:26:36(GMT) UPL: Start upload
+2021-08-01 01:28:52(GMT) UPL: Upload done
+2021-08-01 01:50:59(GMT) UPL: Start copy to USB
+2021-08-01 01:55:35(GMT) UPL: copy done
+2021-08-01 01:55:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 01:57:02(GMT) UPL: Starting upload to IOT
+2021-08-01 01:57:05(GMT) UPL: Start upload
+2021-08-01 01:59:21(GMT) UPL: Upload done
+2021-08-01 02:20:58(GMT) UPL: Start copy to USB
+2021-08-01 02:25:31(GMT) UPL: copy done
+2021-08-01 02:25:31(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 02:26:36(GMT) UPL: Starting upload to IOT
+2021-08-01 02:26:40(GMT) UPL: Start upload
+2021-08-01 02:28:56(GMT) UPL: Upload done
+2021-08-01 02:50:59(GMT) UPL: Start copy to USB
+2021-08-01 02:55:32(GMT) UPL: copy done
+2021-08-01 02:55:32(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 02:56:35(GMT) UPL: Starting upload to IOT
+2021-08-01 02:56:39(GMT) UPL: Start upload
+2021-08-01 02:58:55(GMT) UPL: Upload done
+2021-08-01 03:21:01(GMT) UPL: Start copy to USB
+2021-08-01 03:25:34(GMT) UPL: copy done
+2021-08-01 03:25:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 03:26:35(GMT) UPL: Starting upload to IOT
+2021-08-01 03:26:39(GMT) UPL: Start upload
+2021-08-01 03:28:54(GMT) UPL: Upload done
+2021-08-01 03:50:59(GMT) UPL: Start copy to USB
+2021-08-01 03:55:32(GMT) UPL: copy done
+2021-08-01 03:55:32(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 03:56:45(GMT) UPL: Starting upload to IOT
+2021-08-01 03:56:49(GMT) UPL: Start upload
+2021-08-01 03:59:05(GMT) UPL: Upload done
+2021-08-01 04:20:58(GMT) UPL: Start copy to USB
+2021-08-01 04:25:31(GMT) UPL: copy done
+2021-08-01 04:25:31(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 04:26:45(GMT) UPL: Starting upload to IOT
+2021-08-01 04:26:49(GMT) UPL: Start upload
+2021-08-01 04:29:03(GMT) UPL: Upload done
+2021-08-01 04:50:59(GMT) UPL: Start copy to USB
+2021-08-01 04:55:33(GMT) UPL: copy done
+2021-08-01 04:55:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 04:56:50(GMT) UPL: Starting upload to IOT
+2021-08-01 04:56:54(GMT) UPL: Start upload
+2021-08-01 04:59:10(GMT) UPL: Upload done
+2021-08-01 05:20:59(GMT) UPL: Start copy to USB
+2021-08-01 05:25:33(GMT) UPL: copy done
+2021-08-01 05:25:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 05:26:55(GMT) UPL: Starting upload to IOT
+2021-08-01 05:26:58(GMT) UPL: Start upload
+2021-08-01 05:29:14(GMT) UPL: Upload done
+2021-08-01 05:50:59(GMT) UPL: Start copy to USB
+2021-08-01 05:55:32(GMT) UPL: copy done
+2021-08-01 05:55:32(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 05:56:58(GMT) UPL: Starting upload to IOT
+2021-08-01 05:57:02(GMT) UPL: Start upload
+2021-08-01 05:59:16(GMT) UPL: Upload done
+2021-08-01 06:20:58(GMT) UPL: Start copy to USB
+2021-08-01 06:25:32(GMT) UPL: copy done
+2021-08-01 06:25:32(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 06:26:59(GMT) UPL: Starting upload to IOT
+2021-08-01 06:27:03(GMT) UPL: Start upload
+2021-08-01 06:29:19(GMT) UPL: Upload done
+2021-08-01 06:50:59(GMT) UPL: Start copy to USB
+2021-08-01 06:55:34(GMT) UPL: copy done
+2021-08-01 06:55:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 06:56:57(GMT) UPL: Starting upload to IOT
+2021-08-01 06:57:01(GMT) UPL: Start upload
+2021-08-01 06:59:16(GMT) UPL: Upload done
+2021-08-01 07:20:59(GMT) UPL: Start copy to USB
+2021-08-01 07:25:33(GMT) UPL: copy done
+2021-08-01 07:25:33(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 07:27:08(GMT) UPL: Starting upload to IOT
+2021-08-01 07:27:11(GMT) UPL: Start upload
+2021-08-01 07:29:28(GMT) UPL: Upload done
+2021-08-01 07:50:59(GMT) UPL: Start copy to USB
+2021-08-01 07:55:38(GMT) UPL: copy done
+2021-08-01 07:55:38(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 07:57:26(GMT) UPL: Starting upload to IOT
+2021-08-01 07:57:29(GMT) UPL: Start upload
+2021-08-01 07:59:46(GMT) UPL: Upload done
+2021-08-01 08:20:59(GMT) UPL: Start copy to USB
+2021-08-01 08:25:34(GMT) UPL: copy done
+2021-08-01 08:25:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 08:27:21(GMT) UPL: Starting upload to IOT
+2021-08-01 08:27:25(GMT) UPL: Start upload
+2021-08-01 08:29:41(GMT) UPL: Upload done
+2021-08-01 08:50:58(GMT) UPL: Start copy to USB
+2021-08-01 08:55:34(GMT) UPL: copy done
+2021-08-01 08:55:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 08:57:22(GMT) UPL: Starting upload to IOT
+2021-08-01 08:57:26(GMT) UPL: Start upload
+2021-08-01 08:59:41(GMT) UPL: Upload done
+2021-08-01 09:21:00(GMT) UPL: Start copy to USB
+2021-08-01 09:25:35(GMT) UPL: copy done
+2021-08-01 09:25:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 09:27:24(GMT) UPL: Starting upload to IOT
+2021-08-01 09:27:27(GMT) UPL: Start upload
+2021-08-01 09:29:43(GMT) UPL: Upload done
+2021-08-01 09:50:59(GMT) UPL: Start copy to USB
+2021-08-01 09:55:35(GMT) UPL: copy done
+2021-08-01 09:55:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 09:57:23(GMT) UPL: Starting upload to IOT
+2021-08-01 09:57:27(GMT) UPL: Start upload
+2021-08-01 09:59:42(GMT) UPL: Upload done
+2021-08-01 10:20:59(GMT) UPL: Start copy to USB
+2021-08-01 10:25:36(GMT) UPL: copy done
+2021-08-01 10:25:36(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 10:27:28(GMT) UPL: Starting upload to IOT
+2021-08-01 10:27:32(GMT) UPL: Start upload
+2021-08-01 10:29:48(GMT) UPL: Upload done
+2021-08-01 10:51:00(GMT) UPL: Start copy to USB
+2021-08-01 10:55:35(GMT) UPL: copy done
+2021-08-01 10:55:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 10:57:25(GMT) UPL: Starting upload to IOT
+2021-08-01 10:57:29(GMT) UPL: Start upload
+2021-08-01 10:59:45(GMT) UPL: Upload done
+2021-08-01 11:21:00(GMT) UPL: Start copy to USB
+2021-08-01 11:25:36(GMT) UPL: copy done
+2021-08-01 11:25:36(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 11:27:30(GMT) UPL: Starting upload to IOT
+2021-08-01 11:27:34(GMT) UPL: Start upload
+2021-08-01 11:29:49(GMT) UPL: Upload done
+2021-08-01 11:50:59(GMT) UPL: Start copy to USB
+2021-08-01 11:55:35(GMT) UPL: copy done
+2021-08-01 11:55:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 11:57:27(GMT) UPL: Starting upload to IOT
+2021-08-01 11:57:31(GMT) UPL: Start upload
+2021-08-01 11:59:46(GMT) UPL: Upload done
+2021-08-01 12:21:00(GMT) UPL: Start copy to USB
+2021-08-01 12:25:36(GMT) UPL: copy done
+2021-08-01 12:25:36(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 12:27:29(GMT) UPL: Starting upload to IOT
+2021-08-01 12:27:33(GMT) UPL: Start upload
+2021-08-01 12:29:49(GMT) UPL: Upload done
+2021-08-01 12:50:58(GMT) UPL: Start copy to USB
+2021-08-01 12:55:34(GMT) UPL: copy done
+2021-08-01 12:55:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 12:57:32(GMT) UPL: Starting upload to IOT
+2021-08-01 12:57:36(GMT) UPL: Start upload
+2021-08-01 12:59:52(GMT) UPL: Upload done
+2021-08-01 13:20:59(GMT) UPL: Start copy to USB
+2021-08-01 13:25:35(GMT) UPL: copy done
+2021-08-01 13:25:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 13:27:32(GMT) UPL: Starting upload to IOT
+2021-08-01 13:27:36(GMT) UPL: Start upload
+2021-08-01 13:29:52(GMT) UPL: Upload done
+2021-08-01 13:50:59(GMT) UPL: Start copy to USB
+2021-08-01 13:55:40(GMT) UPL: copy done
+2021-08-01 13:55:40(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 13:57:58(GMT) UPL: Starting upload to IOT
+2021-08-01 13:58:02(GMT) UPL: Start upload
+2021-08-01 14:00:18(GMT) UPL: Upload done
+2021-08-01 14:21:00(GMT) UPL: Start copy to USB
+2021-08-01 14:25:35(GMT) UPL: copy done
+2021-08-01 14:25:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 14:27:33(GMT) UPL: Starting upload to IOT
+2021-08-01 14:27:37(GMT) UPL: Start upload
+2021-08-01 14:29:42(GMT) UPL: Upload done
+2021-08-01 14:50:59(GMT) UPL: Start copy to USB
+2021-08-01 14:55:23(GMT) UPL: copy done
+2021-08-01 14:55:23(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 14:57:29(GMT) UPL: Starting upload to IOT
+2021-08-01 14:57:32(GMT) UPL: Start upload
+2021-08-01 14:59:27(GMT) UPL: Upload done
+2021-08-01 15:20:59(GMT) UPL: Start copy to USB
+2021-08-01 15:25:08(GMT) UPL: copy done
+2021-08-01 15:25:08(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 15:27:03(GMT) UPL: Starting upload to IOT
+2021-08-01 15:27:07(GMT) UPL: Start upload
+2021-08-01 15:28:57(GMT) UPL: Upload done
+2021-08-01 15:50:59(GMT) UPL: Start copy to USB
+2021-08-01 15:54:45(GMT) UPL: copy done
+2021-08-01 15:54:45(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 15:56:35(GMT) UPL: Starting upload to IOT
+2021-08-01 15:56:38(GMT) UPL: Start upload
+2021-08-01 15:58:27(GMT) UPL: Upload done
+2021-08-01 16:20:59(GMT) UPL: Start copy to USB
+2021-08-01 16:24:42(GMT) UPL: copy done
+2021-08-01 16:24:42(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 16:26:23(GMT) UPL: Starting upload to IOT
+2021-08-01 16:26:26(GMT) UPL: Start upload
+2021-08-01 16:28:14(GMT) UPL: Upload done
+2021-08-01 16:50:59(GMT) UPL: Start copy to USB
+2021-08-01 16:54:42(GMT) UPL: copy done
+2021-08-01 16:54:42(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 16:56:24(GMT) UPL: Starting upload to IOT
+2021-08-01 16:56:27(GMT) UPL: Start upload
+2021-08-01 16:58:17(GMT) UPL: Upload done
+2021-08-01 17:21:00(GMT) UPL: Start copy to USB
+2021-08-01 17:24:43(GMT) UPL: copy done
+2021-08-01 17:24:43(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 17:26:30(GMT) UPL: Starting upload to IOT
+2021-08-01 17:26:33(GMT) UPL: Start upload
+2021-08-01 17:28:15(GMT) UPL: Upload done
+2021-08-01 17:50:59(GMT) UPL: Start copy to USB
+2021-08-01 17:54:34(GMT) UPL: copy done
+2021-08-01 17:54:34(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 17:56:31(GMT) UPL: Starting upload to IOT
+2021-08-01 17:56:35(GMT) UPL: Start upload
+2021-08-01 17:58:09(GMT) UPL: Upload done
+2021-08-01 18:21:01(GMT) UPL: Start copy to USB
+2021-08-01 18:24:20(GMT) UPL: copy done
+2021-08-01 18:24:20(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 18:26:06(GMT) UPL: Starting upload to IOT
+2021-08-01 18:26:10(GMT) UPL: Start upload
+2021-08-01 18:27:42(GMT) UPL: Upload done
+2021-08-01 18:51:01(GMT) UPL: Start copy to USB
+2021-08-01 18:54:12(GMT) UPL: copy done
+2021-08-01 18:54:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 18:55:49(GMT) UPL: Starting upload to IOT
+2021-08-01 18:55:53(GMT) UPL: Start upload
+2021-08-01 18:57:25(GMT) UPL: Upload done
+2021-08-01 19:21:00(GMT) UPL: Start copy to USB
+2021-08-01 19:24:12(GMT) UPL: copy done
+2021-08-01 19:24:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 19:25:58(GMT) UPL: Starting upload to IOT
+2021-08-01 19:26:02(GMT) UPL: Start upload
+2021-08-01 19:27:35(GMT) UPL: Upload done
+2021-08-01 19:51:02(GMT) UPL: Start copy to USB
+2021-08-01 19:54:14(GMT) UPL: copy done
+2021-08-01 19:54:14(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 19:56:31(GMT) UPL: Starting upload to IOT
+2021-08-01 19:56:35(GMT) UPL: Start upload
+2021-08-01 19:58:07(GMT) UPL: Upload done
+2021-08-01 20:21:00(GMT) UPL: Start copy to USB
+2021-08-01 20:24:12(GMT) UPL: copy done
+2021-08-01 20:24:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 20:26:10(GMT) UPL: Starting upload to IOT
+2021-08-01 20:26:13(GMT) UPL: Start upload
+2021-08-01 20:27:46(GMT) UPL: Upload done
+2021-08-01 20:51:00(GMT) UPL: Start copy to USB
+2021-08-01 20:54:12(GMT) UPL: copy done
+2021-08-01 20:54:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 20:56:10(GMT) UPL: Starting upload to IOT
+2021-08-01 20:56:14(GMT) UPL: Start upload
+2021-08-01 20:57:45(GMT) UPL: Upload done
+2021-08-01 21:21:00(GMT) UPL: Start copy to USB
+2021-08-01 21:24:12(GMT) UPL: copy done
+2021-08-01 21:24:12(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 21:26:10(GMT) UPL: Starting upload to IOT
+2021-08-01 21:26:13(GMT) UPL: Start upload
+2021-08-01 21:27:46(GMT) UPL: Upload done
+2021-08-01 21:51:01(GMT) UPL: Start copy to USB
+2021-08-01 21:54:13(GMT) UPL: copy done
+2021-08-01 21:54:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 21:56:13(GMT) UPL: Starting upload to IOT
+2021-08-01 21:56:17(GMT) UPL: Start upload
+2021-08-01 21:57:49(GMT) UPL: Upload done
+2021-08-01 22:21:00(GMT) UPL: Start copy to USB
+2021-08-01 22:24:11(GMT) UPL: copy done
+2021-08-01 22:24:11(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 22:26:05(GMT) UPL: Starting upload to IOT
+2021-08-01 22:26:09(GMT) UPL: Start upload
+2021-08-01 22:27:42(GMT) UPL: Upload done
+2021-08-01 22:51:00(GMT) UPL: Start copy to USB
+2021-08-01 22:54:12(GMT) UPL: copy done
+2021-08-01 22:54:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 22:56:06(GMT) UPL: Starting upload to IOT
+2021-08-01 22:56:10(GMT) UPL: Start upload
+2021-08-01 22:57:42(GMT) UPL: Upload done
+2021-08-01 23:21:02(GMT) UPL: Start copy to USB
+2021-08-01 23:24:13(GMT) UPL: copy done
+2021-08-01 23:24:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 23:26:08(GMT) UPL: Starting upload to IOT
+2021-08-01 23:26:12(GMT) UPL: Start upload
+2021-08-01 23:27:45(GMT) UPL: Upload done
+2021-08-01 23:51:00(GMT) UPL: Start copy to USB
+2021-08-01 23:54:13(GMT) UPL: copy done
+2021-08-01 23:54:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-01 23:56:11(GMT) UPL: Starting upload to IOT
+2021-08-01 23:56:14(GMT) UPL: Start upload
+2021-08-01 23:57:47(GMT) UPL: Upload done
+2021-08-02 01:08:30(GMT) UPL: Start copy to USB
+2021-08-02 01:20:00(GMT) UPL: copy done
+2021-08-02 01:20:00(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-02 01:22:34(GMT) UPL: Starting upload to IOT
+2021-08-02 01:22:37(GMT) UPL: Start upload
+2021-08-02 01:28:50(GMT) UPL: Upload done
+2021-08-02 04:08:28(GMT) UPL: Start copy to USB
+2021-08-02 04:20:35(GMT) UPL: copy done
+2021-08-02 04:20:35(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-02 04:23:24(GMT) UPL: Starting upload to IOT
+2021-08-02 04:23:28(GMT) UPL: Start upload
+2021-08-02 04:29:58(GMT) UPL: Upload done
+2021-08-02 07:08:31(GMT) UPL: Start copy to USB
+2021-08-02 07:21:13(GMT) UPL: copy done
+2021-08-02 07:21:13(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-02 07:24:19(GMT) UPL: Starting upload to IOT
+2021-08-02 07:24:23(GMT) UPL: Start upload
+2021-08-02 07:31:08(GMT) UPL: Upload done
+2021-08-02 10:13:30(GMT) UPL: Start copy to USB
+2021-08-02 10:26:47(GMT) UPL: copy done
+2021-08-02 10:26:47(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-02 10:30:10(GMT) UPL: Starting upload to IOT
+2021-08-02 10:30:14(GMT) UPL: Start upload
+2021-08-02 10:37:18(GMT) UPL: Upload done
+2021-08-02 13:08:31(GMT) UPL: Start copy to USB
+2021-08-02 13:22:15(GMT) UPL: copy done
+2021-08-02 13:22:15(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-03 06:18:17(GMT) UPL: Starting upload to IOT
+2021-08-03 06:18:20(GMT) UPL: Start upload
+2021-08-03 06:20:29(GMT) UPL: Upload done
+2021-08-03 15:38:57(GMT) UPL: Start copy to USB
+2021-08-03 15:55:23(GMT) UPL: copy done
+2021-08-03 15:55:23(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-03 15:59:06(GMT) UPL: Starting upload to IOT
+2021-08-03 15:59:10(GMT) UPL: Start upload
+2021-08-03 16:07:47(GMT) UPL: Upload done
+2021-08-03 17:17:42(GMT) UPL: Start copy to USB
+2021-08-03 17:26:19(GMT) UPL: copy done
+2021-08-03 17:26:20(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-03 17:31:02(GMT) UPL: Starting upload to IOT
+2021-08-03 17:31:09(GMT) UPL: Start upload
+2021-08-03 17:36:48(GMT) UPL: Upload done
+2021-08-30 11:18:25(GMT) UPL: Start copy to USB
+rsync error: errors with program diagnostics (code 13) at log.c(237) [sender=3.0.6]
+2021-08-30 11:18:27(GMT) UPL: Copy failed. Keep raw data.
+2021-08-30 11:18:27(GMT) UPL: Starting upload to IOT
+2021-08-30 11:18:27(GMT) UPL: Could not connect.
+2021-08-30 12:28:44(GMT) UPL: Start copy to USB
+rsync: writefd_unbuffered failed to write 4 bytes to socket [sender]: Broken pipe (32)
+rsync: write failed on "/media/sda1/projects/IP_Template_1s_with_ECR/project.db": No space left on device (28)
+rsync error: error in file IO (code 11) at receiver.c(302) [receiver=3.0.6]
+rsync: connection unexpectedly closed (115 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(600) [sender=3.0.6]
+2021-08-30 12:28:46(GMT) UPL: Copy failed. Keep raw data.
+2021-08-30 12:28:46(GMT) UPL: Starting upload to IOT
+2021-08-30 12:28:46(GMT) UPL: Could not connect.
+2021-08-30 12:25:08(GMT) UPL: Start copy to USB
+2021-08-30 12:51:26(GMT) UPL: Start copy to USB
+2021-08-30 12:57:32(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+rsync: writefd_unbuffered failed to write 78 bytes to socket [generator]: Broken pipe (32)
+rsync: writefd_unbuffered failed to write 4 bytes to socket [sender]: Broken pipe (32)
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [generator=3.0.6]
+rsync: connection unexpectedly closed (3970 bytes received so far) [sender]
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at io.c(600) [sender=3.0.6]
+2021-08-30 13:59:51(GMT) UPL: Start copy to USB
+2021-08-30 13:59:58(GMT) UPL: Delete raw data older than 3 day(s).
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+rm: /media/hda1/projects/210731_1/RawData/00000: is a directory
+2021-08-30 14:00:08(GMT) UPL: Start copy to USB
+rmdir: '/media/hda1/projects/210731_1/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210802/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210802_1/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210802_2/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210802_3/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210802_4/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210802_5/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210803/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210803_1/Rawdata': Directory not empty
+rmdir: '/media/hda1/projects/210830_1/Rawdata': Directory not empty
+2021-08-30 14:04:49(GMT) UPL: Start copy to USB
+2021-08-30 14:09:22(GMT) UPL: copy done
+2021-08-30 14:09:22(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-30 14:11:44(GMT) UPL: copy done
+2021-08-30 14:11:44(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-30 14:11:49(GMT) UPL: Starting upload to IOT
+2021-08-30 14:11:54(GMT) UPL: Start upload
+2021-08-30 14:13:47(GMT) UPL: Upload done
+2021-08-30 14:15:47(GMT) UPL: Starting upload to IOT
+2021-08-30 14:15:50(GMT) UPL: Start upload
+2021-08-30 14:15:53(GMT) UPL: Upload done
+2021-08-30 14:33:13(GMT) UPL: Start copy to USB
+2021-08-30 14:33:42(GMT) UPL: copy done
+2021-08-30 14:33:42(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-30 14:34:30(GMT) UPL: Starting upload to IOT
+2021-08-30 14:34:33(GMT) UPL: Start upload
+2021-08-30 14:34:37(GMT) UPL: Upload done
+2021-08-30 16:18:55(GMT) UPL: Start copy to USB
+2021-08-30 16:31:56(GMT) UPL: copy done
+2021-08-30 16:31:56(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-30 16:33:15(GMT) UPL: Starting upload to IOT
+2021-08-30 16:33:18(GMT) UPL: Start upload
+2021-08-30 16:40:23(GMT) UPL: Upload done
+2021-08-30 17:06:25(GMT) UPL: Start copy to USB
+file has vanished: "/media/hda1/projects/210830_4/project.db-journal"
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1039) [sender=3.0.6]
+2021-08-30 17:10:09(GMT) UPL: Copy failed. Keep raw data.
+2021-08-30 17:10:09(GMT) UPL: Starting upload to IOT
+2021-08-30 17:10:14(GMT) UPL: Start upload
+2021-08-30 17:11:45(GMT) UPL: Upload done
+2021-08-30 22:05:00(GMT) UPL: Start copy to USB
+2021-08-30 22:14:43(GMT) UPL: copy done
+2021-08-30 22:14:43(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-30 22:16:17(GMT) UPL: Starting upload to IOT
+2021-08-30 22:16:20(GMT) UPL: Start upload
+2021-08-30 22:21:34(GMT) UPL: Upload done
+2021-08-31 12:46:36(GMT) UPL: Start copy to USB
+2021-08-31 12:49:48(GMT) UPL: copy done
+2021-08-31 12:49:48(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-31 12:51:32(GMT) UPL: Starting upload to IOT
+2021-08-31 12:51:36(GMT) UPL: Start upload
+2021-08-31 12:52:37(GMT) UPL: Upload done
+2021-08-31 14:17:05(GMT) UPL: Start copy to USB
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(544) [sender=3.0.6]
+2021-08-31 14:17:37(GMT) UPL: Copy failed. Keep raw data.
+2021-08-31 14:17:38(GMT) UPL: Starting upload to IOT
+2021-08-31 14:17:40(GMT) UPL: Start upload
+2021-08-31 14:17:50(GMT) UPL: Upload failed.
+2021-08-31 19:06:44(GMT) UPL: Start copy to USB
+2021-08-31 19:13:57(GMT) UPL: copy done
+2021-08-31 19:13:57(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-31 19:15:36(GMT) UPL: Starting upload to IOT
+2021-08-31 19:15:39(GMT) UPL: Start upload
+2021-08-31 19:21:01(GMT) UPL: Upload done
+2021-08-31 19:22:48(GMT) UPL: Start copy to USB
+2021-08-31 19:25:40(GMT) UPL: copy done
+2021-08-31 19:25:40(GMT) UPL: Delete raw data older than 3 day(s).
+2021-08-31 19:27:28(GMT) UPL: Starting upload to IOT
+2021-08-31 19:27:32(GMT) UPL: Start upload
+2021-08-31 19:28:15(GMT) UPL: Upload done

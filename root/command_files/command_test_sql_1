@@ -1,0 +1,9 @@
+LCDON
+#
+# Set settings appropriate for a quick ECR test
+#
+SQLITE  /media/hda1/system.db  /home/root/ECR_settings.sql
+SLEEP 60 
+LCDOFF
+SLEEP 5
+Q

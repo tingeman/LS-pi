@@ -1,0 +1,23 @@
+LCDON
+#
+# Set settings appropriate for a quick ECR test
+#
+SQLITE  /media/hda1/system.db  /home/root/ECR_settings.sql
+SLEEP 120
+s unattendedmode 1
+SLEEP 5
+NEW_PROJECT
+SLEEP 15
+T ECR_2x32 /home/root/protocols/2X32mirrored.xml  /home/root/protocols/QEQ-ERT-02_ElectrodeT.xml 2 2 1 0 0 0
+SLEEP 60
+S 0 0 0
+SLEEP 60
+m
+SLEEP 120
+WAITMEASURE
+SLEEP 5
+LCDOFF
+UPLOAD
+SIGNALCOMPLETE
+SLEEP 5
+Q

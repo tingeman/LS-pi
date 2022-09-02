@@ -1,0 +1,9 @@
+LCDON
+#
+# Set settings appropriate for a full dataset with no ECR test
+#
+SQLITE  /media/hda1/system.db  /home/root/RES_FW_NOECR_0p8sec_settings.sql
+SLEEP 60
+LCDOFF
+SLEEP 5
+Q

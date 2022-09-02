@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Will remove all log files etc.
+
+. ./cronscripter_settings
+
+for file in $WORKDIR/ttyfile $WORKDIR/errfile $LOGDIR/logfile $WORKDIR/projectdatefile $LOGDIR/backuplog $LOGDIR/uploadlog $LOGDIR/oldfile $LOGDIR/UPoldfile
+do
+    
+    if [ -e $file ]
+    then
+        rm $file 
+    else
+        echo "$file not found"
+    fi
+done
+

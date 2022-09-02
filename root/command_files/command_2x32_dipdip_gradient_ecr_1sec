@@ -1,0 +1,50 @@
+LCDON
+#
+# Set settings appropriate for a quick ECR test
+#
+SQLITE  /media/hda1/system.db  /home/root/ECR_settings.sql
+SLEEP 120
+s unattendedmode 1
+SLEEP 15
+NEW_PROJECT
+SLEEP 15
+T ECR_2x32 /home/root/protocols/2X32mirrored.xml  /home/root/protocols/QEQ-ERT-02_ElectrodeT.xml 2 2 1 0 0 0
+SLEEP 60
+S 0 0 0
+SLEEP 60
+m
+SLEEP 120
+WAITMEASURE
+SLEEP 15
+#
+# Set settings appropriate for a full dataset with no ECR test
+#
+SQLITE  /media/hda1/system.db  /home/root/RES_FW_NOECR_1sec_settings.sql
+SLEEP 15
+#
+# RUN Dipole-Dipole protocol
+#
+T 2x32dipdip /home/root/protocols/2X32mirrored.xml  /home/root/protocols/DipoleDipole64_DISKO.xml 2 2 1 0 0 0
+SLEEP 60
+S 0 0 0
+SLEEP 60
+m
+SLEEP 300
+WAITMEASURE
+SLEEP 30
+#
+# RUN Gradient protocol
+#
+T 2x32gradientXL /home/root/protocols/2X32mirrored.xml  /home/root/protocols/GradientXL_64_DISKO.xml 2 2 1 0 0 0
+SLEEP 60
+S 0 0 0
+SLEEP 60
+m
+SLEEP 300
+WAITMEASURE
+SLEEP 5
+LCDOFF
+UPLOAD
+SIGNALCOMPLETE
+SLEEP 5
+Q

@@ -1,0 +1,79 @@
+#/bin/sh
+
+
+check_if_terrameter_runs()
+{
+    A=`$BIN/ps -C terrameter | $BIN/grep -v PID`
+    if [ "$A" ]
+    then
+        $BIN/echo -n "GO: Terrameter is running at " >> $LOGDIR/logfile
+        $BIN/date >>$LOGDIR/logfile
+        running=1
+    else
+        $BIN/echo "GO: Terrameter is not running, continue." >> $LOGDIR/logfile
+        running=0
+    fi
+}
+
+
+start_job()
+{
+    if [ -e $CFile ]
+    then
+        $BIN/echo -n "GO: Start processing commandfile $CFile at " >> $LOGDIR/logfile
+        $BIN/date >> $LOGDIR/logfile
+        $BIN/sh $HOME/cronscripter $CFile | DISPLAY=:0 $TERRAMETERHOME/terrameter 1>> $WORKDIR/ttyfile 2>> $WORKDIR/errfile
+        $BIN/echo -n "GO: Done processing commandfile $CFile at " >> $LOGDIR/logfile
+        $BIN/date >> $LOGDIR/logfile
+    else
+        $BIN/echo -n "GO: No commandfile ($CFile) at " >> $LOGDIR/logfile
+        $BIN/date >> $LOGDIR/logfile
+    fi
+}
+
+
+
+# This is the main program
+
+source "./cronscripter_settings"
+
+if [ $1 ]
+then
+	CFile=$1
+else
+	$BIN/echo -n "GO: No commandfile was provided at " >> $LOGDIR/logfile
+        $BIN/date >>$LOGDIR/logfile
+	exit
+fi
+	
+
+if [ -e $RUNFILEDIR/runfile ]
+then
+	check_if_terrameter_runs
+
+	if [ $running -eq 1 ]
+	then
+        $BIN/echo "GO: Terrameter is running, trying a kill" >> $LOGDIR/logfile
+		$USRBIN/killall terrameter
+	
+		$BIN/sleep 15
+
+		check_if_terrameter_runs
+
+		if [ $running -eq 1 ]
+		then
+        	$BIN/echo -n "GO: Could not kill terrameter, aborts at " >> $LOGDIR/logfile
+            $BIN/date >> $LOGDIR/logfile
+		else
+			start_job
+		fi
+    else
+        $BIN/echo "GO: Terrameter is not running, continue." >> $LOGDIR/logfile
+		start_job
+	fi 
+#else
+    #$BIN/echo -n "GO: No runfile. Die at " >> $LOGDIR/logfile
+	#$BIN/date >> $LOGDIR/logfile
+fi
+
+
