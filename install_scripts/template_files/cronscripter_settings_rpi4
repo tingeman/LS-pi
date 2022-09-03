@@ -2,23 +2,25 @@
 # scripts throughout.
 # There should be no need to change settings anywhere else.
 
+RUN_TERRAMETER=false     # If true, will launch terrameter software
+                        # If false, will simulate terrameter operation
+                        # Use false when operating on Raspberry Pi replacement
 
-LOGDIR="/home/root"
-# logfile goes here
+LOGDIR="/root"
 
-HOME="/home/root"
+HOME="/root"
 
-WORKDIR="/home/root"
+WORKDIR="/root"
 # ttyfile,errfile go here
 
-USBDIR="/media/sda1"
+USBDIR="/media/usb"
 RUNFILEDIR="$USBDIR"
 BCKRUNFILEDIR="$USBDIR"
 UPLRUNFILEDIR="$USBDIR"
 # runfiles goes here
 
-GPIO_OUT_BIN="/home/root"
-# Home of gpio_out
+GPIO_OUT_BIN="/root"
+# Home of gpio_out, only exists on Terrameter
 
 BIN="/bin"
 # Home of echo, grep, sh, sleep, touch
@@ -29,6 +31,12 @@ USRBIN="/usr/bin"
 TERRAMETERHOME="/usr/bin"
 # Home of terrameter executable
 
+if [ "$RUN_TERRAMETER" == true ]; then
+    TERRAMETER_CMD="DISPLAY=:0 $TERRAMETERHOME/terrameter"
+else
+    TERRAMETER_CMD="$HOME/terrameter_simulator.sh"
+fi
+
 RUNCHECK_INTERVAL=300
 # Interval at which to poll if terrmater has an active measurement cycle
 # 300 sec = 5 min
@@ -37,15 +45,13 @@ MAXINTERVALS_TO_WAIT_FOR_TERRAMETER_TO_MEASURE=10
 # How many runcheck intervals to wait for Terrameter to complete measurements
 # 10 x 600 sec = 100 min = 1h40 min
 
-BCKSOURCEDIR="/media/hda1/projects"                                                                 
-BCKDESTDIR="/home/root"  
+BCKSOURCEDIR="/media/hda1/projects" 
 USBDESTDIR="$USBDIR"
 # Source and destination for backups
 
 UPLSOURCEDIR="/media/hda1/projects"                                                                 
 IOTDIR="/media/usb/from_terrameter"
 IOTDATADIR="$IOTDIR"
-#IOTDBDIR="$IOTDIR/tm_data_db"
 # Source and destination for upload
 
 IOT="terrameter@192.168.23.1"

@@ -2,9 +2,11 @@
 # scripts throughout.
 # There should be no need to change settings anywhere else.
 
+RUN_TERRAMETER=false     # If true, will launch terrameter software
+                        # If false, will simulate terrameter operation
+                        # Use false when operating on Raspberry Pi replacement
 
 LOGDIR="/home/root"
-# logfile goes here
 
 HOME="/home/root"
 
@@ -28,6 +30,12 @@ USRBIN="/usr/bin"
 
 TERRAMETERHOME="/usr/bin"
 # Home of terrameter executable
+
+if [ "$RUN_TERRAMETER" == true ]; then
+    TERRAMETER_CMD="DISPLAY=:0 $TERRAMETERHOME/terrameter"
+else
+    TERRAMETER_CMD="$HOME/terrameter_simulator.sh"
+fi
 
 RUNCHECK_INTERVAL=300
 # Interval at which to poll if terrmater has an active measurement cycle
