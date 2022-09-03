@@ -31,7 +31,7 @@ start_job()
         $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "$CALLER: Start processing commandfile $CFile" >> $WORKDIR/ttyfile
         $BIN/echo " " >> $WORKDIR/ttyfile
         $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "$CALLER: Start processing commandfile $CFile" >> $LOGDIR/logfile
-        $BIN/bash $HOME/cronscripter $CFile | DISPLAY=:0 $TERRAMETERHOME/terrameter 1>> $WORKDIR/ttyfile 2>> $WORKDIR/errfile
+        $BIN/bash $HOME/cronscripter $CFile | "$TERRAMETER_CMD" 1>> $WORKDIR/ttyfile 2>> $WORKDIR/errfile
         $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "$CALLER: Done processing commandfile $CFile" >> $LOGDIR/logfile
     else
         $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "$CALLER: No commandfile ($CFile)" >> $LOGDIR/logfile
