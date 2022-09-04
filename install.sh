@@ -157,19 +157,13 @@ else
   unzip -q "$TMP_DIR"/LS-pi.zip -d "$TMP_DIR"/ 
 
 
-
-  exit 0 
-
-
-
-
   cp -rf "$SRC_DIR"/install_scripts/* "$INSTALL_SCRIPTS_DIR"
   cp -rf "$SRC_DIR"/root "$BASE_DIR"
   #rm -r "$SRC_DIR" "$TMP_DIR"/LS-pi.zip
   chown -R $USER:$(id -g -n $USER) "$BASE_DIR" || ((ERR++))
   chown -R $USER:$(id -g -n $USER) "$INSTALL_SCRIPTS_DIR" || ((ERR++))
   chmod -R +x "$BASE_DIR"/*.sh
-  chmod -R +x "$INSTALL_SCRIPTS_DIR"/sh_scripts/*.sh
+  chmod -R +x "$INSTALL_SCRIPTS_DIR"/*.sh
   sleep 2
 fi
 
@@ -217,30 +211,48 @@ systemctl enable console-setup
 systemctl restart console-setup
 
 
+# ==============================================================================
+# Setting up time sync
+# ==============================================================================
+
+# store curren crontab in temporary file
+(crontab -l 2>/dev/null || true) > "$TMP_DIR"/cron_tmp.txt
 
 
-# echo ">>> Modifying /etc/ntp.conf ..."
-# 
-# match=$(grep 'driftfile' /etc/ntp.conf)
-# match=$(echo -e "$match" | sed -e 's/^[[:space:]]*//')
-# if [[ -z "$match" ]]; then
-#     # if line is missing, insert it at end of file
-#     echo "driftfile $USB_MOUNT_POINT/var/lib/ntp.drift" >> /etc/ntp.conf
-#     echo "Inserted missing line"
-# elif [[  "$match" == "#"* ]]; then
-#     # if line is commented, insert it after the commented line
-#     sed -i 's~^[[:space:]]*#[[:space:]]*driftfile.*~&\ndriftfile '"$USB_MOUNT_POINT"'/var/lib/ntp.drift~ }' /etc/ntp.conf
-#     echo "Found commented line, inserting new line after it"
-# else
-#     # if line exists, replace it
-#     sed -i 's#^driftfile.*#driftfile '"$USB_MOUNT_POINT"'/var/lib/ntp.drift# }' /etc/ntp.conf
-#     echo "Replaced existing line"
-# fi
-# 
-# touch "$USB_MOUNT_POINT"/var/lib/ntp.drift
-# 
-# 
-# cp /lib/systemd/system/ntp.service /etc/systemd/system
+
+# Section does exist, do conditional insert
+match=$(grep 'ntp_update.sh' /etc/ssh/sshd_config)
+match=$(echo -e "$match" | sed -e 's/^[[:space:]]*//')
+if [[ -z "$match" ]]; then
+    # if line is missing, insert it at end of file
+    echo "@ boot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "Inserted ntp_update.sh in cronfile"
+elif [[  "$match" == "#"* ]]; then
+    # if line is commented, remove it
+    echo "Found commented line, deleting it and inserting..."
+    sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
+    echo "@ boot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+else
+    echo "Found line, deleting and inserting..."
+    sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
+    echo "@ boot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+fi
+
+## Install crontab...
+#cat "$TMP_DIR"/cron_tmp.txt | /usr/bin/crontab -
+
+## Remove temporary file
+#rm "$TMP_DIR"/cron_tmp.txt
+
+
+
+
+# ==============================================================================
+# Removing unwanted packages
+# ==============================================================================
 
 echo
 echo ">>> Removing some packages that are not needed ..."
