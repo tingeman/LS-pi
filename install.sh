@@ -158,7 +158,7 @@ else
 
 
   cp -rf "$SRC_DIR"/install_scripts/* "$INSTALL_SCRIPTS_DIR"
-  cp -rf "$SRC_DIR"/root "$BASE_DIR"
+  cp -rf "$SRC_DIR"/root/* "$BASE_DIR"
   #rm -r "$SRC_DIR" "$TMP_DIR"/LS-pi.zip
   chown -R $USER:$(id -g -n $USER) "$BASE_DIR" || ((ERR++))
   chown -R $USER:$(id -g -n $USER) "$INSTALL_SCRIPTS_DIR" || ((ERR++))
@@ -232,12 +232,12 @@ elif [[  "$match" == "#"* ]]; then
     # if line is commented, remove it
     echo "Found commented line, deleting it and inserting..."
     sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
-    echo "@ boot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@ boot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
     echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
 else
     echo "Found line, deleting and inserting..."
     sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
-    echo "@ boot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@ boot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
     echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
 fi
 
