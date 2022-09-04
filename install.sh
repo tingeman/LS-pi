@@ -225,19 +225,19 @@ match=$(grep 'ntp_update.sh' /etc/ssh/sshd_config)
 match=$(echo -e "$match" | sed -e 's/^[[:space:]]*//')
 if [[ -z "$match" ]]; then
     # if line is missing, insert it at end of file
-    echo "@ boot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
     echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
     echo "Inserted ntp_update.sh in cronfile"
 elif [[  "$match" == "#"* ]]; then
     # if line is commented, remove it
     echo "Found commented line, deleting it and inserting..."
     sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
-    echo "@ boot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
     echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
 else
     echo "Found line, deleting and inserting..."
     sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
-    echo "@ boot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
     echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
 fi
 
