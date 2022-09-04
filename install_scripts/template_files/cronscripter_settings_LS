@@ -6,12 +6,15 @@ RUN_TERRAMETER=true     # If true, will launch terrameter software
                         # If false, will simulate terrameter operation
                         # Use false when operating on Raspberry Pi replacement
 
-LOGDIR="/home/root"
 
 HOME="/home/root"
 
 WORKDIR="/home/root"
 # ttyfile,errfile go here
+
+LOGDIR="$WORKDIR"/logs
+CRONTABSDIR="$WORKDIR"/crontabs
+
 
 USBDIR="/media/sda1"
 RUNFILEDIR="$USBDIR"

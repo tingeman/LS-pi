@@ -12,6 +12,8 @@ LS_ROOT_DIR='/root'
 BASE_DIR=$LS_ROOT_DIR
 INSTALL_SCRIPTS_DIR="$BASE_DIR/install_files"
 TMP_DIR="$INSTALL_SCRIPTS_DIR/tmp"
+LOGDIR="$BASEDIR"/logs
+CRONTABDIR="$BASEDIR"/crontabs
 
 # PREDEFINED SETTINGS:
 
@@ -19,14 +21,26 @@ TMP_DIR="$INSTALL_SCRIPTS_DIR/tmp"
 USB_MOUNT_POINT=/media/usb
 HOSTNAME=$(hostname)
 
+# Select here what hardware we run...
 HARDWARE='Raspberry Pi'
-HARDWARE='Terrameter LS'
-RUN_ERRAMETER='false'    # Use only true when running on Terrameter LS hardware
+#HARDWARE='Terrameter LS'
 
 # [GIT BRANCH] --------------------------------------------
 GIT_BRANCH=develop      # master or develop
 
 
+
+
+# Select whether to run Terrameter software, 
+# or software that pretneds to be Terrameter
+if [[ $HARDWARE == 'Raspberry Pi' ]]; then
+  RUN_ERRAMETER='false'    # Use only true when running on Terrameter LS hardware
+elif [[ $HARDWARE == 'Raspberry Pi' ]]; then
+  RUN_ERRAMETER='true'    # Use only true when running on Terrameter LS hardware
+else
+  echo 'Unknown hardware, aborting!'  
+  exit 1
+fi
 
 
 
@@ -118,9 +132,20 @@ passwd -d root
 #usermod -m -d /home/root root
 # We will live with that, and instead change the config file
 
-mkdir -p /media/hda1/projects
-chown -R root: '/media/hda1'
+if [[ ! -d '/media/hda1/projects' ]]; then
+  mkdir -p /media/hda1/projects
+  chown -R root: '/media/hda1'
+fi
 
+if [[ ! -d "$LOGDIR" ]]; then
+  mkdir -p "$LOGDIR"
+  chown -R root: "$LOGDIR"
+fi
+
+if [[ ! -d "$CRONTABDIR" ]]; then
+  mkdir -p "$CRONTABDIR"
+  chown -R root: "$CRONTABDIR"
+fi
 
 # ==============================================================================
 # Install LS-Pi
@@ -132,7 +157,7 @@ chown -R root: '/media/hda1'
 # wget ????
 
 # develop/main branch version:
-# wget https://github.com/tingeman/dtu-ert-pi/raw/develop/main/install.sh
+# wget https://github.com/tingeman/LS-pi/raw/develop/main/install.sh
 
 
 mkdir -p "$TMP_DIR"
@@ -182,7 +207,8 @@ fi
 
 # search and replace placeholder text
 sed -i "{s#^[[:space:]]*RUN_TERRAMETER=.*#RUN_TERRAMETER=$RUN_TERRAMETER#}" $BASE_DIR/cronscripter_settings
-sed -i "{s#^[[:space:]]*LOGDIR=.*#WLOGDIR=\"$LOGDIR\"#}" $BASE_DIR/cronscripter_settings
+sed -i "{s#^[[:space:]]*LOGDIR=.*#LOGDIR=\"$LOGDIR\"#}" $BASE_DIR/cronscripter_settings
+sed -i "{s#^[[:space:]]*CRONTABDIR=.*#CRONTABDIR=\"$CRONTABDIR\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*USB_MOUNT_POINT=.*#USB_MOUNT_POINT=\"$USB_MOUNT_POINT\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*SERVER_IP=.*#SERVER_IP=\"$SERVER_IP\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*PORT=.*#PORT=\"$PORT\"#}" $BASE_DIR/cronscripter_settings
@@ -242,10 +268,10 @@ else
 fi
 
 ## Install crontab...
-#cat "$TMP_DIR"/cron_tmp.txt | /usr/bin/crontab -
+cat "$TMP_DIR"/cron_tmp.txt | /usr/bin/crontab -
 
-## Remove temporary file
-#rm "$TMP_DIR"/cron_tmp.txt
+# Remove temporary file
+rm "$TMP_DIR"/cron_tmp.txt
 
 
 
