@@ -2,7 +2,7 @@
 # scripts throughout.
 # There should be no need to change settings anywhere else.
 
-RUN_TERRAMETER=false     # If true, will launch terrameter software
+RUN_TERRAMETER=true     # If true, will launch terrameter software
                         # If false, will simulate terrameter operation
                         # Use false when operating on Raspberry Pi replacement
 
@@ -46,7 +46,6 @@ MAXINTERVALS_TO_WAIT_FOR_TERRAMETER_TO_MEASURE=10
 # 10 x 600 sec = 100 min = 1h40 min
 
 BCKSOURCEDIR="/media/hda1/projects"                                                                 
-BCKDESTDIR="/home/root"  
 USBDESTDIR="$USBDIR"
 # Source and destination for backups
 
