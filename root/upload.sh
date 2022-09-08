@@ -62,8 +62,8 @@ start_upload()
     then
         $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "UPL: Start upload to IOT" >> $LOGDIR/logfile
         #$USRBIN/rsync -a --timeout=300 -e='ssh -i /home/root/.ssh/terrameter_id_rsa' $UPLSOURCEDIR $IOT:$IOTDATADIR
-		$USRBIN/rsync -a --timeout=300 -e='ssh -i '$PRIVATEKEY $UPLSOURCEDIR $IOT:$IOTDATADIR
-		$USRBIN/rsync -a --timeout=300 -e='ssh -i '$PRIVATEKEY /home/root/ $IOT:$IOTDATADIR/home_root/
+		$USRBIN/rsync -a --timeout=300 -e='ssh -i '$SSHKEY $UPLSOURCEDIR $IOT:$IOTDATADIR
+		$USRBIN/rsync -a --timeout=300 -e='ssh -i '$SSHKEY $WORKDIR/ $IOT:$IOTDATADIR/home_root/
              
         if [ $? -eq 0 ]
         then

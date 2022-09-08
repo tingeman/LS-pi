@@ -66,13 +66,13 @@ then
     if [ -e $WORKDIR/UPLOAD_FLAG ]
     then
 		rm $WORKDIR/UPLOAD_FLAG		
-        $BIN/bash $HOME/upload.sh
+        $BIN/bash $WORKDIR/upload.sh
     fi
 
     if [ -e $WORKDIR/SIGNALCOMPLETE_FLAG ]
     then
 		rm $WORKDIR/SIGNALCOMPLETE_FLAG		
-        $BIN/bash $HOME/signalcomplete.sh
+        $BIN/bash $WORKDIR/signalcomplete.sh
     fi	
 	
 else
@@ -84,7 +84,7 @@ then
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: Will reboot system now" >> $LOGDIR/logfile
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: Removing $RUNFILEDIR/rebootmenow." >> $LOGDIR/logfile
     $BIN/rm $RUNFILEDIR/rebootmenow
-    $HOME/reboot_now.sh
+    $WORKDIR/reboot_now.sh
 else
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: No pending reboot" >> $LOGDIR/logfile
 fi

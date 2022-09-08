@@ -157,7 +157,7 @@ lcd_on()
 #
 #    # If ttyfile changed size since last probe (including our own requests for information)
 #    # it means that the terrameter software is responding to input...
-#    new_ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+#    new_ttyfile_size=`ls -nl $WORKDIR/ttyfile | awk '{print $5}'`
 #    delta_ttyfile="$(($new_ttyfile_size-$ttyfile_size))"
 #    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: ttyfile change since last probe: $delta_ttyfile bytes" >> $LOGDIR/logfile
 #
@@ -213,7 +213,7 @@ check_if_measuring()
 {
     # If ttyfile changed size since last probe (including our own requests for information)
     # it means that the terrameter software is responding to input...
-    new_ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+    new_ttyfile_size=`ls -nl $WORKDIR/ttyfile | awk '{print $5}'`
     delta_ttyfile="$(($new_ttyfile_size-$ttyfile_size))"
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: ttyfile change since last probe: $delta_ttyfile bytes" >> $LOGDIR/logfile
 
@@ -246,7 +246,7 @@ check_if_measuring()
         $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Terrameter is measuring" >> $LOGDIR/logfile
         running=1
     else
-        new_ttyfile_size_2=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+        new_ttyfile_size_2=`ls -nl $WORKDIR/ttyfile | awk '{print $5}'`
         delta_ttyfile="$(($new_ttyfile_size-$ttyfile_size))"
         
         if [ $delta_ttyfile -gt 0 ]
@@ -290,7 +290,7 @@ wait_until_next_halfhour()
 wait_until_not_measuring()
 {
     # update ttyfile_size, to ensure we only check for change after this point
-    ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+    ttyfile_size=`ls -nl $WORKDIR/ttyfile | awk '{print $5}'`
     check_if_measuring
     
     n_wait=0
@@ -445,7 +445,7 @@ $BIN/touch $WORKDIR/errfile
 $BIN/touch $WORKDIR/projectdatefile
 running=0
 measure_id=-1
-ttyfile_size=`ls -nl $HOME/ttyfile | awk '{print $5}'`
+ttyfile_size=`ls -nl $WORKDIR/ttyfile | awk '{print $5}'`
 
 
 if [ $# = 1 ]

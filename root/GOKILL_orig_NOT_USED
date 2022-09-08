@@ -22,7 +22,7 @@ start_job()
     then
         $BIN/echo -n "GO: Start processing commandfile $CFile at " >> $LOGDIR/logfile
         $BIN/date >> $LOGDIR/logfile
-        $BIN/sh $HOME/cronscripter $CFile | DISPLAY=:0 $TERRAMETERHOME/terrameter 1>> $WORKDIR/ttyfile 2>> $WORKDIR/errfile
+        $BIN/sh $WORKDIR/cronscripter $CFile | DISPLAY=:0 $TERRAMETERHOME/terrameter 1>> $WORKDIR/ttyfile 2>> $WORKDIR/errfile
         $BIN/echo -n "GO: Done processing commandfile $CFile at " >> $LOGDIR/logfile
         $BIN/date >> $LOGDIR/logfile
     else

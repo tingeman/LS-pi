@@ -8,12 +8,16 @@
 
 # target directories
 
-LS_ROOT_DIR='/root'
-BASE_DIR=$LS_ROOT_DIR
-INSTALL_SCRIPTS_DIR="$BASE_DIR/install_files"
+ROOT_DIR='/root'                   # this is the home directory of the root user. 
+LS_ROOT_DIR='/home/root'           # this is the home directory of the root user on the terrameter
+# on the Terrameter, ROOT_DIR = LS_ROOT_DIR
+# but on Raspberry Pi, they are different.
+
+BASE_DIR=$LS_ROOT_DIR              # BASE_DIR will be the base directory of the installed software
+INSTALL_SCRIPTS_DIR="$ROOT_DIR/install_files"
 TMP_DIR="$INSTALL_SCRIPTS_DIR/tmp"
-LOGDIR="$BASEDIR"/logs
-CRONTABDIR="$BASEDIR"/crontabs
+LOGDIR="$BASE_DIR"/logs
+CRONTABDIR="$BASE_DIR"/crontabs
 
 # PREDEFINED SETTINGS:
 
@@ -35,7 +39,7 @@ GIT_BRANCH=develop      # master or develop
 # or software that pretneds to be Terrameter
 if [[ $HARDWARE == 'Raspberry Pi' ]]; then
   RUN_ERRAMETER='false'    # Use only true when running on Terrameter LS hardware
-elif [[ $HARDWARE == 'Raspberry Pi' ]]; then
+elif [[ $HARDWARE == 'Terrameter LS' ]]; then
   RUN_ERRAMETER='true'    # Use only true when running on Terrameter LS hardware
 else
   echo 'Unknown hardware, aborting!'  
@@ -207,13 +211,13 @@ fi
 
 # search and replace placeholder text
 sed -i "{s#^[[:space:]]*RUN_TERRAMETER=.*#RUN_TERRAMETER=$RUN_TERRAMETER#}" $BASE_DIR/cronscripter_settings
+sed -i "{s#^[[:space:]]*HOME=.*#HOME=\"$ROOT_DIR\"#}" $BASE_DIR/cronscripter_settings
+sed -i "{s#^[[:space:]]*WORKDIR=.*#WORKDIR=\"$LS_ROOT_DIR\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*LOGDIR=.*#LOGDIR=\"$LOGDIR\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*CRONTABDIR=.*#CRONTABDIR=\"$CRONTABDIR\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*USB_MOUNT_POINT=.*#USB_MOUNT_POINT=\"$USB_MOUNT_POINT\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*SERVER_IP=.*#SERVER_IP=\"$SERVER_IP\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*PORT=.*#PORT=\"$PORT\"#}" $BASE_DIR/cronscripter_settings
-
-
 
 
 
@@ -247,31 +251,81 @@ systemctl restart console-setup
 
 
 # Section does exist, do conditional insert
-match=$(grep 'ntp_update.sh' /etc/ssh/sshd_config)
+match=$(grep 'reboot.*ntp_update.sh' cron_tmp.txt)
 match=$(echo -e "$match" | sed -e 's/^[[:space:]]*//')
 if [[ -z "$match" ]]; then
     # if line is missing, insert it at end of file
-    echo "@reboot    /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
-    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot    /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
     echo "Inserted ntp_update.sh in cronfile"
 elif [[  "$match" == "#"* ]]; then
     # if line is commented, remove it
     echo "Found commented line, deleting it and inserting..."
     sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
-    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
-    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
 else
     echo "Found line, deleting and inserting..."
     sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
-    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
-    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
 fi
+
+# Section does exist, do conditional insert
+match=$(cat cron_tmp.txt | grep -v 'reboot' | grep 'ntp_update')
+match=$(echo -e "$match" | sed -e 's/^[[:space:]]*//')
+if [[ -z "$match" ]]; then
+    # if line is missing, insert it at end of file
+    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "Inserted ntp_update.sh in cronfile"
+elif [[  "$match" == "#"* ]]; then
+    # if line is commented, remove it
+    echo "Found commented line, deleting it and inserting..."
+    sed -i "/reboot/! /ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
+else
+    echo "Found line, deleting and inserting..."
+    sed -i "/ntp_update/d" "$TMP_DIR"/cron_tmp.txt 
+    echo "@reboot             /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
+    echo "* */4  *  *  *     /usr/bin/bash  $BASE_DIR/ntp_update.sh" >> "$TMP_DIR"/cron_tmp.txt 
+fi
+
+
 
 ## Install crontab...
 cat "$TMP_DIR"/cron_tmp.txt | /usr/bin/crontab -
 
 # Remove temporary file
 rm "$TMP_DIR"/cron_tmp.txt
+
+
+# ==============================================================================
+# Creating SSH Key
+# ==============================================================================
+
+
+echo
+echo
+echo '>>> Generating ssh public-private key relationship...'
+if [[ ! -d $ROOT_DIR/.ssh ]]; then
+    mkdir $ROOT_DIR/.ssh
+fi
+
+if [[ -f $SSHKEY ]]; then
+    echo "It seems ssh key already exists ($SSHKEY)... skipping this step."
+else
+    if [[ $HARDWARE == 'Raspberry Pi' ]]; then
+        ssh-keygen -b 2048 -t rsa -f $SSHKEY -q -N ""
+        echo "Created ssh key: $SSHKEY"
+    elif [[ $HARDWARE == 'Terrameter LS' ]]; then
+        dropbearkey -f $SSHkey -t rsa -s 2048
+        dropbearkey -y -f $SSHKEY | grep "^ssh-rsa " >> "$SSHKEY".pub
+    else
+        echo 'Unknown hardware, did not create SSH key, please create manually'  
+        exit 1
+    fi
+fi
+
+echo " "
+echo "NB: You must manually add the ssh key to the server authorized keys!"
 
 
 

@@ -6,7 +6,6 @@ RUN_TERRAMETER=true     # If true, will launch terrameter software
                         # If false, will simulate terrameter operation
                         # Use false when operating on Raspberry Pi replacement
 
-
 HOME="/home/root"
 
 WORKDIR="/home/root"
@@ -14,7 +13,6 @@ WORKDIR="/home/root"
 
 LOGDIR="$WORKDIR"/logs
 CRONTABSDIR="$WORKDIR"/crontabs
-
 
 USBDIR="/media/sda1"
 RUNFILEDIR="$USBDIR"
@@ -37,7 +35,7 @@ TERRAMETERHOME="/usr/bin"
 if [ "$RUN_TERRAMETER" == true ]; then
     TERRAMETER_CMD="DISPLAY=:0 $TERRAMETERHOME/terrameter"
 else
-    TERRAMETER_CMD="$HOME/terrameter_simulator.sh"
+    TERRAMETER_CMD="$WORKDIR/terrameter_simulator.sh"
 fi
 
 RUNCHECK_INTERVAL=300
@@ -59,9 +57,9 @@ IOTDATADIR="$IOTDIR"
 # Source and destination for upload
 
 IOT="terrameter@192.168.23.1"
-PRIVATEKEY="/home/root/.ssh/terrameter_id_rsa"
-SSH="$USRBIN/ssh -i $PRIVATEKEY $IOT"
-SCP="$USRBIN/scp -i $PRIVATEKEY"
+SSHKEY="$HOME/.ssh/terrameter_id_rsa"
+SSH="$USRBIN/ssh -i $SSHKEY $IOT"
+SCP="$USRBIN/scp -i $SSHKEY"
 # ssh and scp commands
 
 RMRAWDELAY=4320
