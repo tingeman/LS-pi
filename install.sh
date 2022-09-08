@@ -29,7 +29,7 @@ HOSTNAME=$(hostname)
 HARDWARE='Raspberry Pi'
 #HARDWARE='Terrameter LS'
 
-SSHKEY="$ROOTDIR"/.ssh/terrameter_id_rsa
+SSHKEY="$ROOT_DIR"/.ssh/terrameter_id_rsa
 
 # [GIT BRANCH] --------------------------------------------
 GIT_BRANCH=develop      # master or develop
