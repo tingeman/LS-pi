@@ -125,20 +125,28 @@ source ./helper_functions.sh
 
 # Will turn off LCD via gpio_out   
 lcd_off()                                                                           
-{                                                                                  
-    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Turning LCD off" >> $LOGDIR/logfile
-    $GPIO_OUT_BIN/gpio_out LCD_LAMP_ON 0 1>> $LOGDIR/logfile 2>> $LOGDIR/logfile                                                    
-    #$GPIO_OUT_BIN/gpio_out LCD_PWR_ON 0                                                      
-    #$GPIO_OUT_BIN/gpio_out LCD_INV_PWR_ON 0                                                  
+{   
+    if [ -f $GPIO_OUT_BIN/gpio_out ]; then
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Turning LCD off" >> $LOGDIR/logfile
+        $GPIO_OUT_BIN/gpio_out LCD_LAMP_ON 0 1>> $LOGDIR/logfile 2>> $LOGDIR/logfile                                                    
+        #$GPIO_OUT_BIN/gpio_out LCD_PWR_ON 0                                                      
+        #$GPIO_OUT_BIN/gpio_out LCD_INV_PWR_ON 0                                                  
+    else
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: gpio_out file does not exist, cannot turn LCD off" >> $LOGDIR/logfile
+    fi
 }                                                                                  
                                              
 # Will turn on LCD via gpio_out                                                                                  
 lcd_on()                                                                             
-{                                                                                  
-    $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Turning LCD on" >> $LOGDIR/logfile
-    $GPIO_OUT_BIN/gpio_out LCD_LAMP_ON 1 1>> $LOGDIR/logfile 2>> $LOGDIR/logfile                                                    
-    #$GPIO_OUT_BIN/gpio_out LCD_PWR_ON 1                                                      
-    #$GPIO_OUT_BIN/gpio_out LCD_INV_PWR_ON 1                                                  
+{       
+    if [ -f $GPIO_OUT_BIN/gpio_out ]; then                                                                               
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Turning LCD on" >> $LOGDIR/logfile
+        $GPIO_OUT_BIN/gpio_out LCD_LAMP_ON 1 1>> $LOGDIR/logfile 2>> $LOGDIR/logfile                                                    
+        #$GPIO_OUT_BIN/gpio_out LCD_PWR_ON 1                                                      
+        #$GPIO_OUT_BIN/gpio_out LCD_INV_PWR_ON 1                                                  
+    else
+        $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: gpio_out file does not exist, cannot turn LCD on" >> $LOGDIR/logfile
+    fi
 }      
 
 
