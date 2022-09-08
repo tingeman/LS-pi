@@ -271,7 +271,7 @@ else
 fi
 
 # Section does exist, do conditional insert
-match=$(cat cron_tmp.txt | grep -v 'reboot' | grep 'ntp_update')
+match=$(cat "$TMP_DIR"/cron_tmp.txt | grep -v 'reboot' | grep 'ntp_update')
 match=$(echo -e "$match" | sed -e 's/^[[:space:]]*//')
 if [[ -z "$match" ]]; then
     # if line is missing, insert it at end of file
