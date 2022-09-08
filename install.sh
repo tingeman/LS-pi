@@ -29,6 +29,8 @@ HOSTNAME=$(hostname)
 HARDWARE='Raspberry Pi'
 #HARDWARE='Terrameter LS'
 
+SSHKEY="$ROOTDIR"/.ssh/terrameter_id_rsa
+
 # [GIT BRANCH] --------------------------------------------
 GIT_BRANCH=develop      # master or develop
 
@@ -316,7 +318,7 @@ else
         ssh-keygen -b 2048 -t rsa -f $SSHKEY -q -N ""
         echo "Created ssh key: $SSHKEY"
     elif [[ $HARDWARE == 'Terrameter LS' ]]; then
-        dropbearkey -f $SSHkey -t rsa -s 2048
+        dropbearkey -f $SSHKEY -t rsa -s 2048
         dropbearkey -y -f $SSHKEY | grep "^ssh-rsa " >> "$SSHKEY".pub
     else
         echo 'Unknown hardware, did not create SSH key, please create manually'  
