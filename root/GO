@@ -26,14 +26,14 @@ then
     check_if_rsync_runs "GO"
 
     if [ -e $WORKDIR/UPLOAD_FLAG ]
-	then
-		rm $WORKDIR/UPLOAD_FLAG
-	fi
+    then
+        rm $WORKDIR/UPLOAD_FLAG
+    fi
 
-	if [ -e $WORKDIR/SIGNALCOMPLETE_FLAG ]
-	then
-		rm $WORKDIR/SIGNALCOMPLETE_FLAG
-	fi
+    if [ -e $WORKDIR/SIGNALCOMPLETE_FLAG ]
+    then
+        rm $WORKDIR/SIGNALCOMPLETE_FLAG
+    fi
 
 
     if [ $running -eq 1 ]
@@ -61,23 +61,23 @@ then
         $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: rsync not running. Launching Terrameter" >> $LOGDIR/logfile
         start_job "GO"
     fi
-	
-	# Check for existence of UPLOAD_FLAG and SIGNALCOMPLETE_FLAG, which may be
-	# set by cronscripter command files.
-	# If present, call the appropriate scripts, and remove the flags.
+    
+    # Check for existence of UPLOAD_FLAG and SIGNALCOMPLETE_FLAG, which may be
+    # set by cronscripter command files.
+    # If present, call the appropriate scripts, and remove the flags.
 
     if [ -e $WORKDIR/UPLOAD_FLAG ]
     then
-		rm $WORKDIR/UPLOAD_FLAG		
+        rm $WORKDIR/UPLOAD_FLAG        
         $BIN/bash $WORKDIR/upload.sh
     fi
 
     if [ -e $WORKDIR/SIGNALCOMPLETE_FLAG ]
     then
-		rm $WORKDIR/SIGNALCOMPLETE_FLAG		
+        rm $WORKDIR/SIGNALCOMPLETE_FLAG        
         $BIN/bash $WORKDIR/signalcomplete.sh
-    fi	
-	
+    fi    
+    
 else
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: No runfile. Aborting" >> $LOGDIR/logfile
 fi
