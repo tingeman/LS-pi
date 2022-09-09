@@ -68,6 +68,9 @@ if [[ -p /dev/stdin ]]; then
             echo "Simulating setting parameter..."
         elif echo ${line} | grep -Eq '^P '; then
             echo "Simulating creating new project..."
+            dirname=$(awk '{print $2}')
+            mkdir -p ${UPLSOURCEDIR}/$dirname
+            touch ${UPLSOURCEDIR}/${dirname}/project.db.txt
         elif echo ${line} | grep -Eq '^T '; then
             echo "Simulating creating new task..."
         elif echo ${line} | grep -Eq '^S '; then
