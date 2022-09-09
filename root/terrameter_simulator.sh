@@ -68,7 +68,7 @@ if [[ -p /dev/stdin ]]; then
             echo "Simulating setting parameter..."
         elif echo ${line} | grep -Eq '^P '; then
             echo "Simulating creating new project..."
-            dirname=$(awk '{print $2}')
+            dirname=$(echo ${line} | awk '{print $2}')
             mkdir -p ${UPLSOURCEDIR}/$dirname
             touch ${UPLSOURCEDIR}/${dirname}/project.db.txt
         elif echo ${line} | grep -Eq '^T '; then
@@ -79,7 +79,7 @@ if [[ -p /dev/stdin ]]; then
             echo "Simulating starting measuring process..."
         elif echo ${line} | grep -Eq '^g measure'; then
             echo "Simulating getting current measure..."  
-            echo "measure        0"
+            echo "measure_0"
         elif echo ${line} | grep -Eq '^R'; then
             echo "Measure Results:"
             echo "Showing results for latest measure (id=10)"
