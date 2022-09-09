@@ -14,6 +14,7 @@ WORKDIR="/home/root"
 LOGDIR="$WORKDIR"/logs
 CRONTABSDIR="$WORKDIR"/crontabs
 SQLDIR="$WORKDIR"/sql_commands
+CMDDIR="$WORKDIR"/command_files
 
 USBDIR="/media/usb"
 RUNFILEDIR="$USBDIR"

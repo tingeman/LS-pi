@@ -12,7 +12,7 @@ $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "=== GO SCRIPT STARTED ===" >> $LOGDIR
 
 if [ $1 ]
 then
-    CFile=$1
+    CFile="$CMDDIR"/$1
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: Processing file $CFile" >> $LOGDIR/logfile
 else
     $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "GO: No commandfile was provided" >> $LOGDIR/logfile
