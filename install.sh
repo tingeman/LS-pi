@@ -143,14 +143,22 @@ if [[ ! -d '/media/hda1/projects' ]]; then
   chown -R root: '/media/hda1'
 fi
 
+if [[ ! -d "$BASE_DIR" ]]; then
+  mkdir -p "$BASE_DIR"
+  chown -R root: "$BASE_DIR"
+  echo "Created $BASE_DIR"
+fi
+
 if [[ ! -d "$LOGDIR" ]]; then
   mkdir -p "$LOGDIR"
   chown -R root: "$LOGDIR"
+  echo "Created $LOGDIR"
 fi
 
-if [[ ! -d "$CRONTABDIR" ]]; then
-  mkdir -p "$CRONTABDIR"
-  chown -R root: "$CRONTABDIR"
+if [[ ! -d "$CRONTABSDIR" ]]; then
+  mkdir -p "$CRONTABSDIR"
+  chown -R root: "$CRONTABSDIR"
+  echo "Created $CRONTABSDIR"
 fi
 
 # ==============================================================================
