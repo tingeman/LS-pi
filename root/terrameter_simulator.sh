@@ -64,6 +64,8 @@ if [[ -p /dev/stdin ]]; then
         
         if echo ${line} | grep -Eq '^s '; then
             echo "Simulating setting parameter..."
+        elif echo ${line} | grep -Eq '^P '; then
+            echo "Simulating creating new project..."
         elif echo ${line} | grep -Eq '^T '; then
             echo "Simulating creating new task..."
         elif echo ${line} | grep -Eq '^S '; then
@@ -72,10 +74,17 @@ if [[ -p /dev/stdin ]]; then
             echo "Simulating starting measuring process..."
         elif echo ${line} | grep -Eq '^g measure'; then
             echo "Simulating getting current measure..."  
+            echo "measure        0"
         elif echo ${line} | grep -Eq '^R'; then
+            echo "Measure Results:"
+            echo "Showing results for latest measure (id=10)"
+            echo "Ch  Seq  Type             ADValue    Range  Value   Unit  S.Dev"
+            echo "--  ---  ---------------  ---------  -----  ------  ----  -----"
             echo "Simulating showing current measure result..."
+            echo " "
         elif echo ${line} | grep -Eq '^Q'; then
-            echo "Simulating quitting the script"
+            echo "Quitting the script"
+            exit 0
         else
             echo "I don't know this command!"
         fi
