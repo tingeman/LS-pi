@@ -392,8 +392,8 @@ process_file()
             then                
                 sqldbfile=`$BIN/echo $line | $USRBIN/awk '{print $2}'`
                 sqlcommandfile=`$BIN/echo $line | $USRBIN/awk '{print $3}'`
-                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Executing: sqlite3 $sqldbfile < $sqlcommandfile " >> $LOGDIR/logfile                
-                $USRBIN/sqlite3 $sqldbfile < $sqlcommandfile  2>> $LOGDIR/logfile
+                $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Executing: sqlite3 $sqldbfile < $SQLDIR/$sqlcommandfile " >> $LOGDIR/logfile                
+                $USRBIN/sqlite3 $sqldbfile < $SQLDIR/$sqlcommandfile  2>> $LOGDIR/logfile
             else
                 $BIN/echo $line
                 $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CSCR: Sending \"$line\" to Terrameter " >> $LOGDIR/logfile                

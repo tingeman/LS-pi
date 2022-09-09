@@ -2,7 +2,7 @@ LCDON
 #
 # Set settings appropriate for a quick ECR test
 #
-SQLITE  /media/hda1/system.db  /home/root/ECR_settings.sql
+SQLITE  /media/hda1/system.db  ECR_settings.sql
 SLEEP 120
 s unattendedmode 1
 SLEEP 5

@@ -2,7 +2,7 @@ LCDON
 #
 # Set settings appropriate for a quick ECR test
 #
-SQLITE  /media/hda1/system.db  /home/root/ECR_settings.sql
+SQLITE  /media/hda1/system.db  ECR_settings.sql
 SLEEP 120
 s unattendedmode 1
 SLEEP 15
@@ -19,7 +19,7 @@ SLEEP 15
 #
 # Set settings appropriate for a full dataset with no ECR test
 #
-SQLITE  /media/hda1/system.db  /home/root/RES_FW_NOECR_0p8sec_settings.sql
+SQLITE  /media/hda1/system.db  RES_FW_NOECR_0p8sec_settings.sql
 SLEEP 15
 T 2x32dipdip /home/root/protocols/2X32mirrored.xml  /home/root/protocols/DipoleDipole64_DISKO.xml 2 2 1 0 0 0
 SLEEP 60
