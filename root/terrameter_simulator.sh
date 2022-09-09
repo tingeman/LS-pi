@@ -69,14 +69,23 @@ if [[ -p /dev/stdin ]]; then
         elif echo ${line} | grep -Eq '^P '; then
             echo "Simulating creating new project..."
             dirname=$(echo ${line} | awk '{print $2}')
+            # check if dirname exists, and add counter if it does    
+            if [[ -d ${UPLSOURCEDIR}/$dirname ]] ; then
+                i=1
+                while [[ -d ${UPLSOURCEDIR}/${dirname}_${i} ]]; do
+                    let i++
+                done
+                dirname=${dirname}_${i}
+            fi
+            # create dir and touch file
             mkdir -p ${UPLSOURCEDIR}/$dirname
-            touch ${UPLSOURCEDIR}/${dirname}/project.db.txt
+            touch ${UPLSOURCEDIR}/${dirname}/project.db
         elif echo ${line} | grep -Eq '^T '; then
-            echo "Simulating creating new task..."
+            echo "Simulating creating new task... (doing nothing)"
         elif echo ${line} | grep -Eq '^S '; then
-            echo "Simulating creating new station..."
+            echo "Simulating creating new station... (doing nothing)"
         elif echo ${line} | grep -Eq '^m'; then
-            echo "Simulating starting measuring process..."
+            echo "Simulating starting measuring process... (doing nothing)"
         elif echo ${line} | grep -Eq '^g measure'; then
             echo "Simulating getting current measure..."  
             echo "measure_0"
