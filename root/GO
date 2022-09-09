@@ -1,8 +1,11 @@
 #!/bin/bash
 
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
-source "./cronscripter_settings"
-source "./helper_functions.sh"
+source "$SCRIPTS_DIR/cronscripter_settings"
+source "$SCRIPTS_DIR/helper_functions.sh"
 
 
 $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "=== GO SCRIPT STARTED ===" >> $LOGDIR/logfile

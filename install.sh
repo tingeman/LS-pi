@@ -40,9 +40,9 @@ GIT_BRANCH=develop      # master or develop
 # Select whether to run Terrameter software, 
 # or software that pretneds to be Terrameter
 if [[ $HARDWARE == 'Raspberry Pi' ]]; then
-  RUN_ERRAMETER='false'    # Use only true when running on Terrameter LS hardware
+  RUN_TERRAMETER='false'    # Use only true when running on Terrameter LS hardware
 elif [[ $HARDWARE == 'Terrameter LS' ]]; then
-  RUN_ERRAMETER='true'    # Use only true when running on Terrameter LS hardware
+  RUN_TERRAMETER='true'    # Use only true when running on Terrameter LS hardware
 else
   echo 'Unknown hardware, aborting!'  
   exit 1

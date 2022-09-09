@@ -9,8 +9,12 @@
 #    Thomas Ingeman-Nielsen - 2021-05-29
 ####################################################################
 
-source "./cronscripter_settings"
-source "./helper_functions.sh"
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
+
+source "$SCRIPTS_DIR/cronscripter_settings"
+source "$SCRIPTS_DIR/helper_functions.sh"
 
 touch $LOGDIR/logfile
 

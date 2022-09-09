@@ -1,7 +1,10 @@
 #!/bin/bash
 
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
-source "/home/root/cronscripter_settings"
+source "$SCRIPTS_DIR/cronscripter_settings"
 
 #$BIN/echo "Resetting network" >> $LOGDIR/logfil
 #/sbin/ifdown eth0 >> $LOGDIR/logfil 2>&1

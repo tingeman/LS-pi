@@ -19,7 +19,12 @@
 ####################################################################
 
 # source settings. All changes to directories, etc. done here.
-. ./cronscripter_settings
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
+
+source "$SCRIPTS_DIR/cronscripter_settings"
+
 
 # Will turn off LCD via gpio_out   
 lcd_off()                                                                           

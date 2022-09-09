@@ -1,6 +1,11 @@
 #!/bin/bash
 
-source ./cronscripter_settings
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
+
+source "$SCRIPTS_DIR/cronscripter_settings"
+
 
 cat "$SSHKEY".pub | ssh $IOT "mkdir -p ~/.ssh; touch ~/.ssh/authorized_keys; cat >> ~/.ssh/authorized_keys"
 

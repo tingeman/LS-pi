@@ -1,8 +1,13 @@
 #!/bin/sh
 
 # Will remove all log files etc.
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
-. ./cronscripter_settings
+source "$SCRIPTS_DIR/cronscripter_settings"
+
+
 
 for file in $WORKDIR/ttyfile $WORKDIR/errfile $LOGDIR/logfile $WORKDIR/projectdatefile $LOGDIR/backuplog $LOGDIR/uploadlog $LOGDIR/oldfile $LOGDIR/UPoldfile
 do

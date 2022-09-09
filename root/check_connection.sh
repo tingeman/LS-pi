@@ -31,8 +31,12 @@ test_connectivity()
 
 
 # This is the main program
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
-source "./cronscripter_settings"
+source "$SCRIPTS_DIR/cronscripter_settings"
+
 
 $BIN/echo `date "+%Y-%m-%d %H:%M:%S(%Z)"` "CHK: Testing SSH connection..." >> $LOGDIR/uploadlog
 

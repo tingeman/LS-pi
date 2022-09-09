@@ -52,9 +52,12 @@
 ############################################
 
 
+if [[ -z $SCRIPTS_DIR ]]; then
+    SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+fi
 
+source "$SCRIPTS_DIR/cronscripter_settings"
 
-source ./cronscripter_settings
 
 # Check to see if a pipe exists on stdin.
 if [[ -p /dev/stdin ]]; then
