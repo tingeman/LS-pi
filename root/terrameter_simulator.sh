@@ -62,6 +62,8 @@ if [[ -p /dev/stdin ]]; then
     # If we want to read the input line by line
     while IFS= read line; do
         
+        echo "Line: ${line}"
+
         if echo ${line} | grep -Eq '^s '; then
             echo "Simulating setting parameter..."
         elif echo ${line} | grep -Eq '^P '; then
@@ -88,7 +90,7 @@ if [[ -p /dev/stdin ]]; then
         else
             echo "I don't know this command!"
         fi
-        echo "Line: ${line}"
+
     done
     # Or if we want to simply grab all the data, we can simply use cat instead
     # cat
