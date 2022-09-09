@@ -202,6 +202,8 @@ else
   chown -R $USER:$(id -g -n $USER) "$BASE_DIR" || ((ERR++))
   chown -R $USER:$(id -g -n $USER) "$INSTALL_SCRIPTS_DIR" || ((ERR++))
   chmod -R +x "$BASE_DIR"/*.sh
+  chmod -R +x "$BASE_DIR"/cronscripter
+  chmod -R +x "$BASE_DIR"/GO
   chmod -R +x "$INSTALL_SCRIPTS_DIR"/*.sh
   sleep 2
 fi
