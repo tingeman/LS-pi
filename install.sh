@@ -16,8 +16,8 @@ LS_ROOT_DIR='/home/root'           # this is the home directory of the root user
 BASE_DIR=$LS_ROOT_DIR              # BASE_DIR will be the base directory of the installed software
 INSTALL_SCRIPTS_DIR="$ROOT_DIR/install_files"
 TMP_DIR="$INSTALL_SCRIPTS_DIR/tmp"
-LOGDIR="$BASE_DIR"/logs
-CRONTABDIR="$BASE_DIR"/crontabs
+#LOGDIR="$BASE_DIR"/logs
+#CRONTABSDIR="$BASE_DIR"/crontabs
 
 # PREDEFINED SETTINGS:
 
@@ -215,8 +215,8 @@ fi
 sed -i "{s#^[[:space:]]*RUN_TERRAMETER=.*#RUN_TERRAMETER=$RUN_TERRAMETER#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*HOME=.*#HOME=\"$ROOT_DIR\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*WORKDIR=.*#WORKDIR=\"$LS_ROOT_DIR\"#}" $BASE_DIR/cronscripter_settings
-sed -i "{s#^[[:space:]]*LOGDIR=.*#LOGDIR=\"$LOGDIR\"#}" $BASE_DIR/cronscripter_settings
-sed -i "{s#^[[:space:]]*CRONTABDIR=.*#CRONTABDIR=\"$CRONTABDIR\"#}" $BASE_DIR/cronscripter_settings
+#sed -i "{s#^[[:space:]]*LOGDIR=.*#LOGDIR=\"$LOGDIR\"#}" $BASE_DIR/cronscripter_settings
+#sed -i "{s#^[[:space:]]*CRONTABDIR=.*#CRONTABSDIR=\"$CRONTABSDIR\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*USB_MOUNT_POINT=.*#USB_MOUNT_POINT=\"$USB_MOUNT_POINT\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*SERVER_IP=.*#SERVER_IP=\"$SERVER_IP\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*PORT=.*#PORT=\"$PORT\"#}" $BASE_DIR/cronscripter_settings
