@@ -16,8 +16,8 @@ LS_ROOT_DIR='/home/root'           # this is the home directory of the root user
 BASE_DIR=$LS_ROOT_DIR              # BASE_DIR will be the base directory of the installed software
 INSTALL_SCRIPTS_DIR="$ROOT_DIR/install_files"
 TMP_DIR="$INSTALL_SCRIPTS_DIR/tmp"
-#LOGDIR="$BASE_DIR"/logs
-#CRONTABSDIR="$BASE_DIR"/crontabs
+LOGDIR="$BASE_DIR"/logs
+CRONTABSDIR="$BASE_DIR"/crontabs
 
 # PREDEFINED SETTINGS:
 
