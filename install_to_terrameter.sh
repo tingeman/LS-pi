@@ -70,6 +70,9 @@ else
 fi
 
 
+# [SSH definitions] --------------------------------------
+USE_IP="-o StrictHostKeyChecking=no root@${TERRAMETER_IP}"
+SSH_PASS="sshpass -p \'\'"
 
 
 # ==============================================================================
@@ -134,26 +137,25 @@ else
 fi
 
 echo '>>> Preparing Terrameter for new code...'
-sshpass -p '' ssh -o StrictHostKeyChecking=no root@$TERRAMETER_IP "
-  # check if backup directory exists, and add counter if it does    
-  bak_dirname=\'/home/root_bak\'
+sshpass $SSH_PASS ssh $USE_IP "
+  # check if backup directory exists, and add counter if it does
+  bak_dirname=/home/root_bak
   if [[ -d \$bak_dirname ]] ; then
     i=1
     while [[ -d \${bak_dirname}_\${i} ]]; do
       let i++
     done
-    bak_dirname=\${bak_dirname}_\${i}
+    bak_dirname=\"\${bak_dirname}\"_\${i}
   fi
-  
+
+  # echo \$bak_dirname
+
   # copy the /home/root directory to backup directory
   cp -r /home/root \$bak_dirname
 
   # remove all existing files from /home/root
   rm -r /home/root/*
 "
-
-
-exit 0
 
 
 # ==============================================================================
@@ -179,33 +181,98 @@ sed -i "{s#^[[:space:]]*WORKDIR=.*#WORKDIR=\"$LS_ROOT_DIR\"#}" $SRC_DIR/root/cro
 # ==============================================================================
 
 echo ">>> Copying new files to Terrameter..."
-sshpass -p '' scp -o StrictHostKeyChecking=no $SRC_DIR/root  root@${TERRAMETER_IP}:/home/root
+sshpass $SSH_PASS scp -r -o StrictHostKeyChecking=no $SRC_DIR/root/*  root@${TERRAMETER_IP}:/home/root/
+
 
 
 # ==============================================================================
 # Copy original unique files back from bak-directory
 # ==============================================================================
 
-echo ">>> Copying back original ABEM files from backup folder..."
-sshpass -p '' ssh -o StrictHostKeyChecking=no root@${TERRAMETER_IP} "
-  cp -f \$bak_dirname/gpio_out /home/root/
-  cp -f \$bak_dirname/relay_board_test /home/root/
-  cp -f \$bak_dirname/txusbbootmode /home/root/
-  cp -f \$bak_dirname/protocols /home/root/
-"
-
+if [[ $HARDWARE == 'Terrameter LS' ]]; then
+  echo ">>> Copying back original ABEM files from backup folder..."
+  sshpass $SSH_PASS ssh $USE_IP "
+    # find backup directory
+    bak_dirname=/home/root_bak
+    if [[ -d \$bak_dirname ]] ; then
+      i=1
+      while [[ -d \${bak_dirname}_\${i} ]]; do
+        # step counter one up, to look for next directory
+        let i++  
+      done
+      # now step down to get the number of the latest backup directory
+      let i--   
+      bak_dirname=\"\${bak_dirname}\"_\${i}
+    fi
+    
+    cp -f \$bak_dirname/gpio_out /home/root/
+    cp -f \$bak_dirname/relay_board_test /home/root/
+    cp -f \$bak_dirname/txusbbootmode /home/root/
+    cp -f \$bak_dirname/protocols /home/root/
+  "
+fi
 
 # ==============================================================================
 # Set permissions
 # ==============================================================================
 
 echo ">>> Setting permissions to execute relevant files..."
-sshpass -p '' ssh -o StrictHostKeyChecking=no root@${TERRAMETER_IP} "
+sshpass $SSH_PASS ssh $USE_IP "
   chmod +x /home/root/*.sh
-  chmod +x \$bak_dirname/gpio_out \$bak_dirname/relay_board_test \$bak_dirname/txusbbootmode \$bak_dirname/protocols
   chmod +x /home/root/cronscripter
   chmod +x /home/root/GO
 "
+
+sshpass $SSH_PASS ssh $USE_IP "
+  # find backup directory
+  bak_dirname=/home/root_bak
+  if [[ -d \$bak_dirname ]] ; then
+    i=1
+    while [[ -d \${bak_dirname}_\${i} ]]; do
+      # step counter one up, to look for next directory
+      let i++  
+    done
+    # now step down to get the number of the latest backup directory
+    let i--   
+    bak_dirname=\"\${bak_dirname}\"_\${i}
+  fi
+
+  chmod +x \$bak_dirname/gpio_out \$bak_dirname/relay_board_test \$bak_dirname/txusbbootmode \$bak_dirname/protocols
+"
+
+# ==============================================================================
+# Creating SSH Key
+# ==============================================================================
+
+
+echo
+echo
+echo '>>> Generating ssh public-private key relationship...'
+
+sshpass $SSH_PASS ssh $USE_IP "
+  if [[ ! -d $ROOT_DIR/.ssh ]]; then
+      mkdir $ROOT_DIR/.ssh
+  fi
+"
+
+if sshpass $SSH_PASS ssh $USE_IP "test ! -e $SSHKEY"; then
+    if [[ $HARDWARE == 'Raspberry Pi' ]]; then
+        sshpass $SSH_PASS ssh $USE_IP "ssh-keygen -b 2048 -t rsa -f $SSHKEY -q -N \'\'"
+        echo "Created ssh key: $SSHKEY"
+    elif [[ $HARDWARE == 'Terrameter LS' ]]; then
+        sshpass $SSH_PASS ssh $USE_IP "dropbearkey -f $SSHKEY -t rsa -s 2048"
+        sshpass $SSH_PASS ssh $USE_IP "dropbearkey -y -f $SSHKEY | grep "'^ssh-rsa '" >> ${SSHKEY}.pub"
+    else
+        echo 'Unknown hardware, did not create SSH key, please create manually'  
+        exit 1
+    fi
+else
+    echo "It seems ssh key already exists ($SSHKEY)... skipping this step."
+fi
+
+echo " "
+echo "NB: You must manually add the ssh key to the server authorized keys!"
+echo "    Do this by running the script: append_as_authorized_key.sh"
 
 
 echo ' '
