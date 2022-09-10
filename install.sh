@@ -6,9 +6,24 @@
 # a Terrameter LS attached to the dtu-ert-pi system.
 #
 
-# target directories
 
-ROOT_DIR='/root'                   # this is the home directory of the root user. 
+# Select here what hardware we run...
+HARDWARE='Raspberry Pi'
+#HARDWARE='Terrameter LS'
+
+
+# [TARGET DIRECTORIES] ------------------------------------
+
+# Set the root dir, depending on hardware
+if [[ $HARDWARE == 'Raspberry Pi' ]]; then
+  ROOT_DIR='/root'
+elif [[ $HARDWARE == 'Terrameter LS' ]]; then
+  ROOT_DIR='/root' 
+else
+  echo 'Unknown hardware, aborting!'  
+  exit 1
+fi
+
 LS_ROOT_DIR='/home/root'           # this is the home directory of the root user on the terrameter
 # on the Terrameter, ROOT_DIR = LS_ROOT_DIR
 # but on Raspberry Pi, they are different.
@@ -25,16 +40,10 @@ CRONTABSDIR="$BASE_DIR"/crontabs
 USB_MOUNT_POINT=/media/usb
 HOSTNAME=$(hostname)
 
-# Select here what hardware we run...
-HARDWARE='Raspberry Pi'
-#HARDWARE='Terrameter LS'
-
 SSHKEY="$ROOT_DIR"/.ssh/terrameter_id_rsa
 
 # [GIT BRANCH] --------------------------------------------
 GIT_BRANCH=develop      # master or develop
-
-
 
 
 # Select whether to run Terrameter software, 
@@ -225,12 +234,6 @@ fi
 sed -i "{s#^[[:space:]]*RUN_TERRAMETER=.*#RUN_TERRAMETER=$RUN_TERRAMETER#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*HOME=.*#HOME=\"$ROOT_DIR\"#}" $BASE_DIR/cronscripter_settings
 sed -i "{s#^[[:space:]]*WORKDIR=.*#WORKDIR=\"$LS_ROOT_DIR\"#}" $BASE_DIR/cronscripter_settings
-#sed -i "{s#^[[:space:]]*LOGDIR=.*#LOGDIR=\"$LOGDIR\"#}" $BASE_DIR/cronscripter_settings
-#sed -i "{s#^[[:space:]]*CRONTABDIR=.*#CRONTABSDIR=\"$CRONTABSDIR\"#}" $BASE_DIR/cronscripter_settings
-sed -i "{s#^[[:space:]]*USB_MOUNT_POINT=.*#USB_MOUNT_POINT=\"$USB_MOUNT_POINT\"#}" $BASE_DIR/cronscripter_settings
-sed -i "{s#^[[:space:]]*SERVER_IP=.*#SERVER_IP=\"$SERVER_IP\"#}" $BASE_DIR/cronscripter_settings
-sed -i "{s#^[[:space:]]*PORT=.*#PORT=\"$PORT\"#}" $BASE_DIR/cronscripter_settings
-
 
 
 # ==============================================================================
