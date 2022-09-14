@@ -138,23 +138,23 @@ fi
 
 echo '>>> Preparing Terrameter for new code...'
 sshpass $SSH_PASS ssh $USE_IP "
-  # check if backup directory exists, and add counter if it does
-  bak_dirname=/home/root_bak
-  if [[ -d \$bak_dirname ]] ; then
-    i=1
-    while [[ -d \${bak_dirname}_\${i} ]]; do
-      let i++
-    done
-    bak_dirname=\"\${bak_dirname}\"_\${i}
-  fi
-
-  # echo \$bak_dirname
-
-  # copy the /home/root directory to backup directory
-  cp -r /home/root \$bak_dirname
-
-  # remove all existing files from /home/root
-  rm -r /home/root/*
+    # check if backup directory exists, and add counter if it does
+    bak_dirname=/home/root_bak
+    if [[ -d \$bak_dirname ]] ; then
+        i=1
+        while [[ -d \${bak_dirname}_\${i} ]]; do
+            let i++
+        done
+        bak_dirname=\"\${bak_dirname}\"_\${i}
+    fi
+  
+    # echo \$bak_dirname
+  
+    # copy the /home/root directory to backup directory
+    cp -r /home/root \$bak_dirname
+  
+    # remove all existing files from /home/root
+    rm -r /home/root/*
 "
 
 
@@ -192,23 +192,23 @@ sshpass $SSH_PASS scp -r -o StrictHostKeyChecking=no $SRC_DIR/root/*  root@${TER
 if [[ $HARDWARE == 'Terrameter LS' ]]; then
   echo ">>> Copying back original ABEM files from backup folder..."
   sshpass $SSH_PASS ssh $USE_IP "
-    # find backup directory
-    bak_dirname=/home/root_bak
-    if [[ -d \$bak_dirname ]] ; then
-      i=1
-      while [[ -d \${bak_dirname}_\${i} ]]; do
-        # step counter one up, to look for next directory
-        let i++  
-      done
-      # now step down to get the number of the latest backup directory
-      let i--   
-      bak_dirname=\"\${bak_dirname}\"_\${i}
-    fi
-    
-    cp -f \$bak_dirname/gpio_out /home/root/
-    cp -f \$bak_dirname/relay_board_test /home/root/
-    cp -f \$bak_dirname/txusbbootmode /home/root/
-    cp -f \$bak_dirname/protocols /home/root/
+      # find backup directory
+      bak_dirname=/home/root_bak
+      if [[ -d \$bak_dirname ]] ; then
+          i=1
+          while [[ -d \${bak_dirname}_\${i} ]]; do
+              # step counter one up, to look for next directory
+              let i++  
+          done
+          # now step down to get the number of the latest backup directory
+          let i--   
+          bak_dirname=\"\${bak_dirname}\"_\${i}
+      fi
+      
+      cp -f \$bak_dirname/gpio_out /home/root/
+      cp -f \$bak_dirname/relay_board_test /home/root/
+      cp -f \$bak_dirname/txusbbootmode /home/root/
+      cp -f \$bak_dirname/protocols /home/root/
   "
 fi
 
@@ -221,24 +221,27 @@ sshpass $SSH_PASS ssh $USE_IP "
   chmod +x /home/root/*.sh
   chmod +x /home/root/cronscripter
   chmod +x /home/root/GO
+  chmod +x /home/root/gpio_out /home/root/relay_board_test /home/root/txusbbootmode /home/root/protocols
 "
 
-sshpass $SSH_PASS ssh $USE_IP "
-  # find backup directory
-  bak_dirname=/home/root_bak
-  if [[ -d \$bak_dirname ]] ; then
-    i=1
-    while [[ -d \${bak_dirname}_\${i} ]]; do
-      # step counter one up, to look for next directory
-      let i++  
-    done
-    # now step down to get the number of the latest backup directory
-    let i--   
-    bak_dirname=\"\${bak_dirname}\"_\${i}
-  fi
-
-  chmod +x \$bak_dirname/gpio_out \$bak_dirname/relay_board_test \$bak_dirname/txusbbootmode \$bak_dirname/protocols
-"
+if [[ $HARDWARE == 'Terrameter LS' ]]; then
+    sshpass $SSH_PASS ssh $USE_IP "
+        # find backup directory
+        bak_dirname=/home/root_bak
+        if [[ -d \$bak_dirname ]] ; then
+            i=1
+            while [[ -d \${bak_dirname}_\${i} ]]; do
+                # step counter one up, to look for next directory
+                let i++  
+            done
+            # now step down to get the number of the latest backup directory
+            let i--   
+            bak_dirname=\"\${bak_dirname}\"_\${i}
+        fi
+    
+        chmod +x \$bak_dirname/gpio_out \$bak_dirname/relay_board_test \$bak_dirname/txusbbootmode \$bak_dirname/protocols
+    "
+fi
 
 # ==============================================================================
 # Creating SSH Key
@@ -267,7 +270,7 @@ if sshpass $SSH_PASS ssh $USE_IP "test ! -e $SSHKEY"; then
         exit 1
     fi
 else
-    echo "It seems ssh key already exists ($SSHKEY)... skipping this step."
+    echo "It seems ssh key already exists on Terrameter ($SSHKEY)... skipping this step."
 fi
 
 echo " "
